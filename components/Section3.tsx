@@ -21,7 +21,7 @@ const WorkshopSection = () => {
             <div className="overflow-hidden shadow-2xl bg-mint">
                 {/* Header */}
                 <div className="bg-gradient-to-r from-[#4f8b6f] to-[#2e5d49] text-center py-10 px-4">
-                    <h2 className="text-white text-3xl md:text-4xl font-bold tracking-[0.3em]">
+                    <h2 className="text-white text-3xl md:text-5xl font-bold tracking-[0.3em]">
                         WORKSHOP
                     </h2>
                 </div>

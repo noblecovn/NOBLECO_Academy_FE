@@ -1,7 +1,8 @@
 import Section1 from "@/components/Section1";
 import Section2 from "@/components/Section2";
 import Section3 from "@/components/Section3";
-import Image from "next/image";
+import Section4 from "@/components/Section4";
+import Section5 from "@/components/Section5";
 
 export default function Home() {
   return (
@@ -34,7 +35,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             {/* Cột trái - Nội dung */}
             <div className="text-white flex flex-col gap-10">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium uppercase tracking-tight">
+              <h1 className="text-4xl md:text-5xl font-medium uppercase tracking-tight">
                 NOBLECO ACADEMY
               </h1>
               <p className="text-base md:text-lg leading-relaxed">
@@ -65,6 +66,8 @@ export default function Home() {
       <Section1 />
       <Section2 />
       <Section3 />
+      <Section4 />
+      <Section5 />
           
     </div>
   );
