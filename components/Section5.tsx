@@ -38,7 +38,7 @@ const PartnersAndTestimonialsSection = () => {
                         <p className="text-2xl tracking-[0.2em] uppercase text-white">
                             MẠNG LƯỚI
                         </p>
-                        <h3 className="text-6xl font-semibold tracking-[0.1em] leading-tight">
+                        <h3 className="text-6xl text-white font-semibold tracking-[0.1em] leading-tight">
                             ĐỐI TÁC
                         </h3>
                         <div className="grid grid-cols-2 gap-12 xl:gap-16 mt-10 flex-grow">
@@ -64,7 +64,7 @@ const PartnersAndTestimonialsSection = () => {
                         <p className="text-2xl tracking-[0.2em] uppercase text-white">
                             Chia sẻ từ
                         </p>
-                        <h3 className="text-6xl font-semibold uppercase tracking-[0.1em] leading-tight">
+                        <h3 className="text-6xl text-white font-semibold uppercase tracking-[0.1em] leading-tight">
                             HỌC viên
                         </h3>
                         <div className="mt-10 space-y-6 flex-grow flex flex-col">

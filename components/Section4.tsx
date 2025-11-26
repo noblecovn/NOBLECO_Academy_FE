@@ -9,7 +9,7 @@ const ExpertSection = () => {
                 "- Người Việt Nam đầu tiên đạt chứng chỉ Gemologist của GIA.",
                 "- Có nhiều năm kinh nghiệm tại trung tâm trang sức JTC Bangkok và các mỏ đá quý Việt Nam, Myanmar."
             ],
-            image: "/images/7.png"
+            image: "/images/section4/1.png"
         },
         {
             name: "LÀO TRÍ ĐƯỜNG",
@@ -18,7 +18,7 @@ const ExpertSection = () => {
                 "- Giám đốc Điều hành Công ty LNK JSC.",
                 "- Nhân vật quen thuộc trong lĩnh vực tài chính, từng giữ chức vụ Phó Tổng giám đốc Công ty Cathay."
             ],
-            image: "/images/8.png"
+            image: "/images/section4/2.png"
         }
     ];
 
@@ -48,7 +48,7 @@ const ExpertSection = () => {
                             </div>
                             <div className="flex-1 text-center lg:text-left space-y-4">
                                 <div>
-                                    <h3 className="text-2xl md:text-3xl font-extrabold leading-tight">
+                                    <h3 className="text-2xl text-white md:text-3xl font-extrabold leading-tight">
                                         {expert.name}
                                     </h3>
                                     <p className="text-white text-base font-bold uppercase">
