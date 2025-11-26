@@ -1,0 +1,87 @@
+import Image from "next/image";
+
+const TrainingProgramSection = () => {
+    const programs = [
+        {
+            level: "CẤP ĐỘ 1",
+            title: "\"JEWELRY ADVISOR\"",
+            description: "<span class='font-bold'>Jewelry advisor</span> được thiết kế tinh gọn để giúp học viên nhanh chóng trở thành một Tư vấn viên chuyên nghiệp – người có khả năng nắm vững sản phẩm, tự tin  thuyết phục, chốt sale và xây dựng mối quan hệ với khách hàng bền vững.",
+            image: "/images/1.png", // Placeholder - cần thay bằng ảnh thực tế
+            href: "#cap-do-1"
+        },
+        {
+            level: "CẤP ĐỘ 2",
+            title: "\"SENIOR JEWELRY CONSULTANT\"",
+            description: "<span class='font-bold'>Senior Jewelry Consultant</span> là lộ trình chuyên sâu được thiết kế để giúp học viên đi từ Tư vấn viên lên Chuyên viên cấp cao. Chương trình học kết hợp tinh hoa giữa kỹ năng đàm phán, chốt sale và phát triển năng lực huấn luyện cấp dưới, giúp bạn mở rộng cơ hội thăng tiến và khẳng định vị thế vững chắc trong phân khúc khách hàng cao cấp.",
+            image: "/images/2.png", // Placeholder - cần thay bằng ảnh thực tế
+            href: "#cap-do-2"
+        },
+        {
+            level: "CẤP ĐỘ 3",
+            title: "\"MASTER JEWELRY STYLIST\"",
+            description: "<span class='font-bold'>Master Jewelry Stylist</span> là cấp độ đào tạo cao nhất, giúp học viên trở thành một Chuyên gia trang sức thực thụ với kiến thức sâu rộng. Ở vị trí này, học viên sẽ đảm nhận vai trò Lãnh đạo, Cố vấn chuyên môn, và phát triển năng lực cho toàn bộ đội ngũ.",
+            image: "/images/3.png", // Placeholder - cần thay bằng ảnh thực tế
+            href: "#cap-do-3"
+        }
+    ];
+
+    return (
+        <section className="w-full py-16 px-4 sm:px-6 lg:px-8 min-h-fit">
+            <div className="max-w-7xl mx-auto">
+                {/* Header */}
+                <div className="text-center mb-12">
+                    <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">
+                        CHƯƠNG TRÌNH ĐÀO TẠO
+                    </h2>
+                </div>
+
+                {/* Programs Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-7 gap-6 lg:gap-8 items-stretch">
+                    {programs.map((program, index) => (
+                        <div
+                            key={index}
+                            className={`relative bg-[#0e392b] border border-[#2d5a4a] rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-transform duration-300 flex flex-col ${index === 0 ? 'md:col-span-2' : index === 1 ? 'md:col-span-3' : 'md:col-span-2'}`}
+                        >
+                            {/* Image */}
+                            <div className="relative w-full">
+                                <Image
+                                    src={program.image}
+                                    alt={program.title}
+                                    width={640}
+                                    height={360}
+                                    className="object-cover w-full"
+                                />
+                            </div>
+
+                            {/* Content */}
+                            <div className="p-6 flex flex-col h-full">
+                                {/* Title */}
+                                <div className="text-center">
+                                    <h4 className="text-gray-orange text-lg md:text-xl font-bold">
+                                        {program.level} <br />
+                                        {program.title}
+                                    </h4>
+                                    <p className="text-white text-sm md:text-base leading-relaxed text-justify-center mb-6 flex-grow">
+                                        <span dangerouslySetInnerHTML={{ __html: program.description }} />
+                                    </p>
+                                </div>
+
+                                {/* Button */}
+                                <div className="text-center mt-auto">
+                                    <a
+                                        href={program.href}
+                                        className="inline-block px-6 py-2 border border-white rounded-full text-white text-sm md:text-base font-medium hover:bg-white hover:text-[#0e392b] transition-colors duration-300"
+                                    >
+                                        TÌM HIỂU THÊM
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default TrainingProgramSection;
