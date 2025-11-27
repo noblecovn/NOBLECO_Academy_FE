@@ -34,7 +34,7 @@ const NoblecoAcademySection = () => {
                             key={index}
                             className="relative p-8 hover:transform hover:scale-105 transition-transform duration-300 min-h-[400px] bg-[#043022] rounded-2xl"
                         >
-                            <h4 className="relative z-10 text-[#d4af37] text-xl md:text-4xl font-bold mb-6 text-center">
+                            <h4 className="relative z-10 text-xl md:text-4xl font-bold mb-6 text-center bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
                                 {card.title}
                             </h4>
                             <p className="relative z-10 text-white text-sm md:text-xl leading-relaxed text-center text-justify-center">

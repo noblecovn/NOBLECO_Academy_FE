@@ -6,21 +6,21 @@ const TrainingProgramSection = () => {
             level: "CẤP ĐỘ 1",
             title: "\"JEWELRY ADVISOR\"",
             description: "<span class='font-bold'>Jewelry advisor</span> được thiết kế tinh gọn để giúp học viên nhanh chóng trở thành một Tư vấn viên chuyên nghiệp – người có khả năng nắm vững sản phẩm, tự tin  thuyết phục, chốt sale và xây dựng mối quan hệ với khách hàng bền vững.",
-            image: "/images/1.png", // Placeholder - cần thay bằng ảnh thực tế
+            image: "/images/1.png",
             href: "#cap-do-1"
         },
         {
             level: "CẤP ĐỘ 2",
             title: "\"SENIOR JEWELRY CONSULTANT\"",
             description: "<span class='font-bold'>Senior Jewelry Consultant</span> là lộ trình chuyên sâu được thiết kế để giúp học viên đi từ Tư vấn viên lên Chuyên viên cấp cao. Chương trình học kết hợp tinh hoa giữa kỹ năng đàm phán, chốt sale và phát triển năng lực huấn luyện cấp dưới, giúp bạn mở rộng cơ hội thăng tiến và khẳng định vị thế vững chắc trong phân khúc khách hàng cao cấp.",
-            image: "/images/2.png", // Placeholder - cần thay bằng ảnh thực tế
+            image: "/images/2.png",
             href: "#cap-do-2"
         },
         {
             level: "CẤP ĐỘ 3",
             title: "\"MASTER JEWELRY STYLIST\"",
             description: "<span class='font-bold'>Master Jewelry Stylist</span> là cấp độ đào tạo cao nhất, giúp học viên trở thành một Chuyên gia trang sức thực thụ với kiến thức sâu rộng. Ở vị trí này, học viên sẽ đảm nhận vai trò Lãnh đạo, Cố vấn chuyên môn, và phát triển năng lực cho toàn bộ đội ngũ.",
-            image: "/images/3.png", // Placeholder - cần thay bằng ảnh thực tế
+            image: "/images/3.png",
             href: "#cap-do-3"
         }
     ];
@@ -57,8 +57,10 @@ const TrainingProgramSection = () => {
                             <div className="p-6 flex flex-col h-full">
                                 {/* Title */}
                                 <div className="text-center">
-                                    <h4 className="text-gray-orange text-lg md:text-xl font-bold">
-                                        {program.level} <br />
+                                    <h4 className="bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent text-lg md:text-2xl font-bold">
+                                        {program.level}
+                                    </h4>
+                                    <h4 className="bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent text-lg md:text-2xl font-bold">
                                         {program.title}
                                     </h4>
                                     <p className="text-white text-sm md:text-base leading-relaxed text-justify-center mb-6 flex-grow">

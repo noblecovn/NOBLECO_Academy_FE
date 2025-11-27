@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import Autoplay from "embla-carousel-autoplay"
 
 import {
     Carousel,
@@ -55,6 +56,12 @@ const ExpertSection = () => {
                                 align: "center",
                                 loop: true,
                             }}
+                            plugins={[
+                                Autoplay({
+                                    delay: 4000,
+                                    stopOnInteraction: false,
+                                }),
+                            ]}
                             className="w-full"
                         >
                             <CarouselContent>
@@ -70,16 +77,16 @@ const ExpertSection = () => {
                                                     className="object-cover w-full h-full"
                                                 />
                                             </div>
-                                            <div className="w-full lg:w-1/4 text-center lg:text-left space-y-4">
-                                                <div>
-                                                    <h3 className="text-2xl text-white md:text-3xl font-extrabold leading-tight">
+                                            <div className="w-full lg:w-1/3 text-center lg:text-left space-y-4">
+                                                <div className="border-b border-white">
+                                                    <h3 className="text-2xl md:text-5xl font-semibold leading-tight bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
                                                         {expert.name}
                                                     </h3>
-                                                    <p className="text-white text-base font-bold uppercase">
+                                                    <p className="text-white text-2xl font-semibold uppercase pb-2">
                                                         {expert.role}
                                                     </p>
                                                 </div>
-                                                <ul className="space-y-2 text-sm md:text-base text-white/90">
+                                                <ul className="space-y-2 text-sm md:text-base text-white pt-2">
                                                     {expert.highlights.map((item) => (
                                                         <li key={item} className="leading-relaxed">
                                                             {item}
