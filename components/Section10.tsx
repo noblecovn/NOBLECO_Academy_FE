@@ -1,14 +1,14 @@
-const Section7 = () => {
+const Section10 = () => {
     const targetAudiences = [
         {
-            title: "NGƯỜI MUỐN CHUYỂN NGÀNH",
+            title: "JEWELRY ADVISOR MUỐN THĂNG HẠNG LÊN SENIOR",
             description:
                 "Bạn không biết bắt đầu từ đâu nếu muốn vào nghề nhưng mong muốn bước chân vào ngành hàng cao cấp với mức thu nhập đột phá và môi trường làm việc sang trọng.",
         },
         {
-            title: "NHÂN VIÊN BÁN HÀNG",
+            title: "NHÂN VIÊN BÁN LẺ, TƯ VẤN VIÊN ĐANG MUỐN NÂNG CẤP KỸ NĂNG",
             description:
-                "Bạn đã có kinh nghiệm bán hàng nhưng muốn chuyên nghiệp hóa kiến thức về Kim cương, Đá quý để nâng cao uy tín, khả năng chốt sale và tăng hoa hồng.",
+                "Bạn đã có kinh nghiệm bán hàng nhưng muốn chuyên nghiệp hóa kiến thức về Trang sức, Kim cương, Đá quý để nâng cao uy tín, khả năng chốt sale và upsell.",
             featured: true,
         },
         {
@@ -19,14 +19,14 @@ const Section7 = () => {
     ];
 
     return (
-        <section className="w-full py-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a]">
+        <section className="w-full py-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             {/* Title */}
             <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">
                 <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">
                     KHÓA HỌC DÀNH CHO AI?
                 </h2>
             </div>
-            <div className="max-w-7xl mx-auto pt-32">
+            <div className="max-w-7xl mx-auto pt-32 px-4">
                 {/* Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
                     {targetAudiences.map((audience, index) => (
@@ -60,4 +60,4 @@ const Section7 = () => {
     );
 };
 
-export default Section7;
+export default Section10;

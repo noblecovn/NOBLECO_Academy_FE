@@ -59,7 +59,7 @@ const Section8 = () => {
         <section className="w-full py-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             {/* Title */}
             <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">
-                <h2 className="text-deep-green text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">
+                <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">
                     NỘI DUNG ĐÀO TẠO
                 </h2>
             </div>
