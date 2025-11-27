@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { ReactNode, useEffect, useState } from "react";
 
 const highlights: { title: ReactNode }[] = [
@@ -63,7 +62,7 @@ export default function IntroPopup() {
         }`}
     >
       <div
-        className={`relative w-full max-w-4xl rounded-[32px] bg-gradient-to-t from-[#c9956b] via-[#eab788] to-[#ffe4c7] p-[3px] shadow-2xl transition-all duration-200 ${isClosing ? "scale-95 opacity-0" : "scale-100 opacity-100"
+        className={`relative w-full max-w-4xl rounded-[32px] bg-gradient-to-t from-[#c9956b] via-[#eab788] to-[#ffe4c7] p-1 shadow-2xl transition-all duration-200 ${isClosing ? "scale-95 opacity-0" : "scale-100 opacity-100"
           }`}
       >
         <div className="relative w-full overflow-hidden rounded-[30px] bg-white">

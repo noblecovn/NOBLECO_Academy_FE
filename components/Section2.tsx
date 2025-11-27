@@ -26,7 +26,7 @@ const TrainingProgramSection = () => {
     ];
 
     return (
-        <section className="w-full pb-16 min-h-fit bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
+        <section className="w-full pb-16 min-h-fit bg-gradient-to-t from-[#87c5ab] to-[#04241a]">
             {/* Header */}
             <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">
                 <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">

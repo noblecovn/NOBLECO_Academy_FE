@@ -30,7 +30,7 @@ const PartnersAndTestimonialsSection = () => {
     ];
 
     return (
-        <section className="w-full py-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
+        <section className="w-full py-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a]">
             <div className="max-w-7xl mx-auto overflow-hidden">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
                     {/* Partners */}

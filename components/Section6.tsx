@@ -15,7 +15,7 @@ const Section6 = () => {
                     {/* Khối nội dung */}
                     <div className="p-8 sm:p-12 flex flex-col gap-6 text-white justify-center">
                         <div>
-                            <p className="uppercase tracking-[0.5em] text-base mb-3">Cấp độ 1</p>
+                            <p className="uppercase tracking-[0.2em] text-base mb-3">Cấp độ 1</p>
                             <h2 className="text-4xl sm:text-5xl font-bold uppercase leading-tight tracking-wide">
                                 Jewelry Advisor
                             </h2>
@@ -24,7 +24,7 @@ const Section6 = () => {
                             </p>
                         </div>
 
-                        <div className="inline-flex w-full items-center justify-center bg-gray-orange text-white font-semibold text-center text-sm sm:text-base py-3 px-6 rounded-full shadow-lg">
+                        <div className="inline-flex w-full items-center justify-center bg-gradient-to-r from-[#be945f] to-[#fee08b] text-white font-semibold text-center text-sm sm:text-base py-3 px-6 rounded-full shadow-lg">
                             Học cùng chuyên gia - Thực chiến mỗi ngày - Bứt phá nghề nghiệp
                         </div>
 
