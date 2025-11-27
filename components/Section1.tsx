@@ -16,26 +16,24 @@ const NoblecoAcademySection = () => {
     ];
 
     return (
-        <section className="w-full py-16 px-4 sm:px-6 lg:px-8 min-h-fit">
+        <section className="w-full pb-16 min-h-fit bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
+            {/* Header */}
+            <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">
+                <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-light tracking-wide mb-2">
+                    BƯỚC VÀO NGÀNH TRANG SỨC CÙNG
+                </h2>
+                <h3 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">
+                    NOBLECO ACADEMY
+                </h3>
+            </div>
             <div className="max-w-7xl mx-auto">
-                {/* Header */}
-                <div className="text-center mb-12">
-                    <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-light tracking-wide mb-2">
-                        BƯỚC VÀO NGÀNH TRANG SỨC CÙNG
-                    </h2>
-                    <h3 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">
-                        NOBLECO ACADEMY
-                    </h3>
-                </div>
-
                 {/* Cards Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-20">
                     {cards.map((card, index) => (
                         <div
                             key={index}
-                            className="relative p-8 hover:transform hover:scale-105 transition-transform duration-300 min-h-[400px]"
+                            className="relative p-8 hover:transform hover:scale-105 transition-transform duration-300 min-h-[400px] bg-[#043022] rounded-2xl"
                         >
-                            <div className="w-full h-full absolute top-0 left-0 z-0"><Image src="/images/bg-card.png" alt="NOBLECO Academy" width={640} height={360} className="object-cover" /></div>
                             <h4 className="relative z-10 text-[#d4af37] text-xl md:text-4xl font-bold mb-6 text-center">
                                 {card.title}
                             </h4>

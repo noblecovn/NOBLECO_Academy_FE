@@ -26,14 +26,14 @@ const TrainingProgramSection = () => {
     ];
 
     return (
-        <section className="w-full py-16 px-4 sm:px-6 lg:px-8 min-h-fit">
+        <section className="w-full pb-16 min-h-fit bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
+            {/* Header */}
+            <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">
+                <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">
+                    CHƯƠNG TRÌNH ĐÀO TẠO
+                </h2>
+            </div>
             <div className="max-w-7xl mx-auto">
-                {/* Header */}
-                <div className="text-center mb-12">
-                    <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">
-                        CHƯƠNG TRÌNH ĐÀO TẠO
-                    </h2>
-                </div>
 
                 {/* Programs Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-7 gap-6 lg:gap-8 items-stretch">

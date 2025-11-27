@@ -8,7 +8,7 @@ import IntroPopup from "@/components/IntroPopup";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-gradient-to-b from-[#87c5ab] to-[#0e392b]">
+    <div className="relative min-h-screen">
       <IntroPopup />
       <div className="relative w-full" style={{ aspectRatio: "640 / 360" }}>
         <iframe

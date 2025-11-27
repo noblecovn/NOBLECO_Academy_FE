@@ -1,4 +1,14 @@
-import Image from "next/image";
+"use client"
+
+import Image from "next/image"
+
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
 
 const ExpertSection = () => {
     const experts = [
@@ -7,69 +17,87 @@ const ExpertSection = () => {
             role: "CHUYÊN GIA ĐÁ QUÝ",
             highlights: [
                 "- Người Việt Nam đầu tiên đạt chứng chỉ Gemologist của GIA.",
-                "- Có nhiều năm kinh nghiệm tại trung tâm trang sức JTC Bangkok và các mỏ đá quý Việt Nam, Myanmar."
+                "- Có nhiều năm kinh nghiệm tại trung tâm trang sức JTC Bangkok và các mỏ đá quý Việt Nam, Myanmar.",
             ],
-            image: "/images/section4/1.png"
+            image: "/images/section4/4.png",
         },
         {
             name: "LÀO TRÍ ĐƯỜNG",
             role: "CHUYÊN GIA CHIẾN LƯỢC KINH DOANH",
             highlights: [
                 "- Giám đốc Điều hành Công ty LNK JSC.",
-                "- Nhân vật quen thuộc trong lĩnh vực tài chính, từng giữ chức vụ Phó Tổng giám đốc Công ty Cathay."
+                "- Nhân vật quen thuộc trong lĩnh vực tài chính, từng giữ chức vụ Phó Tổng giám đốc Công ty Cathay.",
             ],
-            image: "/images/section4/2.png"
-        }
-    ];
+            image: "/images/section4/2.png",
+        },
+    ]
 
     return (
-        <section className="w-full py-16">
-            <div className="max-w-7xl mx-auto overflow-hidden">
-                <div className="text-center py-12">
-                    <h2 className="text-white text-3xl md:text-5xl font-bold tracking-[0.1em]">GIẢNG VIÊN & CHUYÊN GIA</h2>
+        <section className="relative w-full pb-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a] overflow-hidden">
+            <Image
+                src="/images/section4/5.png"
+                alt="Background pattern"
+                fill
+                priority
+                className="object-cover pointer-events-none select-none"
+            />
+            <div className="relative z-10">
+                <div className="text-center py-12 border-b border-t border-white py-12 flex flex-col">
+                    <h2 className="text-white text-3xl md:text-5xl font-bold tracking-[0.1em]">
+                        GIẢNG VIÊN & CHUYÊN GIA
+                    </h2>
                 </div>
+                <div className="max-w-7xl mx-auto">
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-25">
-                    {experts.map((expert) => (
-                        <div
-                            key={expert.name}
-                            className={`flex flex-row gap-8 items-end`}
+                    <div className="relative px-6 md:px-12">
+                        <Carousel
+                            opts={{
+                                align: "center",
+                                loop: true,
+                            }}
+                            className="w-full"
                         >
-                            <div className="flex-1 w-full">
-                                <div className="relative w-full">
-                                    <Image
-                                        src={expert.image}
-                                        alt={expert.name}
-                                        width={640}
-                                        height={360}
-                                        className="object-contain drop-shadow-2xl"
-                                    />
-                                </div>
-                            </div>
-                            <div className="flex-1 text-center lg:text-left space-y-4">
-                                <div>
-                                    <h3 className="text-2xl text-white md:text-3xl font-extrabold leading-tight">
-                                        {expert.name}
-                                    </h3>
-                                    <p className="text-white text-base font-bold uppercase">
-                                        {expert.role}
-                                    </p>
-                                </div>
-                                <ul className="space-y-2 text-sm md:text-base text-white/90">
-                                    {expert.highlights.map((item) => (
-                                        <li key={item} className="leading-relaxed">
-                                            {item}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    ))}
+                            <CarouselContent>
+                                {experts.map((expert) => (
+                                    <CarouselItem key={expert.name}>
+                                        <div className="flex flex-col lg:flex-row gap-8 items-center justify-center lg:items-end h-full">
+                                            <div className="w-full lg:w-1/4">
+                                                <Image
+                                                    src={expert.image}
+                                                    alt={expert.name}
+                                                    width={640}
+                                                    height={360}
+                                                    className="object-cover w-full h-full"
+                                                />
+                                            </div>
+                                            <div className="w-full lg:w-1/4 text-center lg:text-left space-y-4">
+                                                <div>
+                                                    <h3 className="text-2xl text-white md:text-3xl font-extrabold leading-tight">
+                                                        {expert.name}
+                                                    </h3>
+                                                    <p className="text-white text-base font-bold uppercase">
+                                                        {expert.role}
+                                                    </p>
+                                                </div>
+                                                <ul className="space-y-2 text-sm md:text-base text-white/90">
+                                                    {expert.highlights.map((item) => (
+                                                        <li key={item} className="leading-relaxed">
+                                                            {item}
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </CarouselItem>
+                                ))}
+                            </CarouselContent>
+                        </Carousel>
+                    </div>
                 </div>
             </div>
         </section>
-    );
-};
+    )
+}
 
-export default ExpertSection;
+export default ExpertSection
 
