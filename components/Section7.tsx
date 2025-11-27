@@ -37,7 +37,7 @@ const Section7 = () => {
                                     : "bg-[#043022]"
                                 }`}
                         >
-                            <h3 className="bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent font-bold text-lg sm:text-xl mb-4 uppercase tracking-wide">
+                            <h3 className="bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent font-bold text-xl mb-4 uppercase tracking-wide">
                                 {audience.title}
                             </h3>
                             <p className="text-white text-sm sm:text-base leading-relaxed text-justify-center">
@@ -49,9 +49,11 @@ const Section7 = () => {
 
                 {/* CTA Button */}
                 <div className="flex justify-center">
-                    <button className="relative px-12 py-4 text-4xl font-bold uppercase tracking-wider border-2 border-[#c9a86c] rounded-full bg-[#043022] hover:bg-[#043022]/80 transition-all duration-300 shadow-lg hover:shadow-[#c9a86c]/20">
-                        <span className="relative z-10 text-white">ĐĂNG KÝ NGAY</span>
-                    </button>
+                    <div className="rounded-full bg-gradient-to-t from-[#c9956b] via-[#eab788] to-[#ffe4c7] p-1">
+                        <button className="cursor-pointer relative px-12 py-4 text-4xl font-bold uppercase tracking-wider rounded-full bg-[#043022] hover:bg-[#043022]/80 transition-all duration-300 shadow-lg">
+                            <span className="relative z-10 text-white">ĐĂNG KÝ NGAY</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>

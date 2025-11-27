@@ -15,11 +15,11 @@ const Section6 = () => {
                     {/* Khối nội dung */}
                     <div className="p-8 sm:p-12 flex flex-col gap-6 text-white justify-center">
                         <div>
-                            <p className="uppercase tracking-[0.2em] text-base mb-3">Cấp độ 1</p>
-                            <h2 className="text-4xl sm:text-5xl font-bold uppercase leading-tight tracking-wide">
+                            <p className="uppercase tracking-[0.2em] text-2xl">Cấp độ 1</p>
+                            <h2 className="text-4xl sm:text-[80px] font-medium uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
                                 Jewelry Advisor
                             </h2>
-                            <p className="text-base sm:text-lg mt-4 leading-relaxed">
+                            <p className="text-base sm:text-xl mt-4 leading-relaxed">
                                 Trở thành Jewelry Advisor – Bắt đầu sự nghiệp trong ngành trang sức cao cấp cùng NOBLECO Academy.
                             </p>
                         </div>

@@ -8,6 +8,7 @@
   --mint: #B6CCBE;
   --moss: #376048;
   --deep-green: #013817;
+  --dark-green: #043022;
   --gray-orange: #be945f;
   --light-orange: #fef6df;
   --white: #FFFFFF;
@@ -48,6 +49,7 @@
 @theme inline {
   /* Brand Colors */
   --color-white: var(--white);
+  --color-dark-green: var(--dark-green);
   --color-cream: var(--cream);
   --color-mint: var(--mint);
   --color-moss: var(--moss);
