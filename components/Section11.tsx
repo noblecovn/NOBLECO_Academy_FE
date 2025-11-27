@@ -95,7 +95,7 @@ const Section11 = () => {
                 </h2>
             </div>
 
-            <div className="max-w-7xl mx-auto pt-8 px-4">
+            <div className="max-w-7xl mx-auto pt-8">
                 {/* PHẦN 1 - Kiến thức chuyên sâu sản phẩm */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-3xl">
@@ -113,7 +113,7 @@ const Section11 = () => {
                                 <h3 className="bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent font-bold text-xl md:text-2xl mb-4 text-center">
                                     {session.title}
                                 </h3>
-                                <p className="text-white text-sm leading-relaxed">
+                                <p className="text-white text-sm leading-relaxed text-justify-center">
                                     {session.content}
                                 </p>
                             </div>
@@ -138,7 +138,7 @@ const Section11 = () => {
                                 <h3 className="bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent font-bold text-xl md:text-2xl mb-4 text-center">
                                     {session.title}
                                 </h3>
-                                <p className="text-white text-sm leading-relaxed">
+                                <p className="text-white text-sm leading-relaxed text-justify-center">
                                     {session.content}
                                 </p>
                             </div>
@@ -165,7 +165,7 @@ const Section11 = () => {
                                     <h3 className="bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent font-bold text-xl md:text-2xl mb-4 text-center">
                                         {session.title}
                                     </h3>
-                                    <p className="text-white text-sm leading-relaxed">
+                                    <p className="text-white text-sm leading-relaxed text-justify-center">
                                         {session.content}
                                     </p>
                                 </div>
@@ -190,7 +190,7 @@ const Section11 = () => {
                                     <h3 className="bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent font-bold text-xl md:text-2xl mb-4 text-center">
                                         {session.title}
                                     </h3>
-                                    <p className="text-white text-sm leading-relaxed">
+                                    <p className="text-white text-sm leading-relaxed text-justify-center">
                                         {session.content}
                                     </p>
                                 </div>
@@ -216,7 +216,7 @@ const Section11 = () => {
                                 <h3 className="bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent font-bold text-xl md:text-2xl mb-4 text-center">
                                     {session.title}
                                 </h3>
-                                <p className="text-white text-sm leading-relaxed">
+                                <p className="text-white text-sm leading-relaxed text-justify-center">
                                     {session.content}
                                 </p>
                             </div>
