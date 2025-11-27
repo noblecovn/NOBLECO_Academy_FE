@@ -79,7 +79,7 @@ const Section8 = () => {
                             {/* Left column */}
                             <div className="flex space-x-8">
                                 <div className="flex items-start gap-3">
-                                    <Image src="/images/section8/1.png" width={20} height={20} alt="Flow Diagram" className="h-full w-auto"/>
+                                    <Image src="/images/section8/1.png" width={20} height={20} alt="Flow Diagram" className="h-full w-auto" />
                                     <p className="text-white text-sm md:text-xl text-center">
                                         Giới thiệu NOBLECO:<br />
                                         câu chuyện hình thành, triết lý, sứ mệnh.
@@ -212,9 +212,59 @@ const Section8 = () => {
 
                 {/* PHẦN 4 */}
                 <div className="mb-12 flex flex-col items-center">
-                    <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-2xl">
+                    <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-16 max-w-2xl">
                         <div className="text-white bg-gray-orange rounded-full font-bold text-lg md:text-xl uppercase tracking-wide">
-                            PHẦN 4 — TỔNG KẾT & TRAO CHỨNG CHỈ (1 BUỔI)
+                            PHẦN 4 — TỔNG KẾT & TRAO CHỨNG CHỉ (1 BUỔI)
+                        </div>
+                    </div>
+                    <div className="w-full grid grid-cols-1 items-start">
+                        <p className="uppercase tracking-[0.2em] text-2xl text-white">CHỨNG CHỈ</p>
+                        <h2 className="text-4xl sm:text-6xl font-medium uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
+                            Jewelry Advisor
+                        </h2>
+                    </div>
+                    {/* Certificate Section */}
+                    <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                        {/* Left - Content */}
+                        <div className="text-white">
+                            <p className="text-base leading-relaxed mb-8 text-justify">
+                                <span className="font-bold">Chứng chỉ được cấp bởi NOBLECO - Thương hiệu kim cương & trang sức đạt chuẩn quốc tế, cùng sự tham gia thẩm định nội dung bởi chuyên gia có chứng nhận GIA</span>. Đây là minh chứng rõ ràng cho kiến thức và kỹ năng chuyên môn mà học viên đã được đào tạo bài bản:
+                            </p>
+
+                            {/* Checklist */}
+                            <div className="space-y-6 max-w-lg">
+                                <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
+                                    <Image src="/images/section8/7.png" width={32} height={32} alt="Check" className="flex-shrink-0 mt-1" />
+                                    <p className="text-sm text-deep-green">
+                                        Nắm vững kiến thức kim cương & trang sức. Bao gồm cấu trúc, phân loại, tiêu chuẩn GIA, cách đọc – phân tích – diễn giải báo cáo kiểm định.
+                                    </p>
+                                </div>
+
+                                <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
+                                    <Image src="/images/section8/7.png" width={32} height={32} alt="Check" className="flex-shrink-0 mt-1" />
+                                    <p className="text-sm text-deep-green">
+                                        Thành thạo kỹ năng tư vấn & bán hàng trong ngành trang sức cao cấp. Khả năng tiếp cận, phân tích nhu cầu và thuyết phục khách hàng dựa trên giá trị sản phẩm.
+                                    </p>
+                                </div>
+
+                                <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
+                                    <Image src="/images/section8/7.png" width={32} height={32} alt="Check" className="flex-shrink-0 mt-1" />
+                                    <p className="text-sm text-deep-green">
+                                        Có đủ chuyên môn để làm việc tại showroom, boutique hoặc ngành bán lẻ cao cấp. Chứng chỉ giúp học viên được đánh giá cao trong quy trình tuyển dụng.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Right - Certificate Image */}
+                        <div className="flex justify-center lg:justify-end">
+                            <Image
+                                src="/images/section8/8.png"
+                                width={500}
+                                height={400}
+                                alt="Certificate of Completion - Jewelry Advisor Training Program"
+                                className="w-full"
+                            />
                         </div>
                     </div>
                 </div>
