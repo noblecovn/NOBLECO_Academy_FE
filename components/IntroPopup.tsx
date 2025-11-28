@@ -96,7 +96,15 @@ export default function IntroPopup() {
                 ))}
               </div>
 
-              <button className="mt-8 inline-flex min-w-[220px] items-center justify-center rounded-full bg-gradient-to-b from-[#87c5ab] to-[#0e392b] px-8 py-3 text-base font-semibold uppercase text-white shadow-lg transition hover:bg-[#19563c]">
+              <button
+                onClick={() => {
+                  handleClose();
+                  setTimeout(() => {
+                    document.getElementById("chuong-trinh-dao-tao")?.scrollIntoView({ behavior: "smooth" });
+                  }, 250);
+                }}
+                className="cursor-pointer mt-8 inline-flex min-w-[220px] items-center justify-center rounded-full bg-gradient-to-b from-[#87c5ab] to-[#0e392b] px-8 py-3 text-base font-semibold uppercase text-white shadow-lg transition hover:bg-[#19563c]"
+              >
                 Tìm hiểu ngay
               </button>
             </div>

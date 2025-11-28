@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -24,15 +26,16 @@ export function Header() {
           </Link>
 
           <div className="group relative">
-            <button
-              type="button"
+            <Link
+              href="#chuong-trinh-dao-tao"
               className="flex items-center gap-2 transition hover:text-[#2F6848] focus-visible:outline-none"
               aria-haspopup="true"
               aria-expanded="false"
+              onClick={(e) => (e.currentTarget as HTMLElement).blur()}
             >
               Chương trình đào tạo
               <Image src="/images/dropdown.png" alt="" width={16} height={16} />
-            </button>
+            </Link>
             {/* Bridge element để lấp khoảng trống giữa button và menu */}
             <div className="absolute left-0 right-0 top-full h-3" />
             <ul className="pointer-events-none absolute top-full mt-1 w-fit min-w-[200px] -translate-y-2 rounded-3xl bg-[linear-gradient(180deg,#87c5ab,#0e392b)] p-4 text-[15px] font-medium text-white opacity-0 shadow-[0px_15px_35px_rgba(0,0,0,0.15)] transition duration-200 ease-out group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 group-focus-within:opacity-100 z-50">
@@ -41,6 +44,7 @@ export function Header() {
                   <Link
                     href={item.href}
                     className="block whitespace-nowrap rounded-xl px-3 py-2 transition hover:bg-white/15 focus-visible:bg-white/20"
+                    onClick={(e) => (e.currentTarget as HTMLElement).blur()}
                   >
                     {item.label}
                   </Link>

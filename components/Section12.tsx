@@ -8,7 +8,7 @@ const Section12 = () => {
     ];
 
     return (
-        <section className="w-full py-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
+        <section id="cap-do-3" className="w-full py-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             <div className="">
                 <div className="grid grid-cols-1 lg:grid-cols-2">
                     {/* Khối nội dung */}

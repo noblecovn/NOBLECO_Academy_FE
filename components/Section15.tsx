@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Section15 = () => {
     const commitments = [
         {
@@ -33,7 +35,15 @@ const Section15 = () => {
     ];
 
     return (
-        <section className="w-full py-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a]">
+        <section className="relative w-full py-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a] overflow-hidden">
+            <Image
+                src="/images/section15/1.png"
+                alt="Background pattern"
+                fill
+                priority
+                className="object-cover pointer-events-none select-none"
+            />
+            <div className="relative z-10">
             {/* Title */}
             <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">
                 <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">
@@ -71,6 +81,7 @@ const Section15 = () => {
                         ))}
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     );
