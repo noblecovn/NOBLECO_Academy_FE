@@ -26,15 +26,15 @@ const ExpertSection = () => {
             name: "LÀO TRÍ ĐƯỜNG",
             role: "CHUYÊN GIA CHIẾN LƯỢC KINH DOANH",
             highlights: [
-                "- Giám đốc Điều hành Công ty LNK JSC.",
-                "- Nhân vật quen thuộc trong lĩnh vực tài chính, từng giữ chức vụ Phó Tổng giám đốc Công ty Cathay.",
+                "- Giám đốc Điều hành Công ty IVNCA Limited Canada.",
+                "- Từng đảm nhiệm vị trí Phó Tổng Giám đốc Công ty Cathay Life và Great Eastern - Tập đoàn bảo hiểm nhân thọ lâu đời nhất tại Singapore và Malaysia.",
             ],
             image: "/images/section4/2.png",
         },
     ]
 
     return (
-        <section id="giang-vien" className="relative w-full py-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a] overflow-hidden">
+        <section id="giang-vien" className="relative w-full pt-16 2xl:py-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a] overflow-hidden">
             <Image
                 src="/images/section4/6.png"
                 alt="Background pattern"
@@ -44,13 +44,13 @@ const ExpertSection = () => {
             />
             <div className="relative z-10">
                 <div className="text-center py-12 border-b border-t border-white py-12 flex flex-col">
-                    <h2 className="text-white text-3xl md:text-5xl font-bold tracking-[0.1em]">
+                    <h2 className="text-white text-xl 2xl:text-5xl font-bold tracking-[0.1em]">
                         GIẢNG VIÊN & CHUYÊN GIA
                     </h2>
                 </div>
                 <div className="max-w-7xl mx-auto">
 
-                    <div className="relative px-6 md:px-12">
+                    <div className="relative px-2 2xl:px-12 py-4">
                         <Carousel
                             opts={{
                                 align: "center",
@@ -74,7 +74,7 @@ const ExpertSection = () => {
                                                     alt={expert.name}
                                                     width={640}
                                                     height={360}
-                                                    className="object-cover w-full h-full"
+                                                    className="object-cover w-full aspect-[3/4]"
                                                 />
                                             </div>
                                             <div className="w-full lg:w-1/3 text-center lg:text-left space-y-4">
@@ -82,13 +82,13 @@ const ExpertSection = () => {
                                                     <h3 className="text-2xl md:text-5xl font-semibold leading-tight bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
                                                         {expert.name}
                                                     </h3>
-                                                    <p className="text-white text-2xl font-semibold uppercase pb-2">
+                                                    <p className="text-white text-xl 2xl:text-2xl font-semibold uppercase pb-2">
                                                         {expert.role}
                                                     </p>
                                                 </div>
-                                                <ul className="space-y-2 text-sm md:text-base text-white pt-2">
+                                                <ul className="min-h-[120px] space-y-2 text-sm md:text-base text-white pt-2">
                                                     {expert.highlights.map((item) => (
-                                                        <li key={item} className="leading-relaxed">
+                                                        <li key={item} className="leading-relaxed text-justify">
                                                             {item}
                                                         </li>
                                                     ))}

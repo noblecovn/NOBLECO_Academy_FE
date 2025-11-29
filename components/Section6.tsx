@@ -11,9 +11,9 @@ const Section6 = () => {
     return (
         <section id="cap-do-1" className="w-full py-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             <div className="">
-                <div className="grid grid-cols-1 lg:grid-cols-2">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 2xl:gap-0">
                     {/* Khối nội dung */}
-                    <div className="p-8 sm:p-12 flex flex-col gap-6 text-white justify-center">
+                    <div className="px-2 2xl:p-12 flex flex-col gap-6 text-white justify-center">
                         <div>
                             <p className="uppercase tracking-[0.2em] text-2xl">Cấp độ 1</p>
                             <h2 className="text-4xl sm:text-[80px] font-medium uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
@@ -24,7 +24,7 @@ const Section6 = () => {
                             </p>
                         </div>
 
-                        <div className="inline-flex w-full items-center justify-center bg-gradient-to-r from-[#be945f] to-[#fee08b] text-white font-semibold text-center text-sm sm:text-base py-3 px-6 rounded-full shadow-lg">
+                        <div className="inline-flex w-full items-center justify-center bg-gradient-to-r from-[#be945f] to-[#fee08b] text-white font-semibold text-center text-xs 2xl:text-base py-3 px-6 rounded-full shadow-lg">
                             Học cùng chuyên gia - Thực chiến mỗi ngày - Bứt phá nghề nghiệp
                         </div>
 

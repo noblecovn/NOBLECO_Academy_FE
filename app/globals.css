@@ -138,7 +138,6 @@
   * {
     @apply border-border outline-ring/50;
   }
-  html,
   body {
     @apply overflow-x-hidden;
   }

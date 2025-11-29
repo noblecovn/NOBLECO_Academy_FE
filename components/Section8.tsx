@@ -59,70 +59,70 @@ const Section8 = () => {
         <section className="w-full py-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             {/* Title */}
             <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">
-                <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">
+                <h2 className="text-white text-2xl md:text-4xl 2xl:text-5xl font-bold tracking-wide">
                     NỘI DUNG ĐÀO TẠO
                 </h2>
             </div>
 
-            <div className="max-w-7xl mx-auto pt-8">
+            <div className="max-w-7xl mx-auto pt-8 px-2 2xl:px-0">
                 {/* PHẦN 1 */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-2xl">
-                        <div className="text-white bg-gray-orange rounded-full font-bold text-lg md:text-xl uppercase tracking-wide">
+                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
                             PHẦN 1 — ĐỊNH HƯỚNG & HỘI THẢO NGÀNH (1 BUỔI)
                         </div>
                     </div>
 
                     {/* Flow diagram */}
-                    <div className="relative w-full py-8">
+                    <div className="relative w-full 2xl:py-8">
                         <div className="grid grid-cols-1 gap-6">
                             {/* Left column */}
-                            <div className="flex space-x-8">
-                                <div className="flex items-start gap-3">
-                                    <Image src="/images/section8/1.png" width={20} height={20} alt="Flow Diagram" className="h-full w-auto" />
-                                    <p className="text-white text-sm md:text-xl text-center">
+                            <div className="flex space-x-2 2xl:space-x-8">
+                                <div className="flex items-center gap-3">
+                                    <Image src="/images/section8/1.png" width={20} height={20} alt="Flow Diagram" className="w-5 2xl:h-full 2xl:w-auto" />
+                                    <p className="text-white text-xs 2xl:text-xl text-center">
                                         Giới thiệu NOBLECO:<br />
                                         câu chuyện hình thành, triết lý, sứ mệnh.
                                     </p>
                                 </div>
-                                <span className="text-white text-5xl">→</span>
+                                <span className="flex items-center text-white text-xl 2xl:text-5xl">→</span>
                                 <div className="flex items-center">
-                                    <p className="text-white text-sm md:text-xl">
+                                    <p className="text-white text-center text-xs md:text-xl">
                                         Giới thiệu giảng viên – phương pháp học tập.
                                     </p>
                                 </div>
-                                <div className="absolute top-15 right-20">
+                                <span className="text-white text-xl 2xl:text-5xl absolute top-10 right-20 2xl:hidden">↓</span>
+                                <span className="text-white text-xl 2xl:text-5xl absolute top-28 right-20 2xl:hidden">↓</span>
+                                <div className="absolute top-15 right-20 hidden 2xl:block">
                                     <Image src="/images/section8/4.png" width={300} height={20} alt="Flow Diagram" />
                                 </div>
                             </div>
 
                             {/* Right column */}
-                            <div className="space-x-8 mt-25 flex">
+                            <div className="flex space-x-2 2xl:space-x-8 mt-20 2xl:mt-25">
                                 <div className="flex items-center">
-                                    <p className="text-white text-sm md:text-xl">
+                                    <p className="text-white text-xs md:text-xl text-center">
                                         Chia team - hoạt động nhóm - định hướng học tập
                                     </p>
                                 </div>
-                                <span className="text-white text-5xl">←</span>
-                                <div className="flex items-start gap-3">
-                                    <p className="text-white text-sm md:text-xl text-center">
+                                <span className="flex items-center text-white text-xl 2xl:text-5xl">←</span>
+                                <div className="flex items-center gap-3">
+                                    <p className="text-white text-xs 2xl:text-xl text-center">
                                         Giá trị học viên nhận được:<br />
                                         kiến thức – cơ hội – hệ sinh thái hỗ trợ.trợ.
                                     </p>
                                 </div>
-                                <div className="absolute bottom-12 right-20">
+                                <div className="absolute bottom-12 right-20 hidden 2xl:block">
                                     <Image src="/images/section8/5.png" width={280} height={20} alt="Flow Diagram" />
                                 </div>
                             </div>
                         </div>
 
                         {/* Right side box */}
-                        <div className="absolute -right-20 top-25 hidden lg:block">
-                            <div className="p-4">
-                                <p className="text-white text-xl text-center">
-                                    Kiến thức tổng quan ngành trang sức <br /> & xu hướng tiêu dùng.
-                                </p>
-                            </div>
+                        <div className="absolute top-20 right-0 2xl:-right-20 2xl:top-25">
+                            <p className="text-white text-xs 2xl:text-xl text-center">
+                                Kiến thức tổng quan ngành trang sức <br /> & xu hướng tiêu dùng.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@ const Section8 = () => {
                 {/* PHẦN 2 */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-2xl">
-                        <div className="text-white bg-gray-orange rounded-full font-bold text-lg md:text-xl uppercase tracking-wide">
+                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
                             PHẦN 2 — KIẾN THỨC SẢN PHẨM (4 BUỔI)
                         </div>
                     </div>
@@ -160,7 +160,7 @@ const Section8 = () => {
                 {/* PHẦN 3 */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-2xl">
-                        <div className="text-white bg-gray-orange rounded-full font-bold text-lg md:text-xl uppercase tracking-wide">
+                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
                             PHẦN 3 — KỸ NĂNG TƯ VẤN & CHĂM SÓC KHÁCH HÀNG CAO CẤP (5 BUỔI)
                         </div>
                     </div>
@@ -211,15 +211,15 @@ const Section8 = () => {
                 </div>
 
                 {/* PHẦN 4 */}
-                <div className="mb-12 flex flex-col items-center">
-                    <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-16 max-w-2xl">
-                        <div className="text-white bg-gray-orange rounded-full font-bold text-lg md:text-xl uppercase tracking-wide">
+                <div className="flex flex-col items-center">
+                    <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 2xl:mb-16 max-w-2xl">
+                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
                             PHẦN 4 — TỔNG KẾT & TRAO CHỨNG CHỉ (1 BUỔI)
                         </div>
                     </div>
                     <div className="w-full grid grid-cols-1 items-start">
                         <p className="uppercase tracking-[0.2em] text-2xl text-white">CHỨNG CHỈ</p>
-                        <h2 className="text-4xl sm:text-6xl font-medium uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
+                        <h2 className="text-4xl 2xl:text-6xl font-medium uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
                             Jewelry Advisor
                         </h2>
                     </div>

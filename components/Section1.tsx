@@ -15,25 +15,25 @@ const NoblecoAcademySection = () => {
     ];
 
     return (
-        <section id="thong-tin-nobleco" className="w-full py-16 min-h-fit bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
+        <section id="thong-tin-nobleco" className="w-full 2xl:py-16 min-h-fit bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             {/* Header */}
-            <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">
-                <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-light tracking-wide mb-2">
+            <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col px-2 2xl:px-0">
+                <h2 className="text-white text-xl 2xl:text-5xl font-light tracking-wide mb-2">
                     BƯỚC VÀO NGÀNH TRANG SỨC CÙNG
                 </h2>
-                <h3 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">
+                <h3 className="text-white text-xl 2xl:text-5xl font-bold tracking-wide">
                     NOBLECO ACADEMY
                 </h3>
             </div>
-            <div className="max-w-7xl mx-auto px-4">
+            <div className="max-w-7xl mx-auto px-2 2xl:px-0">
                 {/* Cards Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-20">
                     {cards.map((card, index) => (
                         <div
                             key={index}
-                            className="relative p-8 hover:transform hover:scale-105 transition-transform duration-300 min-h-[400px] bg-[#043022] rounded-2xl"
+                            className="relative p-8 hover:transform hover:scale-105 transition-transform duration-300 bg-[#043022] rounded-2xl"
                         >
-                            <h4 className="relative z-10 text-xl md:text-4xl font-bold mb-6 text-center bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
+                            <h4 className="relative z-10 text-xl md:text-4xl font-bold mb-2 2xl:mb-6 text-center bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
                                 {card.title}
                             </h4>
                             <p className="relative z-10 text-white text-sm md:text-xl leading-relaxed text-center text-justify-center">

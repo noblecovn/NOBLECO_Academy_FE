@@ -19,16 +19,16 @@ const Section7 = () => {
     ];
 
     return (
-        <section className="w-full py-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a]">
+        <section className="w-full 2xl:py-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a]">
             {/* Title */}
             <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">
-                <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">
+                <h2 className="text-white text-2xl md:text-4xl 2xl:text-5xl font-bold tracking-wide">
                     KHÓA HỌC DÀNH CHO AI?
                 </h2>
             </div>
-            <div className="max-w-7xl mx-auto pt-32">
+            <div className="max-w-7xl mx-auto 2xl:pt-32">
                 {/* Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 px-2 2xl:px-0">
                     {targetAudiences.map((audience, index) => (
                         <div
                             key={index}

@@ -30,7 +30,7 @@ const PartnersAndTestimonialsSection = () => {
     ];
 
     return (
-        <section className="w-full py-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a]">
+        <section className="w-full pt-16 2xl:py-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a] px-2 2xl:px-0">
             <div className="max-w-7xl mx-auto overflow-hidden">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
                     {/* Partners */}
@@ -52,7 +52,7 @@ const PartnersAndTestimonialsSection = () => {
                                         alt={partner.name}
                                         width={160}
                                         height={160}
-                                        className="h-full w-auto"
+                                        className="2xl:h-full 2xl:w-auto"
                                     />
                                 </div>
                             ))}
@@ -71,22 +71,22 @@ const PartnersAndTestimonialsSection = () => {
                             {testimonials.map((testimonial) => (
                                 <div
                                     key={testimonial.name}
-                                    className="bg-white border border-deep-green flex flex-row gap-3 rounded-r-3xl items-center"
+                                    className="bg-white border border-deep-green grid grid-cols-4 gap-3 rounded-r-3xl items-center"
                                 >
-                                    <div className="">
+                                    <div className="col-span-1 h-full">
                                         <Image
                                             src={testimonial.image}
                                             alt={testimonial.name}
                                             width={128}
                                             height={128}
-                                            className=""
+                                            className="h-full"
                                         />
                                     </div>
-                                    <div className="max-w-md">
-                                        <p className="text-lg font-semibold text-deep-green">
+                                    <div className="max-w-xs 2xl:max-w-md col-span-3">
+                                        <p className="text-base 2xl:text-lg font-semibold text-deep-green">
                                             {testimonial.name} - <span className="font-medium">{testimonial.title}</span>
                                         </p>
-                                        <p className="text-sm md:text-base text-deep-green leading-relaxed">
+                                        <p className="text-xs 2xl:text-base text-deep-green leading-relaxed">
                                             {testimonial.quote}
                                         </p>
                                     </div>
