@@ -97,19 +97,19 @@ const Section14 = () => {
     ];
 
     return (
-        <section className="w-full py-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
+        <section className="w-full pt-16 2xl:py-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             {/* Title */}
             <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">
-                <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">
+                <h2 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold tracking-wide">
                     NỘI DUNG ĐÀO TẠO
                 </h2>
             </div>
 
-            <div className="max-w-7xl mx-auto pt-8">
+            <div className="max-w-7xl mx-auto 2xl:pt-8 px-2 2xl:px-0">
                 {/* PHẦN 1 - Kiến thức chuyên sâu và tiên tiến */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-3xl">
-                        <div className="text-white bg-gray-orange rounded-full font-bold text-lg md:text-xl uppercase tracking-wide py-1">
+                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
                             PHẦN 1 — KIẾN THỨC CHUYÊN SÂU VÀ TIÊN TIẾN (5-6 BUỔI)
                         </div>
                     </div>
@@ -134,7 +134,7 @@ const Section14 = () => {
                 {/* PHẦN 2 - Kỹ năng phong cách và tư vấn cá nhân hóa */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-3xl">
-                        <div className="text-white bg-gray-orange rounded-full font-bold text-lg md:text-xl uppercase tracking-wide py-1">
+                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
                             PHẦN 2 — KỸ NĂNG PHONG CÁCH VÀ TƯ VẤN CÁ NHÂN HÓA (4-5 BUỔI)
                         </div>
                     </div>
@@ -159,7 +159,7 @@ const Section14 = () => {
                 {/* PHẦN 3 - Nghệ thuật kể chuyện thương hiệu */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-4xl">
-                        <div className="text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide py-1 px-2">
+                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
                             PHẦN 3 — NGHỆ THUẬT KỂ CHUYỆN THƯƠNG HIỆU & GIAO TIẾP NÂNG CAO (2-3 BUỔI)
                         </div>
                     </div>
@@ -186,7 +186,7 @@ const Section14 = () => {
                     {/* PHẦN 4 - Huấn luyện và lãnh đạo */}
                     <div className="flex flex-col items-center">
                         <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8">
-                            <div className="text-white bg-gray-orange rounded-full font-bold text-sm md:text-base uppercase tracking-wide py-1 px-2">
+                            <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
                                 PHẦN 4 — HUẤN LUYỆN VÀ LÃNH ĐẠO PHÁT TRIỂN ĐỘI NGŨ (3-4 BUỔI)
                             </div>
                         </div>
@@ -211,7 +211,7 @@ const Section14 = () => {
                     {/* PHẦN 5 - Chiến lược kinh doanh */}
                     <div className="flex flex-col items-center">
                         <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8">
-                            <div className="text-white bg-gray-orange rounded-full font-bold text-sm md:text-base uppercase tracking-wide py-1 px-2">
+                            <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
                                 PHẦN 5 — CHIẾN LƯỢC KINH DOANH CAO CẤP VÀ THỊ TRƯỜNG (1-2 BUỔI)
                             </div>
                         </div>

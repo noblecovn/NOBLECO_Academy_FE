@@ -87,19 +87,19 @@ const Section11 = () => {
     ];
 
     return (
-        <section className="w-full py-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a]">
+        <section className="w-full pt-16 2xl:py-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a]">
             {/* Title */}
             <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">
-                <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">
+                <h2 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold tracking-wide">
                     NỘI DUNG ĐÀO TẠO
                 </h2>
             </div>
 
-            <div className="max-w-7xl mx-auto pt-8">
+            <div className="max-w-7xl mx-auto px-2 2xl:px-0">
                 {/* PHẦN 1 - Kiến thức chuyên sâu sản phẩm */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-3xl">
-                        <div className="text-white bg-gray-orange rounded-full font-bold text-lg md:text-xl uppercase tracking-wide py-1">
+                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
                             PHẦN 1 — KIẾN THỨC CHUYÊN SÂU SẢN PHẨM (4 BUỔI)
                         </div>
                     </div>
@@ -124,7 +124,7 @@ const Section11 = () => {
                 {/* PHẦN 2 - Kỹ năng tư vấn chuyên sâu */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-3xl">
-                        <div className="text-white bg-gray-orange rounded-full font-bold text-lg md:text-xl uppercase tracking-wide py-1">
+                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
                             PHẦN 2 — KỸ NĂNG TƯ VẤN CHUYÊN SÂU (3 BUỔI)
                         </div>
                     </div>
@@ -151,7 +151,7 @@ const Section11 = () => {
                     {/* PHẦN 3 - Xử lý tình huống phức tạp */}
                     <div className="flex flex-col items-center">
                         <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8">
-                            <div className="text-white bg-gray-orange rounded-full font-bold text-sm md:text-base uppercase tracking-wide py-1 px-2">
+                            <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
                                 PHẦN 3 — XỬ LÝ TÌNH HUỐNG PHỨC TẠP (2 BUỔI)
                             </div>
                         </div>
@@ -176,7 +176,7 @@ const Section11 = () => {
                     {/* PHẦN 4 - Huấn luyện và phát triển đội ngũ */}
                     <div className="flex flex-col items-center">
                         <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8">
-                            <div className="text-white bg-gray-orange rounded-full font-bold text-sm md:text-base uppercase tracking-wide py-1 px-2">
+                            <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
                                 PHẦN 4 — HUẤN LUYỆN VÀ PHÁT TRIỂN ĐỘI NGŨ (2 BUỔI)
                             </div>
                         </div>
@@ -202,7 +202,7 @@ const Section11 = () => {
                 {/* PHẦN 5 - Thị trường và xu hướng */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-3xl">
-                        <div className="text-white bg-gray-orange rounded-full font-bold text-lg md:text-xl uppercase tracking-wide py-1">
+                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
                             PHẦN 5 — THỊ TRƯỜNG VÀ XU HƯỚNG (2 BUỔI)
                         </div>
                     </div>
@@ -225,10 +225,10 @@ const Section11 = () => {
                 </div>
 
                 {/* CHỨNG CHỈ Section */}
-                <div className="mb-12 flex flex-col">
+                <div className="flex flex-col">
                     <div className="w-full grid grid-cols-1 items-start mb-6">
                         <p className="uppercase tracking-[0.2em] text-2xl text-white">CHỨNG CHỈ</p>
-                        <h2 className="text-4xl sm:text-6xl font-medium uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
+                        <h2 className="text-4xl 2xl:text-6xl font-medium uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
                             Senior Jewelry Consultant
                         </h2>
                     </div>

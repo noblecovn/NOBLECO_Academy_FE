@@ -35,7 +35,7 @@ const Section15 = () => {
     ];
 
     return (
-        <section className="relative w-full py-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a] overflow-hidden">
+        <section className="relative w-full pt-16 2xl:py-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a] overflow-hidden">
             <Image
                 src="/images/section15/2.png"
                 alt="Background pattern"
@@ -52,7 +52,7 @@ const Section15 = () => {
                     </h2>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4">
+                <div className="max-w-7xl mx-auto px-2 2xl:px-0">
                     {/* Grid 2 columns - items flow by column */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8">
                         {/* Cột 1: Cam kết 1, 2, 3 */}
@@ -60,7 +60,7 @@ const Section15 = () => {
                             {commitments.slice(0, 3).map((item, index) => (
                                 <div key={index} className="text-white">
                                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-2 max-w-3xl">
-                                        <div className="text-white bg-gray-orange rounded-full font-bold text-lg md:text-xl uppercase tracking-wide py-1">
+                                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-lg md:text-xl uppercase tracking-wide">
                                             {item.title}
                                         </div>
                                     </div>
@@ -75,7 +75,7 @@ const Section15 = () => {
                             {commitments.slice(3, 6).map((item, index) => (
                                 <div key={index} className="text-white">
                                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-2 max-w-3xl">
-                                        <div className="text-white bg-gray-orange rounded-full font-bold text-lg md:text-xl uppercase tracking-wide py-1">
+                                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-lg md:text-xl uppercase tracking-wide">
                                             {item.title}
                                         </div>
                                     </div>

@@ -18,10 +18,10 @@ const NoblecoAcademySection = () => {
         <section id="thong-tin-nobleco" className="w-full 2xl:py-16 min-h-fit bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             {/* Header */}
             <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col px-2 2xl:px-0">
-                <h2 className="text-white text-xl 2xl:text-5xl font-light tracking-wide mb-2">
+                <h2 className="text-white text-2xl 2xl:text-5xl mb-2">
                     BƯỚC VÀO NGÀNH TRANG SỨC CÙNG
                 </h2>
-                <h3 className="text-white text-xl 2xl:text-5xl font-bold tracking-wide">
+                <h3 className="text-white text-2xl 2xl:text-5xl font-bold">
                     NOBLECO ACADEMY
                 </h3>
             </div>

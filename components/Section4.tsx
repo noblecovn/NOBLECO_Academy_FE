@@ -7,8 +7,6 @@ import {
     Carousel,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
 } from "@/components/ui/carousel"
 
 const ExpertSection = () => {
@@ -44,7 +42,7 @@ const ExpertSection = () => {
             />
             <div className="relative z-10">
                 <div className="text-center py-12 border-b border-t border-white py-12 flex flex-col">
-                    <h2 className="text-white text-xl 2xl:text-5xl font-bold tracking-[0.1em]">
+                    <h2 className="text-white text-2xl 2xl:text-5xl font-bold tracking-[0.1em]">
                         GIẢNG VIÊN & CHUYÊN GIA
                     </h2>
                 </div>
