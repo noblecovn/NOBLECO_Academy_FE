@@ -4,17 +4,17 @@ const Section14 = () => {
     // PHẦN 1 - Kiến thức chuyên sâu và tiên tiến (5-6 buổi)
     const phan1Sessions = [
         {
-            title: "BUỔI 1",
+            title: "NỘI DUNG 1",
             content:
                 "Nghiên cứu chuyên sâu về đặc tính kỹ thuật kim cương cao cấp, công nghệ mới trong chế tác bespoke, đá quý quý hiếm và vật liệu đặc biệt.",
         },
         {
-            title: "BUỔI 2",
+            title: "NỘI DUNG 2",
             content:
                 "Hiểu sâu về thiết kế trang sức đương đại và cổ điển; bao gồm thiết kế bespoke, xu hướng quốc tế và sáng tạo nghệ thuật.",
         },
         {
-            title: "BUỔI 3",
+            title: "NỘI DUNG 3",
             content:
                 "Phân tích các bộ sưu tập giới hạn, bespoke flagship và sản phẩm signature của NOBLECO nhằm khai thác điểm độc đáo và giá trị thương hiệu.",
         },
@@ -23,17 +23,17 @@ const Section14 = () => {
     // PHẦN 2 - Kỹ năng phong cách và tư vấn cá nhân hóa (4-5 buổi)
     const phan2Sessions = [
         {
-            title: "BUỔI 4",
+            title: "NỘI DUNG 1",
             content:
                 "Tư vấn phong cách tinh tế, đa dạng cho các sự kiện cao cấp, nghệ thuật phối trang sức với trang phục và trang điểm.",
         },
         {
-            title: "BUỔI 5",
+            title: "NỘI DUNG 2",
             content:
                 "Ứng dụng kỹ thuật tư vấn bespoke, tạo trải nghiệm cá nhân hóa từng khách hàng.",
         },
         {
-            title: "BUỔI 6",
+            title: "NỘI DUNG 3",
             content:
                 "Phát triển và duy trì mối quan hệ khách hàng thượng lưu dựa trên kiến thức văn hóa, tâm lý và nhu cầu đặc thù.",
         },
@@ -42,17 +42,17 @@ const Section14 = () => {
     // PHẦN 3 - Nghệ thuật kể chuyện thương hiệu & giao tiếp nâng cao (2-3 buổi)
     const phan3Sessions = [
         {
-            title: "BUỔI 1",
+            title: "NỘI DUNG 1",
             content:
-                "Phân tích và thực hành kể chuyện thương hiệu mang đậm giá trị của Nobleco, cách truyền cảm hứng và hình ảnh đẳng cấp.",
+                "Phân tích và thực hành kể chuyện thương hiệu mang đậm giá trị của NOBLECO, cách truyền cảm hứng và hình ảnh đẳng cấp.",
         },
         {
-            title: "BUỔI 2",
+            title: "NỘI DUNG 2",
             content:
                 "Giao tiếp tinh tế, thuyết trình chuyên nghiệp trong các sự kiện, đối tác, khách VIP.",
         },
         {
-            title: "BUỔI 3",
+            title: "NỘI DUNG 3",
             content:
                 "Kỹ năng lãnh đạo và ảnh hưởng trong giao tiếp nội bộ và bên ngoài.",
         },
@@ -61,17 +61,17 @@ const Section14 = () => {
     // PHẦN 4 - Huấn luyện và lãnh đạo phát triển đội ngũ (3-4 buổi)
     const phan4Sessions = [
         {
-            title: "BUỔI 4",
+            title: "NỘI DUNG 1",
             content:
                 "Chiến lược huấn luyện nâng cao, coaching, mentoring tư vấn viên cấp 1 và cấp 2.",
         },
         {
-            title: "BUỔI 5",
+            title: "NỘI DUNG 2",
             content:
                 "Thiết kế chương trình đào tạo, xây dựng tiêu chuẩn đánh giá và phát triển năng lực.",
         },
         {
-            title: "BUỔI 6",
+            title: "NỘI DUNG 3",
             content:
                 "Kỹ năng lãnh đạo đội nhóm, động viên và tạo văn hóa học tập liên tục.",
         },
@@ -80,17 +80,17 @@ const Section14 = () => {
     // PHẦN 5 - Chiến lược kinh doanh cao cấp và thị trường (1-2 buổi)
     const phan5Sessions = [
         {
-            title: "BUỔI 7",
+            title: "NỘI DUNG 1",
             content:
                 "Định hướng chiến lược phát triển thị trường cao cấp và bespoke.",
         },
         {
-            title: "BUỔI 8",
+            title: "NỘI DUNG 2",
             content:
                 "Phân tích đối thủ, xu hướng doanh nghiệp trang sức trong nước và quốc tế.",
         },
         {
-            title: "BUỔI 9",
+            title: "NỘI DUNG 3",
             content:
                 "Thúc đẩy sáng tạo dịch vụ, đổi mới trải nghiệm khách hàng và tăng trưởng doanh thu.",
         },

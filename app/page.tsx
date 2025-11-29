@@ -44,7 +44,7 @@ export default function Home() {
         className="relative w-full bg-cover bg-center bg-no-repeat py-16 md:py-24"
         style={{ backgroundImage: "url('/images/bg-1.png')" }}
       >
-        <div className="container mx-auto max-w-7xl">
+        <div className="container mx-auto max-w-7xl px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             {/* Cột trái - Nội dung */}
             <div className="text-white flex flex-col gap-10">

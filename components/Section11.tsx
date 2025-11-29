@@ -21,7 +21,7 @@ const Section11 = () => {
         {
             title: "BUỔI 4",
             content:
-                "Nghiên cứu bộ sưu tập cao cấp của Nobleco, phân tích điểm khác biệt và lợi thế cạnh tranh.",
+                "Nghiên cứu bộ sưu tập cao cấp của NOBLECO, phân tích điểm khác biệt và lợi thế cạnh tranh.",
         },
     ];
 
@@ -262,11 +262,11 @@ const Section11 = () => {
                                     <div className="text-sm text-deep-green">
                                         <p className="font-bold">Lợi thế cạnh tranh vượt trội khi thăng tiến</p>
                                         <p>Chứng chỉ giúp bạn tăng độ tin cậy khi xét thăng cấp lên:</p>
-                                        <ul className="list-none list-inside mt-1">
-                                            <li>- Senior Consultant</li>
-                                            <li>- Store Supervisor</li>
-                                            <li>- Store/Team Manager</li>
-                                        </ul>
+                                        <div className="flex mt-1 space-x-4">
+                                            <p>- Senior Consultant</p>
+                                            <p>- Store Supervisor</p>
+                                            <p>- Store/Team Manager</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -41,9 +41,9 @@ const Section6 = () => {
                     {/* Hình ảnh */}
                     <div className="relative min-h-[320px] lg:min-h-full">
                         <Image
-                            src="/images/section6/2.png"
+                            src="/images/section6/1.jpg"
                             alt="Học viên Jewelry Advisor"
-                            width={873}
+                            width={2693}
                             height={686}
                             className="object-cover w-full"
                             priority

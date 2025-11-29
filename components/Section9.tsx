@@ -3,7 +3,7 @@ import Image from "next/image";
 const Section9 = () => {
     const highlights = [
         "Nắm vững kiến thức chuyên sâu về kim cương, đá quý và trang sức.",
-        "Phát triển năng lực tư vấn sản phẩm toàn diện, từ phong cách, cảm xúc đến câu chuyện thương hiệu, đồng thời xử lý linh hoạt",
+        "Phát triển năng lực tư vấn sản phẩm toàn diện, từ phong cách, cảm xúc đến câu chuyện thương hiệu, đồng thời xử lý linh hoạt các tình huống tư vấn phức tạp.",
     ];
 
     return (
@@ -35,9 +35,9 @@ const Section9 = () => {
                     {/* Hình ảnh */}
                     <div className="relative min-h-[320px] lg:min-h-full">
                         <Image
-                            src="/images/section9/1.png"
+                            src="/images/section9/2.png"
                             alt="Senior Jewelry Consultant"
-                            width={873}
+                            width={885}
                             height={686}
                             className="object-cover w-full h-full"
                             priority

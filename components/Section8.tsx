@@ -15,7 +15,7 @@ const Section8 = () => {
             result: "hoàn thành 80% trở lên bài kiểm tra kiến thức kim cương đá quý.",
         },
         {
-            title: "BUỔI 3",
+            title: "BUỔI 3 & 4",
             content:
                 "Nắm vững kiến thức về các loại trang sức kim cương, đá quý và quy trình sản xuất cơ bản (vàng 10k, 14k, 18k, bạc 925, bạch kim), (các loại nhẫn, mặt dây, vòng tay, bông tai, cài áo...) (quy trình chế tác cơ bản).",
             result: "hoàn thành 80% trở lên bài kiểm tra kiến thức trang sức và nguyên liệu chế tác.",

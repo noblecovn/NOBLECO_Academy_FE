@@ -20,10 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${afacadFlux.className} antialiased overflow-x-hidden`}
+        className={`${afacadFlux.className} antialiased w-full overflow-x-hidden`}
       >
         <Header />
-        <main className="">{children}</main>
+        <main className="w-full">{children}</main>
       </body>
     </html>
   );

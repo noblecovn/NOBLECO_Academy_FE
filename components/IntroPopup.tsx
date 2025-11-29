@@ -6,7 +6,7 @@ const highlights: { title: ReactNode }[] = [
   {
     title: (
       <>
-        Học phí <strong>0Đ</strong> xuyên suốt quá trình học
+        Đột phá thu nhập và Ổn định tài chính
       </>
     )
   },
@@ -69,7 +69,7 @@ export default function IntroPopup() {
         <button
           onClick={handleClose}
           aria-label="Đóng popup"
-          className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/80 text-emerald-900 shadow-md transition hover:bg-white"
+          className="absolute right-4 top-4 z-10 flex h-6 w-6 2xl:h-10 2xl:w-10 items-center justify-center rounded-full bg-white/80 text-emerald-900 shadow-md transition hover:bg-white"
         >
           ✕
         </button>
@@ -77,13 +77,13 @@ export default function IntroPopup() {
         <div className="relative w-full">
           <div className="w-full overflow-hidden rounded-[28px] bg-white/95 text-center shadow-2xl">
             <div className="bg-gradient-to-b from-[#87c5ab] to-[#0e392b] px-6 py-8 text-white md:px-10 md:py-10">
-              <h2 className="text-2xl leading-snug md:text-3xl">
+              <h2 className="text-lg 2xl:text-2xl leading-snug md:text-3xl">
                 Trở thành Chuyên gia Trang sức <br /> chuẩn quốc tế cùng{" "}
                 <span className="font-bold">NOBLECO Academy</span>
               </h2>
             </div>
 
-            <div className="bg-white px-6 pb-8 pt-6 md:px-10 md:pb-10">
+            <div className="bg-white px-3 pb-8 pt-6 md:pb-10">
               <div className="grid gap-6 text-left text-emerald-900 md:grid-cols-3">
                 {highlights.map((item, index) => (
                   <div
@@ -91,7 +91,7 @@ export default function IntroPopup() {
                     className={`flex flex-col gap-2 text-base md:text-lg lg:text-xl ${index < highlights.length - 1 ? "md:border-r md:pr-6" : ""
                       }`}
                   >
-                    <div className="font-medium text-emerald-900">{item.title}</div>
+                    <div className="font-medium text-deep-green text-justify-center">{item.title}</div>
                   </div>
                 ))}
               </div>

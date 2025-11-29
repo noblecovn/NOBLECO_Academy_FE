@@ -3,7 +3,7 @@ import Image from "next/image";
 const Section12 = () => {
     const highlights = [
         "Chất lượng kim cương, đá quý và trang sức.",
-        "Thiết kế, phong cách (styling), bespoke (may đo/thiết kế theo yêu cầu).",
+        "Thiết kế, phong cách (styling), bespoke (thiết kế theo yêu cầu).",
         "Nghệ thuật kể chuyện thương hiệu (Branding Storytelling).",
     ];
 

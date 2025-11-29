@@ -47,7 +47,7 @@ const TrainingProgramSection = () => {
                                 <Image
                                     src={program.image}
                                     alt={program.title}
-                                    width={640}
+                                    width={885}
                                     height={360}
                                     className="object-cover w-full"
                                 />

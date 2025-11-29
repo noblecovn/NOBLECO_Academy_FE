@@ -3,7 +3,7 @@ const Section10 = () => {
         {
             title: "JEWELRY ADVISOR MUỐN THĂNG HẠNG LÊN SENIOR",
             description:
-                "Bạn không biết bắt đầu từ đâu nếu muốn vào nghề nhưng mong muốn bước chân vào ngành hàng cao cấp với mức thu nhập đột phá và môi trường làm việc sang trọng.",
+                "Bạn đã là tư vấn viên trang sức với những kinh nghiệm nhất định, muốn nâng cấp kiến thức và xây dựng khả năng xây dựng và dẫn dắt đội nhóm.",
         },
         {
             title: "NHÂN VIÊN BÁN LẺ, TƯ VẤN VIÊN ĐANG MUỐN NÂNG CẤP KỸ NĂNG",

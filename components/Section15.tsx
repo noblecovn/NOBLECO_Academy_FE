@@ -15,7 +15,7 @@ const Section15 = () => {
         {
             title: "3. CAM KẾT SAU KHI TỐT NGHIỆP",
             content:
-                "• NOBLECO không ngừng đồng hành ngay cả khi bạn hoàn thành khóa học:\n• Định hướng nghề nghiệp phù hợp\n• Hỗ trợ bố cục CV – portfolio chuyên ngành\n• Hợp tác kinh doanh bền vững cùng NOBLECO",
+                "NOBLECO không ngừng đồng hành ngay cả khi bạn hoàn thành khóa học:\n Định hướng nghề nghiệp phù hợp\n Hỗ trợ bố cục CV – portfolio chuyên ngành\n Hợp tác kinh doanh bền vững cùng NOBLECO",
         },
         {
             title: "4. CAM KẾT PHÁT TRIỂN LÂU DÀI",
@@ -37,51 +37,56 @@ const Section15 = () => {
     return (
         <section className="relative w-full py-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a] overflow-hidden">
             <Image
-                src="/images/section15/1.png"
+                src="/images/section15/2.png"
                 alt="Background pattern"
-                fill
+                width={293}
+                height={398}
                 priority
-                className="object-cover pointer-events-none select-none"
+                className="object-cover absolute bottom-0 left-0"
             />
             <div className="relative z-10">
-            {/* Title */}
-            <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">
-                <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">
-                    CAM KẾT ĐỒNG HÀNH TỪ NOBLECO
-                </h2>
-            </div>
+                {/* Title */}
+                <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">
+                    <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">
+                        CAM KẾT ĐỒNG HÀNH TỪ NOBLECO
+                    </h2>
+                </div>
 
-            <div className="max-w-7xl mx-auto px-4">
-                {/* Grid 2 columns - items flow by column */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8">
-                    {/* Cột 1: Cam kết 1, 2, 3 */}
-                    <div className="flex flex-col gap-8">
-                        {commitments.slice(0, 3).map((item, index) => (
-                            <div key={index} className="text-white">
-                                <h3 className="font-bold text-lg md:text-xl mb-3 uppercase tracking-wide">
-                                    {item.title}
-                                </h3>
-                                <p className="text-sm md:text-base leading-relaxed whitespace-pre-line">
-                                    {item.content}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
-                    {/* Cột 2: Cam kết 4, 5, 6 */}
-                    <div className="flex flex-col gap-8">
-                        {commitments.slice(3, 6).map((item, index) => (
-                            <div key={index} className="text-white">
-                                <h3 className="font-bold text-lg md:text-xl mb-3 uppercase tracking-wide">
-                                    {item.title}
-                                </h3>
-                                <p className="text-sm md:text-base leading-relaxed whitespace-pre-line">
-                                    {item.content}
-                                </p>
-                            </div>
-                        ))}
+                <div className="max-w-7xl mx-auto px-4">
+                    {/* Grid 2 columns - items flow by column */}
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8">
+                        {/* Cột 1: Cam kết 1, 2, 3 */}
+                        <div className="flex flex-col gap-8">
+                            {commitments.slice(0, 3).map((item, index) => (
+                                <div key={index} className="text-white">
+                                    <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-2 max-w-3xl">
+                                        <div className="text-white bg-gray-orange rounded-full font-bold text-lg md:text-xl uppercase tracking-wide py-1">
+                                            {item.title}
+                                        </div>
+                                    </div>
+                                    <p className="text-sm md:text-base leading-relaxed whitespace-pre-line">
+                                        {item.content}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
+                        {/* Cột 2: Cam kết 4, 5, 6 */}
+                        <div className="flex flex-col gap-8">
+                            {commitments.slice(3, 6).map((item, index) => (
+                                <div key={index} className="text-white">
+                                    <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-2 max-w-3xl">
+                                        <div className="text-white bg-gray-orange rounded-full font-bold text-lg md:text-xl uppercase tracking-wide py-1">
+                                            {item.title}
+                                        </div>
+                                    </div>
+                                    <p className="text-sm md:text-base leading-relaxed whitespace-pre-line">
+                                        {item.content}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
     );

@@ -37,9 +37,9 @@ const WorkshopSection = () => {
                                 height={360}
                                 className="w-full"
                             />
-                            <div className="absolute inset-0 bg-white/45" />
+                            <div className="absolute inset-0 bg-black/45" />
                             <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 p-6 text-center">
-                                <p className="text-deep-green text-lg md:text-3xl font-extrabold">
+                                <p className="text-white text-lg md:text-3xl font-extrabold">
                                     <span dangerouslySetInnerHTML={{ __html: workshop.title }} />
                                 </p>
                             </div>
