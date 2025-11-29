@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Section16 = () => {
     const [formData, setFormData] = useState({
@@ -13,6 +13,56 @@ const Section16 = () => {
         time: "",
         referral: "",
     });
+
+    const [timeLeft, setTimeLeft] = useState({
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+    });
+
+    useEffect(() => {
+        // Get or set target date in localStorage
+        const STORAGE_KEY = 'nobleco_countdown_target';
+        let targetDate: Date;
+
+        const storedTarget = localStorage.getItem(STORAGE_KEY);
+        if (storedTarget) {
+            targetDate = new Date(storedTarget);
+            // If target date has passed, reset to 2 days from now
+            if (targetDate.getTime() <= Date.now()) {
+                targetDate = new Date();
+                targetDate.setDate(targetDate.getDate() + 2);
+                localStorage.setItem(STORAGE_KEY, targetDate.toISOString());
+            }
+        } else {
+            // First visit: set target to 2 days from now
+            targetDate = new Date();
+            targetDate.setDate(targetDate.getDate() + 2);
+            localStorage.setItem(STORAGE_KEY, targetDate.toISOString());
+        }
+
+        const calculateTimeLeft = () => {
+            const now = new Date();
+            const difference = targetDate.getTime() - now.getTime();
+
+            if (difference > 0) {
+                setTimeLeft({
+                    days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                    hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+                    minutes: Math.floor((difference / (1000 * 60)) % 60),
+                    seconds: Math.floor((difference / 1000) % 60),
+                });
+            } else {
+                setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+            }
+        };
+
+        calculateTimeLeft();
+        const timer = setInterval(calculateTimeLeft, 1000);
+
+        return () => clearInterval(timer);
+    }, []);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
         setFormData({
@@ -38,19 +88,19 @@ const Section16 = () => {
                             <div className="flex justify-center w-fit bg-white p-2">
                                 <div className="flex gap-4">
                                     <div className="text-white text-center font-bold">
-                                        <div className="text-4xl bg-[#ed1c24] p-2">00</div>
+                                        <div className="text-4xl bg-[#ed1c24] p-2">{String(timeLeft.days).padStart(2, '0')}</div>
                                         <div className="text-xl text-deep-green">days</div>
                                     </div>
                                     <div className="text-white text-center font-bold">
-                                        <div className="text-4xl bg-[#ed1c24] p-2">00</div>
+                                        <div className="text-4xl bg-[#ed1c24] p-2">{String(timeLeft.hours).padStart(2, '0')}</div>
                                         <div className="text-xl text-deep-green">hours</div>
                                     </div>
                                     <div className="text-white text-center font-bold">
-                                        <div className="text-4xl bg-[#ed1c24] p-2">00</div>
+                                        <div className="text-4xl bg-[#ed1c24] p-2">{String(timeLeft.minutes).padStart(2, '0')}</div>
                                         <div className="text-xl text-deep-green">min</div>
                                     </div>
                                     <div className="text-white text-center font-bold">
-                                        <div className="text-4xl bg-[#ed1c24] p-2">00</div>
+                                        <div className="text-4xl bg-[#ed1c24] p-2">{String(timeLeft.seconds).padStart(2, '0')}</div>
                                         <div className="text-xl text-deep-green">sec</div>
                                     </div>
                                 </div>
