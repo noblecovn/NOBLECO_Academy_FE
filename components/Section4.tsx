@@ -18,7 +18,7 @@ const ExpertSection = () => {
                 "- Người Việt Nam đầu tiên đạt chứng chỉ Gemologist của GIA.",
                 "- Có nhiều năm kinh nghiệm tại trung tâm trang sức JTC Bangkok và các mỏ đá quý Việt Nam, Myanmar.",
             ],
-            image: "/images/section4/4.png",
+            image: "/images/section4/N.png",
         },
         {
             name: "LÀO TRÍ ĐƯỜNG",
@@ -27,7 +27,7 @@ const ExpertSection = () => {
                 "- Giám đốc Điều hành Công ty IVNCA Limited Canada.",
                 "- Từng đảm nhiệm vị trí Phó Tổng Giám đốc Công ty Cathay Life và Great Eastern - Tập đoàn bảo hiểm nhân thọ lâu đời nhất tại Singapore và Malaysia.",
             ],
-            image: "/images/section4/2.png",
+            image: "/images/section4/D.png",
         },
     ]
 
@@ -66,12 +66,12 @@ const ExpertSection = () => {
                                 {experts.map((expert) => (
                                     <CarouselItem key={expert.name}>
                                         <div className="flex flex-col lg:flex-row gap-8 items-center justify-center lg:items-end h-full">
-                                            <div className="w-full lg:w-1/4">
+                                            <div className="w-full lg:w-1/3">
                                                 <Image
                                                     src={expert.image}
                                                     alt={expert.name}
-                                                    width={640}
-                                                    height={360}
+                                                    width={1500}
+                                                    height={2000}
                                                     className="object-cover w-full aspect-[3/4]"
                                                 />
                                             </div>
