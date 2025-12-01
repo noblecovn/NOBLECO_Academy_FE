@@ -24,7 +24,7 @@ const Section6 = () => {
                             </p>
                         </div>
 
-                        <div className="inline-flex w-full items-center justify-center bg-gradient-to-r from-[#be945f] to-[#fee08b] text-white font-semibold text-center text-xs 2xl:text-base py-3 px-6 rounded-full shadow-lg">
+                        <div className="inline-flex w-full items-center justify-center bg-gradient-to-r from-[#be945f] to-[#fee08b] text-white font-semibold text-center text-xs md:text-base py-3 px-6 rounded-full shadow-lg">
                             Học cùng chuyên gia - Thực chiến mỗi ngày - Bứt phá nghề nghiệp
                         </div>
 

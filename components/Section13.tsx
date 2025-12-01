@@ -28,12 +28,12 @@ const Section13 = () => {
             </div>
             <div className="max-w-7xl mx-auto 2xl:pt-32 px-4">
                 {/* Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-12">
                     {targetAudiences.map((audience, index) => (
                         <div
                             key={index}
                             className={`relative rounded-3xl border-2 border-[#c9a86c] p-6 sm:p-8 text-center ${audience.featured
-                                    ? "bg-[#043022] md:-mt-20 md:mb-20"
+                                    ? "bg-[#043022] lg:-mt-20 lg:mb-20"
                                     : "bg-[#043022]"
                                 }`}
                         >

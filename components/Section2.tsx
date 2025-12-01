@@ -29,21 +29,21 @@ const TrainingProgramSection = () => {
         <section id="chuong-trinh-dao-tao" className="w-full pt-16 2xl:py-16 min-h-fit bg-gradient-to-t from-[#87c5ab] to-[#04241a]">
             {/* Header */}
             <div className="text-center mb-12 border-b border-t border-white py-12 px-2 2xl:px-0 flex flex-col">
-                <h2 className="text-white text-2xl 2xl:text-5xl font-bold tracking-wide">
+                <h2 className="text-white text-2xl md:text-4xl 2xl:text-5xl font-bold tracking-wide">
                     CHƯƠNG TRÌNH ĐÀO TẠO
                 </h2>
             </div>
             <div className="max-w-7xl mx-auto">
 
                 {/* Programs Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-7 gap-6 lg:gap-8 items-stretch px-2 2xl:px-0">
+                <div className="grid grid-cols-1 2xl:grid-cols-7 gap-6 lg:gap-8 items-stretch px-2 2xl:px-0">
                     {programs.map((program, index) => (
                         <div
                             key={index}
                             className={`relative bg-[#0e392b] border border-[#2d5a4a] rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-transform duration-300 flex flex-col ${index === 0 ? 'md:col-span-2' : index === 1 ? 'md:col-span-3' : 'md:col-span-2'}`}
                         >
                             {/* Image */}
-                            <div className="relative w-full h-48 md:h-56">
+                            <div className="relative w-full h-48 md:h-90 2xl:h-56">
                                 <Image
                                     src={program.image}
                                     alt={program.title}
@@ -56,10 +56,10 @@ const TrainingProgramSection = () => {
                             <div className="p-6 flex flex-col flex-grow">
                                 {/* Title */}
                                 <div className="text-center flex-grow">
-                                    <h4 className="bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent text-lg 2xl:text-2xl font-bold">
+                                    <h4 className="bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent text-lg md:text-2xl font-bold">
                                         {program.level}
                                     </h4>
-                                    <h4 className="bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent text-lg 2xl:text-2xl font-bold pb-2">
+                                    <h4 className="bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent text-lg md:text-2xl font-bold pb-2">
                                         {program.title}
                                     </h4>
                                     <p className="text-white text-sm md:text-base leading-relaxed text-justify-center flex-grow">

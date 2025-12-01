@@ -109,7 +109,7 @@ const Section14 = () => {
                 {/* PHẦN 1 - Kiến thức chuyên sâu và tiên tiến */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-3xl">
-                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
+                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
                             PHẦN 1 — KIẾN THỨC CHUYÊN SÂU VÀ TIÊN TIẾN (5-6 BUỔI)
                         </div>
                     </div>
@@ -134,7 +134,7 @@ const Section14 = () => {
                 {/* PHẦN 2 - Kỹ năng phong cách và tư vấn cá nhân hóa */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-3xl">
-                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
+                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
                             PHẦN 2 — KỸ NĂNG PHONG CÁCH VÀ TƯ VẤN CÁ NHÂN HÓA (4-5 BUỔI)
                         </div>
                     </div>
@@ -159,7 +159,7 @@ const Section14 = () => {
                 {/* PHẦN 3 - Nghệ thuật kể chuyện thương hiệu */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-4xl">
-                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
+                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
                             PHẦN 3 — NGHỆ THUẬT KỂ CHUYỆN THƯƠNG HIỆU & GIAO TIẾP NÂNG CAO (2-3 BUỔI)
                         </div>
                     </div>
@@ -186,7 +186,7 @@ const Section14 = () => {
                     {/* PHẦN 4 - Huấn luyện và lãnh đạo */}
                     <div className="flex flex-col items-center">
                         <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8">
-                            <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
+                            <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
                                 PHẦN 4 — HUẤN LUYỆN VÀ LÃNH ĐẠO PHÁT TRIỂN ĐỘI NGŨ (3-4 BUỔI)
                             </div>
                         </div>
@@ -211,7 +211,7 @@ const Section14 = () => {
                     {/* PHẦN 5 - Chiến lược kinh doanh */}
                     <div className="flex flex-col items-center">
                         <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8">
-                            <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
+                            <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
                                 PHẦN 5 — CHIẾN LƯỢC KINH DOANH CAO CẤP VÀ THỊ TRƯỜNG (1-2 BUỔI)
                             </div>
                         </div>
@@ -252,7 +252,7 @@ const Section14 = () => {
                             </p>
 
                             {/* Checklist */}
-                            <div className="space-y-6 max-w-lg">
+                            <div className="space-y-6 lg:max-w-lg">
                                 <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
                                     <Image src="/images/section8/7.png" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
                                     <div className="text-sm text-deep-green">
@@ -278,9 +278,9 @@ const Section14 = () => {
                         {/* Right - Certificate Image */}
                         <div className="flex justify-center lg:justify-end">
                             <Image
-                                src="/images/section14/certificate.png"
-                                width={500}
-                                height={400}
+                                src="/images/section14/3-01.jpg"
+                                width={3840}
+                                height={2789}
                                 alt="Certificate of Completion - Master Jewelry Stylist Training Program"
                                 className="w-full"
                             />

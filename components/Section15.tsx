@@ -52,7 +52,7 @@ const Section15 = () => {
                             {commitments.slice(0, 3).map((item, index) => (
                                 <div key={index} className="text-white">
                                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-2 max-w-3xl">
-                                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-lg md:text-xl uppercase tracking-wide">
+                                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-lg md:text-lg uppercase tracking-wide">
                                             {item.title}
                                         </div>
                                     </div>
@@ -69,7 +69,7 @@ const Section15 = () => {
                             {commitments.slice(3, 6).map((item, index) => (
                                 <div key={index} className="text-white">
                                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-2 max-w-3xl">
-                                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-lg md:text-xl uppercase tracking-wide">
+                                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-lg md:text-lg uppercase tracking-wide">
                                             {item.title}
                                         </div>
                                     </div>

@@ -68,7 +68,7 @@ const Section8 = () => {
                 {/* PHẦN 1 */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-2xl">
-                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
+                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
                             PHẦN 1 — ĐỊNH HƯỚNG & HỘI THẢO NGÀNH (1 BUỔI)
                         </div>
                     </div>
@@ -80,19 +80,19 @@ const Section8 = () => {
                             <div className="flex space-x-2 2xl:space-x-8">
                                 <div className="flex items-center gap-3">
                                     <Image src="/images/section8/1.png" width={20} height={20} alt="Flow Diagram" className="w-5 2xl:h-full 2xl:w-auto" />
-                                    <p className="text-white text-xs 2xl:text-xl text-center">
+                                    <p className="text-white text-xs md:text-lg 2xl:text-xl text-center">
                                         Giới thiệu NOBLECO:<br />
                                         câu chuyện hình thành, triết lý, sứ mệnh.
                                     </p>
                                 </div>
-                                <span className="flex items-center text-white text-xl 2xl:text-5xl">→</span>
+                                <span className="flex items-center text-white text-xl md:text-5xl">→</span>
                                 <div className="flex items-center">
-                                    <p className="text-white text-center text-xs md:text-xl">
+                                    <p className="text-white text-center text-xs md:text-lg 2xl:text-xl">
                                         Giới thiệu giảng viên – phương pháp học tập.
                                     </p>
                                 </div>
-                                <span className="text-white text-xl 2xl:text-5xl absolute top-10 right-20 2xl:hidden">↓</span>
-                                <span className="text-white text-xl 2xl:text-5xl absolute top-28 right-20 2xl:hidden">↓</span>
+                                <span className="text-white text-xl 2xl:text-5xl absolute top-10 right-20 md:right-50 2xl:hidden">↓</span>
+                                <span className="text-white text-xl 2xl:text-5xl absolute top-28 md:top-33 right-20 md:right-50 2xl:hidden">↓</span>
                                 <div className="absolute top-15 right-20 hidden 2xl:block">
                                     <Image src="/images/section8/4.png" width={300} height={58} alt="Flow Diagram" />
                                 </div>
@@ -101,13 +101,13 @@ const Section8 = () => {
                             {/* Right column */}
                             <div className="flex space-x-2 2xl:space-x-8 mt-20 2xl:mt-25">
                                 <div className="flex items-center">
-                                    <p className="text-white text-xs md:text-xl text-center">
+                                    <p className="text-white text-xs md:text-lg 2xl:text-xl text-center">
                                         Chia team - hoạt động nhóm - định hướng học tập
                                     </p>
                                 </div>
-                                <span className="flex items-center text-white text-xl 2xl:text-5xl">←</span>
+                                <span className="flex items-center text-white text-xl md:text-5xl">←</span>
                                 <div className="flex items-center gap-3">
-                                    <p className="text-white text-xs 2xl:text-xl text-center">
+                                    <p className="text-white text-xs md:text-lg 2xl:text-xl text-center">
                                         Giá trị học viên nhận được:<br />
                                         kiến thức – cơ hội – hệ sinh thái hỗ trợ.trợ.
                                     </p>
@@ -119,8 +119,8 @@ const Section8 = () => {
                         </div>
 
                         {/* Right side box */}
-                        <div className="absolute top-20 right-0 2xl:-right-20 2xl:top-25">
-                            <p className="text-white text-xs 2xl:text-xl text-center">
+                        <div className="absolute top-20 right-0 md:right-20 2xl:-right-20 2xl:top-25">
+                            <p className="text-white text-xs md:text-lg 2xl:text-xl text-center">
                                 Kiến thức tổng quan ngành trang sức <br /> & xu hướng tiêu dùng.
                             </p>
                         </div>
@@ -130,12 +130,12 @@ const Section8 = () => {
                 {/* PHẦN 2 */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-2xl">
-                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
+                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
                             PHẦN 2 — KIẾN THỨC SẢN PHẨM (4 BUỔI)
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                         {phan2Sessions.map((session, index) => (
                             <div
                                 key={index}
@@ -160,13 +160,13 @@ const Section8 = () => {
                 {/* PHẦN 3 */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-2xl">
-                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
+                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
                             PHẦN 3 — KỸ NĂNG TƯ VẤN & CHĂM SÓC KHÁCH HÀNG CAO CẤP (5 BUỔI)
                         </div>
                     </div>
 
                     {/* First row - 3 cards */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
                         {phan3Sessions.slice(0, 3).map((session, index) => (
                             <div
                                 key={index}
@@ -188,7 +188,7 @@ const Section8 = () => {
                     </div>
 
                     {/* Second row - 2 cards centered */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
                         {phan3Sessions.slice(3, 5).map((session, index) => (
                             <div
                                 key={index}
@@ -213,7 +213,7 @@ const Section8 = () => {
                 {/* PHẦN 4 */}
                 <div className="flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 2xl:mb-16 max-w-2xl">
-                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
+                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm  md:text-lg uppercase tracking-wide">
                             PHẦN 4 — TỔNG KẾT & TRAO CHỨNG CHỉ (1 BUỔI)
                         </div>
                     </div>
@@ -232,7 +232,7 @@ const Section8 = () => {
                             </p>
 
                             {/* Checklist */}
-                            <div className="space-y-6 max-w-lg">
+                            <div className="space-y-6 2xl:max-w-lg">
                                 <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
                                     <Image src="/images/section8/7.png" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
                                     <p className="text-sm text-deep-green">
@@ -259,9 +259,9 @@ const Section8 = () => {
                         {/* Right - Certificate Image */}
                         <div className="flex justify-center lg:justify-end">
                             <Image
-                                src="/images/section8/8.png"
-                                width={500}
-                                height={400}
+                                src="/images/section8/1-01.jpg"
+                                width={3840}
+                                height={2789}
                                 alt="Certificate of Completion - Jewelry Advisor Training Program"
                                 className="w-full"
                             />

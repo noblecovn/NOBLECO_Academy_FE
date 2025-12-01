@@ -42,7 +42,7 @@ const ExpertSection = () => {
             />
             <div className="relative z-10">
                 <div className="text-center py-12 border-b border-t border-white py-12 flex flex-col">
-                    <h2 className="text-white text-2xl 2xl:text-5xl font-bold tracking-[0.1em]">
+                    <h2 className="text-white text-2xl md:text-4xl 2xl:text-5xl font-bold tracking-[0.1em]">
                         GIẢNG VIÊN & CHUYÊN GIA
                     </h2>
                 </div>
@@ -84,7 +84,7 @@ const ExpertSection = () => {
                                                         {expert.role}
                                                     </p>
                                                 </div>
-                                                <ul className="min-h-[120px] space-y-2 text-sm md:text-base text-white pt-2">
+                                                <ul className="min-h-[120px] space-y-2 text-sm md:text-lg text-white pt-2">
                                                     {expert.highlights.map((item) => (
                                                         <li key={item} className="leading-relaxed text-justify">
                                                             {item}

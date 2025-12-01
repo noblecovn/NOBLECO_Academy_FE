@@ -21,13 +21,13 @@ const WorkshopSection = () => {
             <div className="overflow-hidden shadow-2xl bg-mint">
                 {/* Header */}
                 <div className="bg-gradient-to-r from-[#4f8b6f] to-[#2e5d49] text-center py-10 px-4">
-                    <h2 className="text-white text-2xl 2xl:text-5xl font-bold tracking-[0.3em]">
+                    <h2 className="text-white text-2xl md:text-4xl 2xl:text-5xl font-bold tracking-[0.3em]">
                         WORKSHOP
                     </h2>
                 </div>
 
                 {/* Workshop Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3">
+                <div className="grid grid-cols-1 lg:grid-cols-3">
                     {workshops.map((workshop, index) => (
                         <div key={index} className="relative overflow-hidden">
                             <Image

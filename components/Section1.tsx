@@ -18,16 +18,16 @@ const NoblecoAcademySection = () => {
         <section id="thong-tin-nobleco" className="w-full 2xl:py-16 min-h-fit bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             {/* Header */}
             <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col px-2 2xl:px-0">
-                <h2 className="text-white text-2xl 2xl:text-5xl mb-2">
+                <h2 className="text-white text-2xl md:text-4xl 2xl:text-5xl mb-2">
                     BƯỚC VÀO NGÀNH TRANG SỨC CÙNG
                 </h2>
-                <h3 className="text-white text-2xl 2xl:text-5xl font-bold">
+                <h3 className="text-white text-2xl md:text-4xl 2xl:text-5xl font-bold">
                     NOBLECO ACADEMY
                 </h3>
             </div>
             <div className="max-w-7xl mx-auto px-2 2xl:px-0">
                 {/* Cards Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-20">
+                <div className="grid grid-cols-1 2xl:grid-cols-3 gap-6 lg:gap-20">
                     {cards.map((card, index) => (
                         <div
                             key={index}

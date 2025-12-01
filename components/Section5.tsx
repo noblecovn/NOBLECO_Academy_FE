@@ -41,7 +41,7 @@ const PartnersAndTestimonialsSection = () => {
                         <h3 className="text-6xl text-white font-semibold tracking-[0.1em] leading-tight">
                             ĐỐI TÁC
                         </h3>
-                        <div className="grid grid-cols-2 gap-12 xl:gap-16 mt-10 flex-grow">
+                        <div className="grid grid-cols-2 gap-12 md:gap-20 xl:gap-16 mt-10 flex-grow">
                             {partners.map((partner) => (
                                 <div
                                     key={partner.name}
@@ -52,7 +52,7 @@ const PartnersAndTestimonialsSection = () => {
                                         alt={partner.name}
                                         width={160}
                                         height={160}
-                                        className="2xl:h-full 2xl:w-auto"
+                                        className="w-full lg:h-full lg:w-auto"
                                     />
                                 </div>
                             ))}

@@ -19,7 +19,7 @@ const Section12 = () => {
                                 Master Jewelry Stylist
                             </h2>
                         </div>
-                        <div className="inline-flex w-full items-center justify-center bg-gradient-to-r from-[#be945f] to-[#fee08b] text-white font-semibold text-center text-xs 2xl:text-base py-3 px-6 rounded-full shadow-lg">
+                        <div className="inline-flex w-full items-center justify-center bg-gradient-to-r from-[#be945f] to-[#fee08b] text-white font-semibold text-center text-xs md:text-base py-3 px-6 rounded-full shadow-lg">
                             Nâng tầm kỹ năng & Trở thành Chuyên viên Cao cấp thực thụ
                         </div>
                         <p className="text-white font-semibold text-lg italic">

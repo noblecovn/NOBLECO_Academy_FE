@@ -28,17 +28,17 @@ const Section11 = () => {
     // PHẦN 2 - Kỹ năng tư vấn chuyên sâu (3 buổi)
     const phan2Sessions = [
         {
-            title: "BUỔI 5",
+            title: "BUỔI 1",
             content:
                 "Có khả năng tư vấn theo phong cách cá nhân, nghề nghiệp, sự kiện sang trọng và tâm lý khách hàng cao cấp phù hợp với phân khúc Premium.",
         },
         {
-            title: "BUỔI 6",
+            title: "BUỔI 2",
             content:
                 "Nắm bắt khả năng phân tích kỹ thuật và đánh giá chất lượng kim cương nâng cao. Phân biệt kỹ kim cương và các loại đá thay thế, công nghệ xử lý, phân biệt loại hiếm.",
         },
         {
-            title: "BUỔI 7",
+            title: "BUỔI 3",
             content:
                 "Thành thạo kỹ năng đàm phán, chốt sale, và upsell chuyên nghiệp, đồng thời xây dựng mối quan hệ khách hàng bền vững.",
         },
@@ -61,12 +61,12 @@ const Section11 = () => {
     // PHẦN 4 - Huấn luyện và phát triển đội ngũ (2 buổi)
     const phan4Sessions = [
         {
-            title: "BUỔI 3",
+            title: "BUỔI 1",
             content:
                 "Rèn luyện kỹ năng huấn luyện, mentoring và quản lý các tư vấn viên cấp 1. Truyền đạt kiến thức và kỹ năng một cách hiệu quả.",
         },
         {
-            title: "BUỔI 4",
+            title: "BUỔI 2",
             content:
                 "Lập kế hoạch phát triển cá nhân và nhóm tư vấn viên, tạo động lực và thực hiện đánh giá, phản hồi hiệu quả.",
         },
@@ -75,12 +75,12 @@ const Section11 = () => {
     // PHẦN 5 - Thị trường và xu hướng (2 buổi)
     const phan5Sessions = [
         {
-            title: "BUỔI 5",
+            title: "BUỔI 1",
             content:
                 "Cập nhật xu hướng trang sức cao cấp trên thế giới và Việt Nam, các thương hiệu đẳng cấp (Cartier, Tiffany, BVLgari, VCA...Doji, PNJ...).",
         },
         {
-            title: "BUỔI 6",
+            title: "BUỔI 2",
             content:
                 "Phân tích thị trường, phân tích đối thủ cạnh tranh và định vị thương hiệu. Dự báo xu hướng khách hàng và cơ hội kinh doanh mới.",
         },
@@ -99,12 +99,12 @@ const Section11 = () => {
                 {/* PHẦN 1 - Kiến thức chuyên sâu sản phẩm */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-3xl">
-                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
+                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
                             PHẦN 1 — KIẾN THỨC CHUYÊN SÂU SẢN PHẨM (4 BUỔI)
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {phan1Sessions.map((session, index) => (
                             <div
                                 key={index}
@@ -124,7 +124,7 @@ const Section11 = () => {
                 {/* PHẦN 2 - Kỹ năng tư vấn chuyên sâu */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-3xl">
-                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
+                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
                             PHẦN 2 — KỸ NĂNG TƯ VẤN CHUYÊN SÂU (3 BUỔI)
                         </div>
                     </div>
@@ -151,7 +151,7 @@ const Section11 = () => {
                     {/* PHẦN 3 - Xử lý tình huống phức tạp */}
                     <div className="flex flex-col items-center">
                         <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8">
-                            <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
+                            <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
                                 PHẦN 3 — XỬ LÝ TÌNH HUỐNG PHỨC TẠP (2 BUỔI)
                             </div>
                         </div>
@@ -176,7 +176,7 @@ const Section11 = () => {
                     {/* PHẦN 4 - Huấn luyện và phát triển đội ngũ */}
                     <div className="flex flex-col items-center">
                         <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8">
-                            <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
+                            <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
                                 PHẦN 4 — HUẤN LUYỆN VÀ PHÁT TRIỂN ĐỘI NGŨ (2 BUỔI)
                             </div>
                         </div>
@@ -202,7 +202,7 @@ const Section11 = () => {
                 {/* PHẦN 5 - Thị trường và xu hướng */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-3xl">
-                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm 2xl:text-xl uppercase tracking-wide">
+                        <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
                             PHẦN 5 — THỊ TRƯỜNG VÀ XU HƯỚNG (2 BUỔI)
                         </div>
                     </div>
@@ -242,7 +242,7 @@ const Section11 = () => {
                             </p>
 
                             {/* Checklist */}
-                            <div className="space-y-6 max-w-lg">
+                            <div className="space-y-6 lg:max-w-lg">
                                 <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
                                     <Image src="/images/section8/7.png" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
                                     <div className="text-sm text-deep-green">
@@ -275,9 +275,9 @@ const Section11 = () => {
                         {/* Right - Certificate Image */}
                         <div className="flex justify-center lg:justify-end">
                             <Image
-                                src="/images/section11/certificate.png"
-                                width={500}
-                                height={400}
+                                src="/images/section11/2-01.jpg"
+                                width={3840}
+                                height={2789}
                                 alt="Certificate of Completion - Senior Jewelry Consultant Training Program"
                                 className="w-full"
                             />
