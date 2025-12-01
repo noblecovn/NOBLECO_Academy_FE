@@ -27,7 +27,7 @@ const NoblecoAcademySection = () => {
             </div>
             <div className="max-w-7xl mx-auto px-2 2xl:px-0">
                 {/* Cards Grid */}
-                <div className="grid grid-cols-1 2xl:grid-cols-3 gap-6 lg:gap-20">
+                <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 lg:gap-20">
                     {cards.map((card, index) => (
                         <div
                             key={index}

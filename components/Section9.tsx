@@ -11,7 +11,7 @@ const Section9 = () => {
             <div className="">
                 <div className="grid grid-cols-1 lg:grid-cols-2">
                     {/* Khối nội dung */}
-                    <div className="p-2 2xl:p-12 lg:p-16 flex flex-col gap-6 text-white justify-center">
+                    <div className="p-2 2xl:p-12 flex flex-col gap-6 text-white justify-center">
                         <div>
                             <p className="uppercase tracking-[0.2em] text-lg sm:text-xl text-white/80">Cấp độ 2</p>
                             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-medium uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">

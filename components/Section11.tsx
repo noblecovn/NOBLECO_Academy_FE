@@ -273,13 +273,13 @@ const Section11 = () => {
                         </div>
 
                         {/* Right - Certificate Image */}
-                        <div className="flex justify-center lg:justify-end">
+                        <div className="flex justify-center lg:justify-end lg:h-full">
                             <Image
                                 src="/images/section11/2-01.jpg"
                                 width={3840}
                                 height={2789}
                                 alt="Certificate of Completion - Senior Jewelry Consultant Training Program"
-                                className="w-full"
+                                className="w-full lg:h-full lg:w-auto"
                             />
                         </div>
                     </div>

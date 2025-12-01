@@ -19,14 +19,14 @@ const Section10 = () => {
     ];
 
     return (
-        <section className="w-full 2xl:py-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
+        <section className="w-full lg:pt-16 2xl:py-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             {/* Title */}
             <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">
                 <h2 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold tracking-wide">
                     KHÓA HỌC DÀNH CHO AI?
                 </h2>
             </div>
-            <div className="max-w-7xl mx-auto 2xl:pt-32 px-2 2xl:px-0">
+            <div className="max-w-7xl mx-auto lg:pt-16 2xl:pt-32 px-2 2xl:px-0">
                 {/* Cards */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-12">
                     {targetAudiences.map((audience, index) => (

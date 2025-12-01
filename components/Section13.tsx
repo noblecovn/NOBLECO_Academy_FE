@@ -26,7 +26,7 @@ const Section13 = () => {
                     KHÓA HỌC DÀNH CHO AI?
                 </h2>
             </div>
-            <div className="max-w-7xl mx-auto 2xl:pt-32 px-4">
+            <div className="max-w-7xl mx-auto lg:pt-16 2xl:pt-32 px-4">
                 {/* Cards */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-12">
                     {targetAudiences.map((audience, index) => (

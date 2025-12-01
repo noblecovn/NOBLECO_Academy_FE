@@ -29,7 +29,7 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-10 text-[17px] font-semibold text-[#0E3D27]" aria-label="Điều hướng chính">
+        <nav className="hidden xl:flex items-center gap-10 text-[17px] font-semibold text-[#0E3D27]" aria-label="Điều hướng chính">
           <Link href="/" className="flex items-center gap-2 transition hover:text-[#2F6848]">
             <Image src="/images/home.png" alt="" width={20} height={16} />
             Trang chủ
@@ -70,7 +70,7 @@ export function Header() {
 
         {/* Mobile Hamburger Button */}
         <button
-          className="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5"
+          className="xl:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label={mobileMenuOpen ? "Đóng menu" : "Mở menu"}
           aria-expanded={mobileMenuOpen}
@@ -95,7 +95,7 @@ export function Header() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`lg:hidden fixed inset-0 top-[73px] bg-black/50 z-40 transition-opacity duration-300 ${
+        className={`xl:hidden fixed inset-0 top-[73px] bg-black/50 z-40 transition-opacity duration-300 ${
           mobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
         onClick={closeMobileMenu}
@@ -103,7 +103,7 @@ export function Header() {
 
       {/* Mobile Menu Panel */}
       <nav
-        className={`lg:hidden fixed top-[73px] right-0 h-[calc(100vh-73px)] w-[280px] bg-white shadow-xl z-50 transform transition-transform duration-300 ease-out overflow-y-auto ${
+        className={`xl:hidden fixed top-[73px] right-0 h-[calc(100vh-73px)] w-[280px] bg-white shadow-xl z-50 transform transition-transform duration-300 ease-out overflow-y-auto ${
           mobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
         aria-label="Menu di động"

@@ -77,7 +77,7 @@ const Section8 = () => {
                     <div className="relative w-full 2xl:py-8">
                         <div className="grid grid-cols-1 gap-6">
                             {/* Left column */}
-                            <div className="flex space-x-2 2xl:space-x-8">
+                            <div className="flex space-x-2 2xl:space-x-8 justify-between lg:justify-start">
                                 <div className="flex items-center gap-3">
                                     <Image src="/images/section8/1.png" width={20} height={20} alt="Flow Diagram" className="w-5 2xl:h-full 2xl:w-auto" />
                                     <p className="text-white text-xs md:text-lg 2xl:text-xl text-center">
@@ -91,15 +91,17 @@ const Section8 = () => {
                                         Giới thiệu giảng viên – phương pháp học tập.
                                     </p>
                                 </div>
-                                <span className="text-white text-xl 2xl:text-5xl absolute top-10 right-20 md:right-50 2xl:hidden">↓</span>
-                                <span className="text-white text-xl 2xl:text-5xl absolute top-28 md:top-33 right-20 md:right-50 2xl:hidden">↓</span>
-                                <div className="absolute top-15 right-20 hidden 2xl:block">
-                                    <Image src="/images/section8/4.png" width={300} height={58} alt="Flow Diagram" />
-                                </div>
                             </div>
-
+                            <div className="absolute top-7 2xl:top-15 right-20 2xl:right-20 hidden lg:block">
+                                <Image src="/images/section8/4.png" width={300} height={58} alt="Flow Diagram" className="w-50" />
+                            </div>
+                            <div className="absolute bottom-5 2xl:bottom-12 right-20 hidden lg:block">
+                                <Image src="/images/section8/5.png" width={280} height={69} alt="Flow Diagram" className="w-50" />
+                            </div>
+                            <span className="text-white text-xl absolute top-10 right-20 md:right-30 lg:hidden">↓</span>
+                            <span className="text-white text-xl absolute top-28 md:top-33 right-20 md:right-30 lg:hidden">↓</span>
                             {/* Right column */}
-                            <div className="flex space-x-2 2xl:space-x-8 mt-20 2xl:mt-25">
+                            <div className="flex space-x-2 2xl:space-x-8 mt-20 2xl:mt-25 justify-between lg:justify-start">
                                 <div className="flex items-center">
                                     <p className="text-white text-xs md:text-lg 2xl:text-xl text-center">
                                         Chia team - hoạt động nhóm - định hướng học tập
@@ -112,14 +114,11 @@ const Section8 = () => {
                                         kiến thức – cơ hội – hệ sinh thái hỗ trợ.trợ.
                                     </p>
                                 </div>
-                                <div className="absolute bottom-12 right-20 hidden 2xl:block">
-                                    <Image src="/images/section8/5.png" width={280} height={69} alt="Flow Diagram" />
-                                </div>
                             </div>
                         </div>
 
                         {/* Right side box */}
-                        <div className="absolute top-20 right-0 md:right-20 2xl:-right-20 2xl:top-25">
+                        <div className="absolute top-20 right-0 2xl:-right-20 2xl:top-25">
                             <p className="text-white text-xs md:text-lg 2xl:text-xl text-center">
                                 Kiến thức tổng quan ngành trang sức <br /> & xu hướng tiêu dùng.
                             </p>
@@ -257,13 +256,13 @@ const Section8 = () => {
                         </div>
 
                         {/* Right - Certificate Image */}
-                        <div className="flex justify-center lg:justify-end">
+                        <div className="flex justify-center lg:justify-end lg:h-full">
                             <Image
                                 src="/images/section8/1-01.jpg"
                                 width={3840}
                                 height={2789}
                                 alt="Certificate of Completion - Jewelry Advisor Training Program"
-                                className="w-full"
+                                className="w-full lg:h-full lg:w-auto"
                             />
                         </div>
                     </div>

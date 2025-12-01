@@ -9,7 +9,7 @@ const Section6 = () => {
     ];
 
     return (
-        <section id="cap-do-1" className="w-full pt-16 2xl:py-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
+        <section id="cap-do-1" className="w-full pt-16 lg:py-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             <div className="">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 2xl:gap-0">
                     {/* Khối nội dung */}
@@ -45,7 +45,7 @@ const Section6 = () => {
                             alt="Học viên Jewelry Advisor"
                             width={2693}
                             height={686}
-                            className="object-cover w-full"
+                            className="object-cover w-full lg:w-auto lg:h-full"
                             priority
                         />
                     </div>

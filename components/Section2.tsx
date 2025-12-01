@@ -36,11 +36,11 @@ const TrainingProgramSection = () => {
             <div className="max-w-7xl mx-auto">
 
                 {/* Programs Grid */}
-                <div className="grid grid-cols-1 2xl:grid-cols-7 gap-6 lg:gap-8 items-stretch px-2 2xl:px-0">
+                <div className="grid grid-cols-1 xl:grid-cols-7 gap-y-6 xl:gap-x-6 items-stretch px-2 2xl:px-0">
                     {programs.map((program, index) => (
                         <div
                             key={index}
-                            className={`relative bg-[#0e392b] border border-[#2d5a4a] rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-transform duration-300 flex flex-col ${index === 0 ? 'md:col-span-2' : index === 1 ? 'md:col-span-3' : 'md:col-span-2'}`}
+                            className={`w-full relative bg-[#0e392b] border border-[#2d5a4a] rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-transform duration-300 flex flex-col ${index === 0 ? 'md:col-span-2' : index === 1 ? 'md:col-span-3' : 'md:col-span-2'}`}
                         >
                             {/* Image */}
                             <div className="relative w-full h-48 md:h-90 2xl:h-56">
