@@ -73,7 +73,7 @@ const Section15 = () => {
                                             {item.title}
                                         </div>
                                     </div>
-                                    <div className={`bg-dark-green rounded-3xl p-6 shadow-lg border-2 border-[#c9a86c] lg:min-h-[156px] 2xl:min-h-1 ${index === 2 ? 'lg:min-h-[181px]' : ''}`}>
+                                    <div className={`bg-dark-green rounded-3xl p-6 shadow-lg border-2 border-[#c9a86c] lg:min-h-[156px] xl:min-h-1 ${index === 2 ? 'lg:min-h-[181px] xl:min-h-[156px]' : ''}`}>
                                         <p className="text-sm md:text-base leading-relaxed whitespace-pre-line">
                                             {item.content}
                                         </p>

@@ -80,36 +80,36 @@ const Section8 = () => {
                             <div className="flex space-x-2 2xl:space-x-8 justify-between lg:justify-start">
                                 <div className="flex items-center gap-3">
                                     <Image src="/images/section8/1.png" width={20} height={20} alt="Flow Diagram" className="w-5 2xl:h-full 2xl:w-auto" />
-                                    <p className="text-white text-xs md:text-lg 2xl:text-xl text-center">
+                                    <p className="text-white text-xs md:text-lg xl:text-xl text-center">
                                         Giới thiệu NOBLECO:<br />
                                         câu chuyện hình thành, triết lý, sứ mệnh.
                                     </p>
                                 </div>
                                 <span className="flex items-center text-white text-xl md:text-5xl">→</span>
                                 <div className="flex items-center">
-                                    <p className="text-white text-center text-xs md:text-lg 2xl:text-xl">
+                                    <p className="text-white text-center text-xs md:text-lg xl:text-xl">
                                         Giới thiệu giảng viên – phương pháp học tập.
                                     </p>
                                 </div>
                             </div>
-                            <div className="absolute top-7 2xl:top-15 right-20 2xl:right-20 hidden lg:block">
-                                <Image src="/images/section8/4.png" width={300} height={58} alt="Flow Diagram" className="w-50" />
+                            <div className="absolute top-7 2xl:top-15 right-20 xl:right-35 hidden lg:block">
+                                <Image src="/images/section8/4.png" width={300} height={58} alt="Flow Diagram" className="w-50 xl:w-70" />
                             </div>
-                            <div className="absolute bottom-5 2xl:bottom-12 right-20 hidden lg:block">
-                                <Image src="/images/section8/5.png" width={280} height={69} alt="Flow Diagram" className="w-50" />
+                            <div className="absolute bottom-5 xl:bottom-3 2xl:bottom-12 right-20 xl:right-35 hidden lg:block">
+                                <Image src="/images/section8/5.png" width={280} height={69} alt="Flow Diagram" className="w-50 xl:w-65" />
                             </div>
                             <span className="text-white text-xl absolute top-10 right-20 md:right-30 lg:hidden">↓</span>
                             <span className="text-white text-xl absolute top-28 md:top-33 right-20 md:right-30 lg:hidden">↓</span>
                             {/* Right column */}
                             <div className="flex space-x-2 2xl:space-x-8 mt-20 2xl:mt-25 justify-between lg:justify-start">
                                 <div className="flex items-center">
-                                    <p className="text-white text-xs md:text-lg 2xl:text-xl text-center">
+                                    <p className="text-white text-xs md:text-lg xl:text-xl text-center">
                                         Chia team - hoạt động nhóm - định hướng học tập
                                     </p>
                                 </div>
                                 <span className="flex items-center text-white text-xl md:text-5xl">←</span>
                                 <div className="flex items-center gap-3">
-                                    <p className="text-white text-xs md:text-lg 2xl:text-xl text-center">
+                                    <p className="text-white text-xs md:text-lg xl:text-xl text-center">
                                         Giá trị học viên nhận được:<br />
                                         kiến thức – cơ hội – hệ sinh thái hỗ trợ.trợ.
                                     </p>
@@ -118,8 +118,8 @@ const Section8 = () => {
                         </div>
 
                         {/* Right side box */}
-                        <div className="absolute top-20 right-0 2xl:-right-20 2xl:top-25">
-                            <p className="text-white text-xs md:text-lg 2xl:text-xl text-center">
+                        <div className="absolute top-20 right-0 2xl:top-30">
+                            <p className="text-white text-xs md:text-lg xl:text-xl text-center">
                                 Kiến thức tổng quan ngành trang sức <br /> & xu hướng tiêu dùng.
                             </p>
                         </div>
