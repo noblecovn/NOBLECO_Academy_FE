@@ -244,21 +244,21 @@ const Section11 = () => {
                             {/* Checklist */}
                             <div className="space-y-6 max-w-lg">
                                 <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
-                                    <Image src="/images/section8/7.png" width={32} height={32} alt="Check" className="flex-shrink-0 mt-1" />
+                                    <Image src="/images/section8/7.png" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
                                     <div className="text-sm text-deep-green">
                                         <p>Khẳng định năng lực chuyên môn. Chứng chỉ xác nhận bạn đã nắm vững kiến thức trang sức, kỹ năng tư vấn cao cấp, quy trình bán hàng xa xỉ và phong thái chuyên nghiệp, giúp bạn nổi bật so với ứng viên phổ thông.</p>
                                     </div>
                                 </div>
 
                                 <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
-                                    <Image src="/images/section8/7.png" width={32} height={32} alt="Check" className="flex-shrink-0 mt-1" />
+                                    <Image src="/images/section8/7.png" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
                                     <div className="text-sm text-deep-green">
                                         <p>Thành thạo kỹ năng tư vấn & bán hàng trong ngành trang sức cao cấp. Khả năng tiếp cận, phân tích nhu cầu và thuyết phục khách hàng dựa trên giá trị sản phẩm.</p>
                                     </div>
                                 </div>
 
                                 <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
-                                    <Image src="/images/section8/7.png" width={32} height={32} alt="Check" className="flex-shrink-0 mt-1" />
+                                    <Image src="/images/section8/7.png" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
                                     <div className="text-sm text-deep-green">
                                         <p className="font-bold">Lợi thế cạnh tranh vượt trội khi thăng tiến</p>
                                         <p>Chứng chỉ giúp bạn tăng độ tin cậy khi xét thăng cấp lên:</p>

@@ -94,7 +94,7 @@ const Section8 = () => {
                                 <span className="text-white text-xl 2xl:text-5xl absolute top-10 right-20 2xl:hidden">↓</span>
                                 <span className="text-white text-xl 2xl:text-5xl absolute top-28 right-20 2xl:hidden">↓</span>
                                 <div className="absolute top-15 right-20 hidden 2xl:block">
-                                    <Image src="/images/section8/4.png" width={300} height={20} alt="Flow Diagram" />
+                                    <Image src="/images/section8/4.png" width={300} height={58} alt="Flow Diagram" />
                                 </div>
                             </div>
 
@@ -113,7 +113,7 @@ const Section8 = () => {
                                     </p>
                                 </div>
                                 <div className="absolute bottom-12 right-20 hidden 2xl:block">
-                                    <Image src="/images/section8/5.png" width={280} height={20} alt="Flow Diagram" />
+                                    <Image src="/images/section8/5.png" width={280} height={69} alt="Flow Diagram" />
                                 </div>
                             </div>
                         </div>
@@ -234,21 +234,21 @@ const Section8 = () => {
                             {/* Checklist */}
                             <div className="space-y-6 max-w-lg">
                                 <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
-                                    <Image src="/images/section8/7.png" width={32} height={32} alt="Check" className="flex-shrink-0 mt-1" />
+                                    <Image src="/images/section8/7.png" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
                                     <p className="text-sm text-deep-green">
                                         Nắm vững kiến thức kim cương & trang sức. Bao gồm cấu trúc, phân loại, tiêu chuẩn GIA, cách đọc – phân tích – diễn giải báo cáo kiểm định.
                                     </p>
                                 </div>
 
                                 <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
-                                    <Image src="/images/section8/7.png" width={32} height={32} alt="Check" className="flex-shrink-0 mt-1" />
+                                    <Image src="/images/section8/7.png" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
                                     <p className="text-sm text-deep-green">
                                         Thành thạo kỹ năng tư vấn & bán hàng trong ngành trang sức cao cấp. Khả năng tiếp cận, phân tích nhu cầu và thuyết phục khách hàng dựa trên giá trị sản phẩm.
                                     </p>
                                 </div>
 
                                 <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
-                                    <Image src="/images/section8/7.png" width={32} height={32} alt="Check" className="flex-shrink-0 mt-1" />
+                                    <Image src="/images/section8/7.png" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
                                     <p className="text-sm text-deep-green">
                                         Có đủ chuyên môn để làm việc tại showroom, boutique hoặc ngành bán lẻ cao cấp. Chứng chỉ giúp học viên được đánh giá cao trong quy trình tuyển dụng.
                                     </p>

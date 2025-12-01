@@ -31,7 +31,7 @@ const Section6 = () => {
                         <ul className="space-y-4 text-base sm:text-lg mt-4">
                             {highlights.map((item) => (
                                 <li key={item} className="flex items-start gap-3">
-                                    <Image src="/images/section6/1.png" alt="check" width={24} height={24} className="object-cover" />
+                                    <Image src="/images/section6/1.png" alt="check" width={24} height={30} className="object-cover" />
                                     <span>{item}</span>
                                 </li>
                             ))}

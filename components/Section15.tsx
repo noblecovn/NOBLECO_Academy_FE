@@ -36,14 +36,6 @@ const Section15 = () => {
 
     return (
         <section className="relative w-full pt-16 2xl:py-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a] overflow-hidden">
-            <Image
-                src="/images/section15/2.png"
-                alt="Background pattern"
-                width={293}
-                height={398}
-                priority
-                className="object-cover absolute bottom-0 left-0"
-            />
             <div className="relative z-10">
                 {/* Title */}
                 <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">
@@ -64,9 +56,11 @@ const Section15 = () => {
                                             {item.title}
                                         </div>
                                     </div>
-                                    <p className="text-sm md:text-base leading-relaxed whitespace-pre-line">
-                                        {item.content}
-                                    </p>
+                                    <div className={`bg-dark-green rounded-3xl p-6 shadow-lg border-2 border-[#c9a86c] ${index === 2 ? 'min-h-[156px]' : ''}`}>
+                                        <p className="text-sm md:text-base leading-relaxed whitespace-pre-line">
+                                            {item.content}
+                                        </p>
+                                    </div>
                                 </div>
                             ))}
                         </div>
@@ -79,9 +73,11 @@ const Section15 = () => {
                                             {item.title}
                                         </div>
                                     </div>
-                                    <p className="text-sm md:text-base leading-relaxed whitespace-pre-line">
-                                        {item.content}
-                                    </p>
+                                    <div className={`bg-dark-green rounded-3xl p-6 shadow-lg border-2 border-[#c9a86c] ${index === 2 ? 'min-h-[156px]' : ''}`}>
+                                        <p className="text-sm md:text-base leading-relaxed whitespace-pre-line">
+                                            {item.content}
+                                        </p>
+                                    </div>
                                 </div>
                             ))}
                         </div>

@@ -43,7 +43,7 @@ const TrainingProgramSection = () => {
                             className={`relative bg-[#0e392b] border border-[#2d5a4a] rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-transform duration-300 flex flex-col ${index === 0 ? 'md:col-span-2' : index === 1 ? 'md:col-span-3' : 'md:col-span-2'}`}
                         >
                             {/* Image */}
-                            <div className="relative w-full h-48 md:h-56 2xl:h-96">
+                            <div className="relative w-full h-48 md:h-56">
                                 <Image
                                     src={program.image}
                                     alt={program.title}
@@ -68,13 +68,16 @@ const TrainingProgramSection = () => {
                                 </div>
 
                                 {/* Button */}
-                                <div className="text-center mt-auto pt-10">
-                                    <a
-                                        href={program.href}
-                                        className="inline-block px-6 py-2 border border-white rounded-full text-white text-sm md:text-base font-medium hover:bg-white hover:text-[#0e392b] transition-colors duration-300"
-                                    >
-                                        TÌM HIỂU THÊM
-                                    </a>
+                                <div className="text-center mt-auto pt-10 flex justify-center">
+                                    <div className="rounded-full bg-gradient-to-t from-[#c9956b] via-[#eab788] to-[#ffe4c7] p-[2px] w-fit">
+
+                                        <a
+                                            href={program.href}
+                                            className="bg-[#0e392b] inline-block px-12 py-2 rounded-full text-white text-sm md:text-base font-medium"
+                                        >
+                                            TÌM HIỂU THÊM
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

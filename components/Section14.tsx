@@ -254,7 +254,7 @@ const Section14 = () => {
                             {/* Checklist */}
                             <div className="space-y-6 max-w-lg">
                                 <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
-                                    <Image src="/images/section8/7.png" width={32} height={32} alt="Check" className="flex-shrink-0 mt-1" />
+                                    <Image src="/images/section8/7.png" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
                                     <div className="text-sm text-deep-green">
                                         <p className="font-bold">Khẳng định vị thế chuyên gia trong ngành trang sức cao cấp:</p>
                                         <ul className="list-none mt-1">
@@ -266,7 +266,7 @@ const Section14 = () => {
                                 </div>
 
                                 <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
-                                    <Image src="/images/section8/7.png" width={32} height={32} alt="Check" className="flex-shrink-0 mt-1" />
+                                    <Image src="/images/section8/7.png" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
                                     <div className="text-sm text-deep-green">
                                         <p className="font-bold">Mở rộng cơ hội nghề nghiệp & thu nhập</p>
                                         <p>Có thể đảm nhiệm các vị trí cao cấp: Senior Stylist, Store Trainer, Product Specialist,...</p>

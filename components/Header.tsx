@@ -22,16 +22,16 @@ export function Header() {
   };
 
   return (
-    <header className="w-full sticky top-0 z-50 border-b border-[#D5DADF] bg-white px-4 py-4 text-[var(--deep-green)]">
+    <header className="w-full sticky top-0 z-50 border-b border-[#D5DADF] bg-white px-2 py-4 text-[var(--deep-green)]">
       <div className="mx-auto flex max-w-7xl items-center justify-between">
         <Link href="/" className="flex items-center gap-3" aria-label="Trang chủ NOBLECO Academy">
-          <Image src="/images/logo.png" alt="NOBLECO Academy" width={146} height={56} priority />
+          <Image src="/images/logo.png" alt="NOBLECO Academy" width={150} height={51} priority/>
         </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-10 text-[17px] font-semibold text-[#0E3D27]" aria-label="Điều hướng chính">
           <Link href="/" className="flex items-center gap-2 transition hover:text-[#2F6848]">
-            <Image src="/images/home.png" alt="" width={20} height={20} />
+            <Image src="/images/home.png" alt="" width={20} height={16} />
             Trang chủ
           </Link>
 
@@ -44,7 +44,7 @@ export function Header() {
               onClick={(e) => (e.currentTarget as HTMLElement).blur()}
             >
               Chương trình đào tạo
-              <Image src="/images/dropdown.png" alt="" width={16} height={16} />
+              <Image src="/images/dropdown.png" alt="" width={16} height={13} />
             </Link>
             {/* Bridge element để lấp khoảng trống giữa button và menu */}
             <div className="absolute left-0 right-0 top-full h-3" />
