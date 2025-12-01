@@ -111,7 +111,7 @@ const Section8 = () => {
                                 <div className="flex items-center gap-3">
                                     <p className="text-white text-xs md:text-lg xl:text-xl text-center">
                                         Giá trị học viên nhận được:<br />
-                                        kiến thức – cơ hội – hệ sinh thái hỗ trợ.trợ.
+                                        kiến thức – cơ hội – hệ sinh thái hỗ trợ.
                                     </p>
                                 </div>
                             </div>
