@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { ReactNode, useEffect, useState } from "react";
 
 const highlights: { title: ReactNode }[] = [
@@ -66,50 +67,54 @@ export default function IntroPopup() {
           }`}
       >
         <div className="relative w-full overflow-hidden rounded-[30px] bg-white">
-        <button
-          onClick={handleClose}
-          aria-label="Đóng popup"
-          className="absolute right-4 top-4 z-10 flex h-6 w-6 2xl:h-10 2xl:w-10 items-center justify-center rounded-full bg-white/80 text-emerald-900 shadow-md transition hover:bg-white"
-        >
-          ✕
-        </button>
+          <button
+            onClick={handleClose}
+            aria-label="Đóng popup"
+            className="absolute right-4 top-4 z-10 flex h-6 w-6 2xl:h-10 2xl:w-10 items-center justify-center rounded-full bg-white/80 text-emerald-900 shadow-md transition hover:bg-white"
+          >
+            ✕
+          </button>
 
-        <div className="relative w-full">
-          <div className="w-full overflow-hidden rounded-[28px] bg-white/95 text-center shadow-2xl">
-            <div className="bg-gradient-to-b from-[#87c5ab] to-[#0e392b] px-6 py-8 text-white md:px-10 md:py-10">
-              <h2 className="text-lg 2xl:text-2xl leading-snug md:text-3xl">
-                Trở thành Chuyên gia Trang sức <br /> chuẩn quốc tế cùng{" "}
-                <span className="font-bold">NOBLECO Academy</span>
-              </h2>
-            </div>
-
-            <div className="bg-white px-3 pb-8 pt-6 md:pb-10">
-              <div className="grid gap-6 text-left text-emerald-900 md:grid-cols-3">
-                {highlights.map((item, index) => (
-                  <div
-                    key={index}
-                    className={`flex flex-col gap-2 text-base md:text-lg lg:text-xl ${index < highlights.length - 1 ? "md:border-r md:pr-6" : ""
-                      }`}
-                  >
-                    <div className="font-medium text-deep-green text-justify-center">{item.title}</div>
-                  </div>
-                ))}
+          <div className="relative w-full">
+            <div className="w-full overflow-hidden rounded-[28px] bg-white/95 text-center shadow-2xl">
+              <div className="bg-gradient-to-b from-[#87c5ab] to-[#0e392b] px-6 py-8 text-white md:px-10 md:py-10">
+                <h2 className="text-lg 2xl:text-2xl leading-snug md:text-3xl">
+                  Trở thành Chuyên gia Trang sức <br /> chuẩn quốc tế cùng{" "}
+                  <span className="font-bold">NOBLECO Academy</span>
+                </h2>
               </div>
 
-              <button
-                onClick={() => {
-                  handleClose();
-                  setTimeout(() => {
-                    document.getElementById("chuong-trinh-dao-tao")?.scrollIntoView({ behavior: "smooth" });
-                  }, 250);
-                }}
-                className="cursor-pointer mt-8 inline-flex min-w-[220px] items-center justify-center rounded-full bg-gradient-to-b from-[#87c5ab] to-[#0e392b] px-8 py-3 text-base font-semibold uppercase text-white shadow-lg transition hover:bg-[#19563c]"
-              >
-                Tìm hiểu ngay
-              </button>
+              <div className="bg-white px-3 pb-8 pt-6 md:pb-10">
+                <div className="grid gap-6 text-left text-emerald-900 md:grid-cols-3">
+                  {highlights.map((item, index) => (
+                    <div
+                      key={index}
+                      className={`relative flex flex-col gap-2 text-base md:text-lg lg:text-xl justify-center items-center min-h-[200px]`}
+                    >
+                      <Image src="/images/introPopup/1.png" alt="Icon" width={200} height={253} className="absolute -top-10 left-1/2 -translate-x-1/2 pointer-events-none select-none" />
+                      <div className="relative z-10 font-medium text-white text-justify-center max-w-[150px]">{item.title}</div>
+                    </div>
+                  ))}
+                </div>
+                <div className="text-center mt-auto pt-10 flex justify-center">
+                  <div className="rounded-full bg-gradient-to-t from-[#c9956b] via-[#eab788] to-[#ffe4c7] p-[2px] w-fit">
+
+                    <button
+                      onClick={() => {
+                        handleClose();
+                        setTimeout(() => {
+                          document.getElementById("chuong-trinh-dao-tao")?.scrollIntoView({ behavior: "smooth" });
+                        }, 250);
+                      }}
+                      className="cursor-pointer bg-gradient-to-b from-[#87c5ab] to-[#0e392b] inline-block px-20 py-2 rounded-full text-white text-sm md:text-2xl font-bold"
+                    >
+                      TÌM HIỂU NGAY
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
     </div>

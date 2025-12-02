@@ -34,7 +34,7 @@ const ExpertSection = () => {
     return (
         <section id="giang-vien" className="relative w-full pt-16 2xl:py-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a] overflow-hidden">
             <Image
-                src="/images/section4/6.png"
+                src="/images/section4/1.png"
                 alt="Background pattern"
                 fill
                 priority
