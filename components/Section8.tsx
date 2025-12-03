@@ -56,27 +56,24 @@ const Section8 = () => {
     ];
 
     return (
-        <section className="w-full pb-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
+        <section className="w-full pb-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a]">
             {/* Title */}
-            <div className="text-center border-b border-t border-white py-12 flex flex-col">
+            {/* <div className="text-center border-b border-t border-white py-12 flex flex-col">
                 <h2 className="text-white text-2xl md:text-4xl 2xl:text-5xl font-bold tracking-wide">
                     NỘI DUNG ĐÀO TẠO
                 </h2>
-            </div>
+            </div> */}
 
             <div className="max-w-7xl mx-auto px-2 2xl:px-0">
-                {/* PHẦN 1 */}
-                <div className="my-12 flex flex-col items-center">
+                {/* <div className="my-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-2xl">
                         <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
                             PHẦN 1 — ĐỊNH HƯỚNG & HỘI THẢO NGÀNH (1 BUỔI)
                         </div>
                     </div>
 
-                    {/* Flow diagram */}
                     <div className="relative w-full 2xl:py-8">
                         <div className="grid grid-cols-1 gap-6">
-                            {/* Left column */}
                             <div className="flex space-x-2 2xl:space-x-8 justify-between lg:justify-start relative z-10">
                                 <div className="flex items-center gap-3">
                                     <div className="rounded-full bg-gradient-to-t from-[#c9956b] via-[#eab788] to-[#ffe4c7] p-1">
@@ -103,7 +100,6 @@ const Section8 = () => {
                             </div>
                             <span className="text-white text-xl absolute top-20 md:top-15 right-20 md:right-35 lg:hidden">↓</span>
                             <span className="text-white text-xl absolute top-45 md:top-40 right-20 md:right-35 lg:hidden">↓</span>
-                            {/* Right column */}
                             <div className="flex space-x-2 2xl:space-x-8 mt-30 2xl:mt-25 justify-between lg:justify-start">
                                 <div className="flex items-center w-1/2 md:w-auto">
                                     <div className="rounded-full bg-gradient-to-t from-[#c9956b] via-[#eab788] to-[#ffe4c7] p-1">
@@ -123,8 +119,6 @@ const Section8 = () => {
                                 </div>
                             </div>
                         </div>
-
-                        {/* Right side box */}
                         <div className="absolute top-30 md:top-25 right-0 2xl:top-30">
                             <div className="rounded-full bg-gradient-to-t from-[#c9956b] via-[#eab788] to-[#ffe4c7] p-1">
                                 <button className="relative px-12 py-1 text-sm tracking-wider rounded-full bg-[#0e392b] transition-all duration-300 shadow-lg">
@@ -134,8 +128,6 @@ const Section8 = () => {
                         </div>
                     </div>
                 </div>
-
-                {/* PHẦN 2 */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-2xl">
                         <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
@@ -165,15 +157,12 @@ const Section8 = () => {
                     </div>
                 </div>
 
-                {/* PHẦN 3 */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-2xl">
                         <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
                             PHẦN 3 — KỸ NĂNG TƯ VẤN & CHĂM SÓC KHÁCH HÀNG CAO CẤP (5 BUỔI)
                         </div>
                     </div>
-
-                    {/* First row - 3 cards */}
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
                         {phan3Sessions.slice(0, 3).map((session, index) => (
                             <div
@@ -194,8 +183,6 @@ const Section8 = () => {
                             </div>
                         ))}
                     </div>
-
-                    {/* Second row - 2 cards centered */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
                         {phan3Sessions.slice(3, 5).map((session, index) => (
                             <div
@@ -216,15 +203,14 @@ const Section8 = () => {
                             </div>
                         ))}
                     </div>
-                </div>
+                </div> */}
 
-                {/* PHẦN 4 */}
                 <div className="flex flex-col items-center">
-                    <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-12 max-w-2xl">
+                    {/* <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-12 max-w-2xl">
                         <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm  md:text-lg uppercase tracking-wide">
                             PHẦN 4 — TỔNG KẾT & TRAO CHỨNG CHỉ (1 BUỔI)
                         </div>
-                    </div>
+                    </div> */}
                     <div className="w-full grid grid-cols-1 items-start">
                         <p className="uppercase tracking-[0.2em] text-2xl text-white">CHỨNG CHỈ</p>
                         <h2 className="text-4xl 2xl:text-6xl font-medium uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">

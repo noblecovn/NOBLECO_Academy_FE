@@ -132,7 +132,7 @@ const Section16 = () => {
     };
 
     return (
-        <section className="w-full pb-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
+        <section className="w-full pb-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a]">
             <div className="max-w-7xl mx-auto px-2 2xl:px-0">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     {/* Left Column */}

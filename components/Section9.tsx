@@ -7,7 +7,7 @@ const Section9 = () => {
     ];
 
     return (
-        <section id="cap-do-2" className="w-full bg-gradient-to-t from-[#87c5ab] to-[#04241a]">
+        <section id="cap-do-2" className="w-full bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             <div className="">
                 <div className="grid grid-cols-1 lg:grid-cols-2">
                     {/* Khối nội dung */}

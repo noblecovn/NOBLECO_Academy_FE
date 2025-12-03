@@ -97,17 +97,16 @@ const Section14 = () => {
     ];
 
     return (
-        <section className="w-full pt-16 xl:pt-0 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
+        <section className="w-full pt-16 xl:pt-0 bg-gradient-to-t from-[#87c5ab] to-[#04241a]">
             {/* Title */}
-            <div className="text-center border-b border-t border-white py-12 flex flex-col">
+            {/* <div className="text-center border-b border-t border-white py-12 flex flex-col">
                 <h2 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold tracking-wide">
                     NỘI DUNG ĐÀO TẠO
                 </h2>
-            </div>
+            </div> */}
 
             <div className="max-w-7xl mx-auto 2xl:pt-12 px-2 2xl:px-0">
-                {/* PHẦN 1 - Kiến thức chuyên sâu và tiên tiến */}
-                <div className="mb-12 flex flex-col items-center">
+                {/* <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-3xl">
                         <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
                             PHẦN 1 — KIẾN THỨC CHUYÊN SÂU VÀ TIÊN TIẾN (5-6 BUỔI)
@@ -131,7 +130,6 @@ const Section14 = () => {
                     </div>
                 </div>
 
-                {/* PHẦN 2 - Kỹ năng phong cách và tư vấn cá nhân hóa */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-3xl">
                         <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
@@ -156,7 +154,6 @@ const Section14 = () => {
                     </div>
                 </div>
 
-                {/* PHẦN 3 - Nghệ thuật kể chuyện thương hiệu */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-4xl">
                         <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
@@ -181,9 +178,7 @@ const Section14 = () => {
                     </div>
                 </div>
 
-                {/* PHẦN 4 & 5 - Grid 2 cột */}
                 <div className="mb-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    {/* PHẦN 4 - Huấn luyện và lãnh đạo */}
                     <div className="flex flex-col items-center">
                         <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8">
                             <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
@@ -208,7 +203,6 @@ const Section14 = () => {
                         </div>
                     </div>
 
-                    {/* PHẦN 5 - Chiến lược kinh doanh */}
                     <div className="flex flex-col items-center">
                         <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8">
                             <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
@@ -232,7 +226,7 @@ const Section14 = () => {
                             ))}
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 {/* CHỨNG CHỈ Section */}
                 <div className="flex flex-col">
