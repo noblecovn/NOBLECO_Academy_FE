@@ -32,7 +32,7 @@ const ExpertSection = () => {
     ]
 
     return (
-        <section id="giang-vien" className="relative w-full pt-16 xl:pt-0 bg-gradient-to-b from-[#87c5ab] to-[#04241a] overflow-hidden">
+        <section id="giang-vien" className="relative w-full bg-gradient-to-b from-[#87c5ab] to-[#04241a] overflow-hidden">
             <Image
                 src="/images/section4/1.png"
                 alt="Background pattern"

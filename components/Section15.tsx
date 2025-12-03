@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const Section15 = () => {
     const commitments = [
         {
@@ -35,7 +33,7 @@ const Section15 = () => {
     ];
 
     return (
-        <section className="relative w-full pt-16 2xl:py-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a] overflow-hidden">
+        <section className="relative w-full py-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a] overflow-hidden">
             <div className="relative z-10">
                 {/* Title */}
                 <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">

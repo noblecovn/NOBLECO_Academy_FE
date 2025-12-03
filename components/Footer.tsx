@@ -9,7 +9,7 @@ export function Footer() {
         {/* Left Section - Contact Info */}
         <div className="flex flex-col gap-4">
           <h3 className="text-lg font-medium italic">Thông tin liên hệ</h3>
-          
+
           <div className="flex flex-col md:flex-row gap-4 md:gap-8">
             {/* Address 1 */}
             <div className="flex items-start gap-3">
@@ -43,6 +43,27 @@ export function Footer() {
 
             {/* Address 2 */}
             <div className="flex items-start gap-3">
+              <div className="md:hidden">
+                <svg
+                  className="w-5 h-5 mt-0.5 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+              </div>
               <div className="text-sm">
                 <p>7A/3 Nguyễn Thị Minh Khai, Phường Sài Gòn,</p>
                 <p>TP.Hồ Chí Minh</p>
