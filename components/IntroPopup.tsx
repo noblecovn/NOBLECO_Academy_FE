@@ -89,10 +89,10 @@ export default function IntroPopup() {
                   {highlights.map((item, index) => (
                     <div
                       key={index}
-                      className={`relative flex flex-col gap-2 text-base md:text-lg lg:text-xl justify-center items-center min-h-[200px]`}
+                      className={`relative flex flex-col gap-2 text-base md:text-lg lg:text-xl justify-center items-center min-h-[120px] md:min-h-[200px]`}
                     >
-                      <Image src="/images/introPopup/1.png" alt="Icon" width={200} height={253} className="absolute -top-10 left-1/2 -translate-x-1/2 pointer-events-none select-none" />
-                      <div className="relative z-10 font-medium text-white text-justify-center max-w-[150px]">{item.title}</div>
+                      <Image src="/images/introPopup/1.png" alt="Icon" width={200} height={253} className="w-[120px] md:w-auto absolute -top-10 left-1/2 -translate-x-1/2 pointer-events-none select-none" />
+                      <div className="text-xs md:text-base relative z-10 font-medium text-white text-center md:text-justify-center max-w-[90px] md:max-w-[150px]">{item.title}</div>
                     </div>
                   ))}
                 </div>

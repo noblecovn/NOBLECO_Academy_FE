@@ -97,15 +97,15 @@ const Section14 = () => {
     ];
 
     return (
-        <section className="w-full pt-16 2xl:py-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
+        <section className="w-full pt-16 xl:pt-0 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             {/* Title */}
-            <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">
+            <div className="text-center border-b border-t border-white py-12 flex flex-col">
                 <h2 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold tracking-wide">
                     NỘI DUNG ĐÀO TẠO
                 </h2>
             </div>
 
-            <div className="max-w-7xl mx-auto 2xl:pt-8 px-2 2xl:px-0">
+            <div className="max-w-7xl mx-auto 2xl:pt-12 px-2 2xl:px-0">
                 {/* PHẦN 1 - Kiến thức chuyên sâu và tiên tiến */}
                 <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-3xl">
@@ -235,7 +235,7 @@ const Section14 = () => {
                 </div>
 
                 {/* CHỨNG CHỈ Section */}
-                <div className="pt-12 flex flex-col">
+                <div className="flex flex-col">
                     <div className="w-full grid grid-cols-1 items-start mb-6">
                         <p className="uppercase tracking-[0.2em] text-2xl text-white">CHỨNG CHỈ</p>
                         <h2 className="text-4xl sm:text-6xl font-medium uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">

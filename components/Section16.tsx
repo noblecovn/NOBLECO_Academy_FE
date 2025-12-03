@@ -2,6 +2,9 @@
 
 import { useState, useEffect } from "react";
 
+// API endpoint - có thể thay đổi thành biến môi trường
+const API_ENDPOINT = process.env.NEXT_PUBLIC_API_URL || "https://api.noblecovn.com/api/register";
+
 const Section16 = () => {
     const [formData, setFormData] = useState({
         name: "",
@@ -20,6 +23,12 @@ const Section16 = () => {
         minutes: 0,
         seconds: 0,
     });
+
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<{
+        type: "success" | "error" | null;
+        message: string;
+    }>({ type: null, message: "" });
 
     useEffect(() => {
         // Get or set target date in localStorage
@@ -71,14 +80,59 @@ const Section16 = () => {
         });
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        console.log("Form submitted:", formData);
-        // Handle form submission
+
+        // Reset status
+        setSubmitStatus({ type: null, message: "" });
+        setIsSubmitting(true);
+
+        try {
+            const response = await fetch(API_ENDPOINT, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                setSubmitStatus({
+                    type: "success",
+                    message: "Đăng ký thành công! Chúng tôi sẽ liên hệ với bạn trong 24h làm việc.",
+                });
+                // Reset form sau khi submit thành công
+                setFormData({
+                    name: "",
+                    email: "",
+                    phoneNumber: "",
+                    dateOfBirth: "",
+                    levelOfInterest: "",
+                    desire: "",
+                    time: "",
+                    referral: "",
+                });
+            } else {
+                setSubmitStatus({
+                    type: "error",
+                    message: data.message || "Đã có lỗi xảy ra. Vui lòng thử lại sau.",
+                });
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            setSubmitStatus({
+                type: "error",
+                message: "Không thể kết nối đến server. Vui lòng kiểm tra kết nối internet và thử lại.",
+            });
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
-        <section className="w-full py-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
+        <section className="w-full pb-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             <div className="max-w-7xl mx-auto px-2 2xl:px-0">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     {/* Left Column */}
@@ -117,13 +171,16 @@ const Section16 = () => {
                                 value={formData.referral}
                                 onChange={handleChange}
                                 placeholder="Họ tên - SĐT - email của nhóm bạn:"
-                                className="w-full bg-mint text-deep-green font-medium placeholder:font-medium border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:border-[#0a5c3f] resize-none placeholder:text-deep-green"
+                                disabled={isSubmitting}
+                                className="w-full bg-mint text-deep-green font-medium placeholder:font-medium border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:border-[#0a5c3f] resize-none placeholder:text-deep-green disabled:opacity-50 disabled:cursor-not-allowed"
                             />
                         </div>
 
                         {/* Privacy Notice */}
                         <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                            <h4 className="text-white font-bold text-center mb-3">Cam kết bảo mật thông tin</h4>
+                            <h2 className="text-2xl md:text-3xl text-center font-medium uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
+                                Cam kết bảo mật thông tin
+                            </h2>
                             <p className="text-white text-sm text-center leading-relaxed">
                                 Khi tham gia đào tạo, bạn đồng ý rằng các nội dung trong chương trình đào tạo là tài sản trí tuệ của NOBLECO Academy. Việc chia sẻ tài liệu ra ngoài là xâm phạm quyền sở hữu trí tuệ và có thể phải chịu mọi trách nhiệm trước pháp luật theo điều 225, 226 bộ luật hình sự.
                             </p>
@@ -145,6 +202,18 @@ const Section16 = () => {
                             Vui lòng điền đầy đủ các thông tin dưới đây. Chúng tôi sẽ liên lạc lại trong 24h làm việc.
                         </p>
 
+                        {/* Status Message */}
+                        {submitStatus.type && (
+                            <div
+                                className={`mb-4 p-4 rounded-lg ${submitStatus.type === "success"
+                                        ? "bg-green-100 text-green-800 border border-green-300"
+                                        : "bg-red-100 text-red-800 border border-red-300"
+                                    }`}
+                            >
+                                <p className="text-sm font-medium">{submitStatus.message}</p>
+                            </div>
+                        )}
+
                         <form onSubmit={handleSubmit} className="space-y-2">
                             <input
                                 type="text"
@@ -152,7 +221,9 @@ const Section16 = () => {
                                 placeholder="Họ tên của bạn:"
                                 value={formData.name}
                                 onChange={handleChange}
-                                className="w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f]"
+                                required
+                                disabled={isSubmitting}
+                                className="w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f] disabled:opacity-50 disabled:cursor-not-allowed"
                             />
 
                             <input
@@ -161,25 +232,30 @@ const Section16 = () => {
                                 placeholder="Email:"
                                 value={formData.email}
                                 onChange={handleChange}
-                                className="w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f]"
+                                required
+                                disabled={isSubmitting}
+                                className="w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f] disabled:opacity-50 disabled:cursor-not-allowed"
                             />
 
                             <input
                                 type="tel"
                                 name="phoneNumber"
-                                placeholder="Số điện thoại:" 
+                                placeholder="Số điện thoại:"
                                 value={formData.phoneNumber}
                                 onChange={handleChange}
-                                className="w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f]"
+                                required
+                                disabled={isSubmitting}
+                                className="w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f] disabled:opacity-50 disabled:cursor-not-allowed"
                             />
 
                             <input
                                 type="text"
                                 name="dateOfBirth"
-                                placeholder="Năm sinh:" 
+                                placeholder="Năm sinh:"
                                 value={formData.dateOfBirth}
                                 onChange={handleChange}
-                                className="w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f]"
+                                disabled={isSubmitting}
+                                className="w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f] disabled:opacity-50 disabled:cursor-not-allowed"
                             />
 
                             <div>
@@ -188,7 +264,9 @@ const Section16 = () => {
                                     name="levelOfInterest"
                                     value={formData.levelOfInterest}
                                     onChange={handleChange}
-                                    className="w-full font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f] bg-mint text-deep-green appearance-none cursor-pointer"
+                                    required
+                                    disabled={isSubmitting}
+                                    className="w-full font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f] bg-mint text-deep-green appearance-none cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
                                     style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%230a5c3f'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 1rem center', backgroundSize: '1rem' }}
                                 >
                                     <option value=""></option>
@@ -205,7 +283,9 @@ const Section16 = () => {
                                     name="desire"
                                     value={formData.desire}
                                     onChange={handleChange}
-                                    className="w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f]"
+                                    required
+                                    disabled={isSubmitting}
+                                    className="w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f] disabled:opacity-50 disabled:cursor-not-allowed"
                                 />
                             </div>
 
@@ -216,16 +296,18 @@ const Section16 = () => {
                                     name="time"
                                     value={formData.time}
                                     onChange={handleChange}
-                                    className="w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f]"
+                                    disabled={isSubmitting}
+                                    className="w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f] disabled:opacity-50 disabled:cursor-not-allowed"
                                 />
                             </div>
 
                             <div className="flex justify-center pt-6">
                                 <button
                                     type="submit"
-                                    className="bg-[#ed1c24] hover:bg-red-700 text-white font-bold text-xl px-16 py-3 rounded-full transition-all duration-300 shadow-lg"
+                                    disabled={isSubmitting}
+                                    className="bg-[#ed1c24] hover:bg-red-700 text-white font-bold text-xl px-16 py-3 rounded-full transition-all duration-300 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-[#ed1c24]"
                                 >
-                                    ĐĂNG KÝ
+                                    {isSubmitting ? "ĐANG GỬI..." : "ĐĂNG KÝ"}
                                 </button>
                             </div>
                         </form>

@@ -56,17 +56,17 @@ const Section8 = () => {
     ];
 
     return (
-        <section className="w-full py-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
+        <section className="w-full pb-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             {/* Title */}
-            <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">
+            <div className="text-center border-b border-t border-white py-12 flex flex-col">
                 <h2 className="text-white text-2xl md:text-4xl 2xl:text-5xl font-bold tracking-wide">
                     NỘI DUNG ĐÀO TẠO
                 </h2>
             </div>
 
-            <div className="max-w-7xl mx-auto pt-8 px-2 2xl:px-0">
+            <div className="max-w-7xl mx-auto px-2 2xl:px-0">
                 {/* PHẦN 1 */}
-                <div className="mb-12 flex flex-col items-center">
+                <div className="my-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-2xl">
                         <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm md:text-lg uppercase tracking-wide">
                             PHẦN 1 — ĐỊNH HƯỚNG & HỘI THẢO NGÀNH (1 BUỔI)
@@ -220,7 +220,7 @@ const Section8 = () => {
 
                 {/* PHẦN 4 */}
                 <div className="flex flex-col items-center">
-                    <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 2xl:mb-16 max-w-2xl">
+                    <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-12 max-w-2xl">
                         <div className="p-1 text-white bg-gray-orange rounded-full font-bold text-sm  md:text-lg uppercase tracking-wide">
                             PHẦN 4 — TỔNG KẾT & TRAO CHỨNG CHỉ (1 BUỔI)
                         </div>

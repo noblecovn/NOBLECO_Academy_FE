@@ -87,7 +87,7 @@ const Section11 = () => {
     ];
 
     return (
-        <section className="w-full pt-16 2xl:py-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a]">
+        <section className="w-full pt-16 2xl:pt-0 bg-gradient-to-t from-[#87c5ab] to-[#04241a]">
             {/* Title */}
             <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">
                 <h2 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold tracking-wide">

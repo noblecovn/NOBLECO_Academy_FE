@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="w-full bg-gradient-to-t from-[#87c5ab] to-[#04241a] text-white py-6 px-4 md:px-8">
+    <footer className="w-full bg-[#04241a] text-white py-6 px-4 md:px-8">
       <div className="mx-auto max-w-7xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         {/* Left Section - Contact Info */}
         <div className="flex flex-col gap-4">

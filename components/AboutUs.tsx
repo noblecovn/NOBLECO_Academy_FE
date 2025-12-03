@@ -1,16 +1,13 @@
+import Image from "next/image";
 const AboutUs = () => {
     return (
         <section
-        className="relative w-full py-16 2xl:py-24 bg-gradient-to-t from-[#87c5ab] to-[#04241a]"
+        className="relative w-full py-16 2xl:py-0 bg-white"
       >
         {/* Background image chỉ hiển thị trên md trở lên */}
-        <div 
-          className="hidden lg:block absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/images/bg-1.png')" }}
-        />
-        <div className="container mx-auto max-w-7xl px-2 2xl:px-0 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
-            <div className="text-white flex flex-col gap-10">
+        <div className="">
+          <div className="grid lg:grid-cols-2 gap-8 items-start">
+            <div className="py-18 text-deep-green flex flex-col gap-10 order-0 max-w-lg mx-auto" id="text-content">
               <h1 className="text-4xl md:text-5xl font-medium uppercase tracking-tight">
                 NOBLECO ACADEMY
               </h1>
@@ -33,7 +30,9 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-            <div></div>
+            <div className="order-1 relative h-full">
+              <Image src="/images/about-us/4.jpg" alt="About Us" fill className="" />
+            </div>
           </div>
         </div>
       </section>
