@@ -13,6 +13,7 @@ import Section15 from "@/components/Section15";
 import Section16 from "@/components/Section16";
 import IntroPopup from "@/components/IntroPopup";
 import AboutUs from "@/components/AboutUs";
+import Target from "@/components/Target";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
       </div>
 
       <AboutUs />
+      <Target />
       <Section1 />
       <Section2 />
       <Section3 />
