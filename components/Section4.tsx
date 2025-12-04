@@ -2,7 +2,10 @@
 
 import Image from "next/image"
 import Autoplay from "embla-carousel-autoplay"
-
+import { Cormorant_Garamond } from "next/font/google";
+const cormorantGaramond = Cormorant_Garamond({
+    subsets: ["vietnamese"],
+});
 import {
     Carousel,
     CarouselContent,
@@ -38,7 +41,7 @@ const ExpertSection = () => {
 
             <div className="relative z-10">
                 <div className="text-center py-12 border-b border-t border-white py-12 flex flex-col">
-                    <h2 className="text-white text-2xl md:text-4xl 2xl:text-5xl font-bold tracking-[0.1em]">
+                    <h2 className={`${cormorantGaramond.className} text-white text-2xl md:text-4xl 2xl:text-5xl font-bold`}>
                         GIẢNG VIÊN & CHUYÊN GIA
                     </h2>
                 </div>
@@ -67,7 +70,7 @@ const ExpertSection = () => {
 
                                                 </div>
                                                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 h-full flex items-end">
-                                                    <div className="w-full">
+                                                    <div>
                                                         <Image
                                                             src={expert.image}
                                                             alt={expert.name}
@@ -76,7 +79,7 @@ const ExpertSection = () => {
                                                             className="object-cover w-full h-full"
                                                         />
                                                     </div>
-                                                    <div className="w-full text-center lg:text-left space-y-4">
+                                                    <div className="text-center lg:text-left space-y-4 w-full">
                                                         <div className="border-b border-white">
                                                             <h3 className="text-2xl md:text-5xl font-semibold leading-tight bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
                                                                 {expert.name}

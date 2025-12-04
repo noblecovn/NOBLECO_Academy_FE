@@ -1,5 +1,8 @@
 import Image from "next/image";
-
+import { Cormorant_Garamond } from "next/font/google";
+const cormorantGaramond = Cormorant_Garamond({
+    subsets: ["vietnamese"],
+});
 const Section9 = () => {
     const highlights = [
         "Nắm vững kiến thức chuyên sâu về kim cương, đá quý và trang sức.",
@@ -9,8 +12,8 @@ const Section9 = () => {
     return (
         <section id="cap-do-2" className="w-full bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             <div className="w-full flex flex-col items-center justify-center border-b border-t border-white py-6">
-                <span className="uppercase tracking-[0.2em] text-3xl font-bold text-white w-fit">Cấp độ 2</span>
-                <h2 className="text-4xl 2xl:text-7xl font-bold uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
+                <span className={`${cormorantGaramond.className} uppercase text-3xl font-bold text-white w-fit`}>Cấp độ <span className="text-5xl">2</span></span>
+                <h2 className={`${cormorantGaramond.className} text-4xl 2xl:text-7xl font-bold uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent`}>
                     Senior Jewelry Consultant
                 </h2>
             </div>

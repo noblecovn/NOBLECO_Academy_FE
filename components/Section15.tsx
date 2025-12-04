@@ -1,3 +1,7 @@
+import { Cormorant_Garamond } from "next/font/google";
+const cormorantGaramond = Cormorant_Garamond({
+    subsets: ["vietnamese"],
+});
 const Section15 = () => {
     const commitments = [
         {
@@ -37,7 +41,7 @@ const Section15 = () => {
             <div className="relative z-10">
                 {/* Title */}
                 <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">
-                    <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide">
+                    <h2 className={`${cormorantGaramond.className} text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide`}>
                         CAM KẾT ĐỒNG HÀNH TỪ NOBLECO
                     </h2>
                 </div>
