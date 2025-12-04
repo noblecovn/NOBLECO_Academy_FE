@@ -14,7 +14,7 @@ const Section12 = () => {
         <section id="cap-do-3" className="w-full pt-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             <div className="w-full flex flex-col items-center justify-center border-b border-t border-white py-6">
                 <span className={`${cormorantGaramond.className} uppercase text-3xl font-bold text-white w-fit`}>Cấp độ <span className="text-5xl">3</span></span>
-                <h2 className={`${cormorantGaramond.className} text-4xl 2xl:text-7xl font-bold uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent`}>
+                <h2 className={`${cormorantGaramond.className} text-center text-4xl 2xl:text-7xl font-bold uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent`}>
                     Master Jewelry Stylist
                 </h2>
             </div>
@@ -29,7 +29,7 @@ const Section12 = () => {
                             Trở thành chuyên gia thực thụ về:
                         </p>
 
-                        <ul className="space-y-4 text-base sm:text-lg">
+                        <ul className="space-y-4 text-lg">
                             {highlights.map((item, index) => (
                                 <li key={item} className="flex items-start gap-3">
                                     <Image src="/images/section6/1.png" alt="check" width={24} height={30} className="object-cover" />
@@ -54,7 +54,7 @@ const Section12 = () => {
                             alt="Master Jewelry Stylist"
                             width={873}
                             height={686}
-                            className="object-cover w-full h-full"
+                            className="object-cover w-full h-[560px]"
                             priority
                         />
                     </div>

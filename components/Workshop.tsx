@@ -23,7 +23,7 @@ const WorkshopSection = () => {
         <section id="workshop" className="w-full pt-16 min-h-fit bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             <div className="overflow-hidden shadow-2xl bg-mint">
                 {/* Header */}
-                <div className="bg-gradient-to-r from-[#4f8b6f] to-[#2e5d49] text-center py-10 px-4">
+                <div className="bg-gradient-to-r from-[#4f8b6f] to-[#2e5d49] text-center py-6 px-4">
                     <h2 className={`${cormorantGaramond.className} text-white text-2xl md:text-4xl 2xl:text-5xl font-bold`}>
                         WORKSHOP
                     </h2>

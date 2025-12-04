@@ -13,7 +13,7 @@ const Section9 = () => {
         <section id="cap-do-2" className="w-full bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             <div className="w-full flex flex-col items-center justify-center border-b border-t border-white py-6">
                 <span className={`${cormorantGaramond.className} uppercase text-3xl font-bold text-white w-fit`}>Cấp độ <span className="text-5xl">2</span></span>
-                <h2 className={`${cormorantGaramond.className} text-4xl 2xl:text-7xl font-bold uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent`}>
+                <h2 className={`${cormorantGaramond.className} text-center text-4xl 2xl:text-7xl font-bold uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent`}>
                     Senior Jewelry Consultant
                 </h2>
             </div>
@@ -21,17 +21,11 @@ const Section9 = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2">
                     {/* Khối nội dung */}
                     <div className="p-2 2xl:p-12 flex flex-col gap-6 text-white justify-center">
-                        {/* <div>
-                            <p className="uppercase tracking-[0.2em] text-lg sm:text-xl text-white/80">Cấp độ 2</p>
-                            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-medium uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
-                                Senior Jewelry Consultant
-                            </h2>
-                        </div> */}
                         <div className="inline-flex w-full items-center justify-center bg-gradient-to-r from-[#be945f] to-[#fee08b] text-white font-semibold text-center text-xs md:text-base py-3 px-6 rounded-full shadow-lg">
                             Nâng tầm kỹ năng & Trở thành Chuyên viên Cao cấp thực thụ
                         </div>
 
-                        <ul className="space-y-4 text-base sm:text-lg mt-4">
+                        <ul className="space-y-4 text-lg mt-4">
                             {highlights.map((item) => (
                                 <li key={item} className="flex items-start gap-3">
                                     <Image src="/images/section6/1.png" alt="check" width={24} height={30} className="object-cover" />
@@ -56,7 +50,7 @@ const Section9 = () => {
                             alt="Senior Jewelry Consultant"
                             width={885}
                             height={686}
-                            className="object-cover w-full h-full"
+                            className="object-cover w-full h-[560px]"
                             priority
                         />
                     </div>

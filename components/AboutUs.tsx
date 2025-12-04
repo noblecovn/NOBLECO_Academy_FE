@@ -1,7 +1,7 @@
 import Image from "next/image";
 const AboutUs = () => {
   return (
-    <section
+    <section id="thong-tin-nobleco"
       className="relative w-full bg-white"
     >
       {/* Background image chỉ hiển thị trên md trở lên */}

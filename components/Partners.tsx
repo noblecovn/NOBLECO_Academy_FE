@@ -1,5 +1,8 @@
 import Image from "next/image";
-
+import { Cormorant_Garamond } from "next/font/google";
+const cormorantGaramond = Cormorant_Garamond({
+    subsets: ["vietnamese"],
+});
 const PartnersAndTestimonialsSection = () => {
     const partners = [
         { name: "SJC", subtitle: "Saigon Jewelry Company", image: "/images/section5/1.png" },
@@ -32,13 +35,13 @@ const PartnersAndTestimonialsSection = () => {
     return (
         <section className="w-full pt-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a] px-2 2xl:px-0">
             <div className="max-w-7xl mx-auto overflow-hidden">
-                <div className="grid grid-cols-1 lg:grid-cols-2  items-stretch">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0 items-stretch">
                     {/* Partners */}
                     <div className="pr-0 lg:pr-16 flex flex-col h-full">
-                        <p className="text-2xl tracking-[0.2em] uppercase text-white">
+                        <p className={`${cormorantGaramond.className} text-2xl uppercase text-white`}>
                             MẠNG LƯỚI
                         </p>
-                        <h3 className="text-6xl text-white font-semibold tracking-[0.1em] leading-tight">
+                        <h3 className={`${cormorantGaramond.className} text-6xl text-white font-semibold leading-tight`}>
                             ĐỐI TÁC
                         </h3>
                         <div className="grid grid-cols-2 gap-12 md:gap-20 xl:gap-16 mt-10 flex-grow">
@@ -61,10 +64,10 @@ const PartnersAndTestimonialsSection = () => {
 
                     {/* Testimonials */}
                     <div className="flex flex-col h-full">
-                        <p className="text-2xl tracking-[0.2em] uppercase text-white">
+                        <p className={`${cormorantGaramond.className} text-2xl uppercase text-white`}>
                             Chia sẻ từ
                         </p>
-                        <h3 className="text-6xl text-white font-semibold uppercase tracking-[0.1em] leading-tight">
+                        <h3 className={`${cormorantGaramond.className} text-6xl text-white font-semibold uppercase leading-tight`}>
                             HỌC viên
                         </h3>
                         <div className="mt-10 space-y-6 flex-grow flex flex-col">

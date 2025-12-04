@@ -40,7 +40,7 @@ const Section15 = () => {
         <section className="relative w-full py-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a] overflow-hidden">
             <div className="relative z-10">
                 {/* Title */}
-                <div className="text-center mb-12 border-b border-t border-white py-12 flex flex-col">
+                <div className="text-center mb-12 border-b border-t border-white py-6 flex flex-col">
                     <h2 className={`${cormorantGaramond.className} text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide`}>
                         CAM KẾT ĐỒNG HÀNH TỪ NOBLECO
                     </h2>

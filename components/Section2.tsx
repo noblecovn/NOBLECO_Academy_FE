@@ -31,7 +31,7 @@ const TrainingProgramSection = () => {
     return (
         <section id="chuong-trinh-dao-tao" className="w-full pt-16 2xl:pt-0 min-h-fit bg-gradient-to-t from-[#87c5ab] to-[#04241a]">
             {/* Header */}
-            <div className="text-center mb-12 border-b border-t border-white py-12 px-2 2xl:px-0 flex flex-col">
+            <div className="text-center mb-12 border-b border-t border-white py-6 px-2 2xl:px-0 flex flex-col">
                 <h2 className={`${cormorantGaramond.className} text-white text-2xl md:text-4xl 2xl:text-5xl font-bold tracking-wide`}>
                     CHƯƠNG TRÌNH ĐÀO TẠO
                 </h2>

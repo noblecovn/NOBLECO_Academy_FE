@@ -24,10 +24,6 @@ const Section6 = () => {
                     {/* Khối nội dung */}
                     <div className="px-2 2xl:p-12 flex flex-col gap-6 text-white justify-center">
                         <div>
-                            {/* <p className="uppercase tracking-[0.2em] text-2xl">Cấp độ 1</p>
-                            <h2 className="text-4xl sm:text-[80px] font-medium uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
-                                Jewelry Advisor
-                            </h2> */}
                             <p className="text-base sm:text-xl mt-4 leading-relaxed">
                                 Trở thành Jewelry Advisor – Bắt đầu sự nghiệp trong ngành trang sức cao cấp cùng NOBLECO Academy.
                             </p>
@@ -37,7 +33,7 @@ const Section6 = () => {
                             Học cùng chuyên gia - Thực chiến mỗi ngày - Bứt phá nghề nghiệp
                         </div>
 
-                        <ul className="space-y-4 text-base sm:text-lg mt-4">
+                        <ul className="space-y-4 text-lg mt-4">
                             {highlights.map((item) => (
                                 <li key={item} className="flex items-start gap-3">
                                     <Image src="/images/section6/1.png" alt="check" width={24} height={30} className="object-cover" />
@@ -62,7 +58,7 @@ const Section6 = () => {
                             alt="Học viên Jewelry Advisor"
                             width={2693}
                             height={686}
-                            className="object-cover w-full lg:w-auto lg:h-full"
+                            className="object-cover w-full h-[560px]"
                             priority
                         />
                     </div>
