@@ -8,16 +8,22 @@ const Section9 = () => {
 
     return (
         <section id="cap-do-2" className="w-full bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
+            <div className="w-full flex flex-col items-center justify-center border-b border-t border-white py-6">
+                <span className="uppercase tracking-[0.2em] text-3xl font-bold text-white w-fit">Cấp độ 2</span>
+                <h2 className="text-4xl 2xl:text-7xl font-bold uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
+                    Senior Jewelry Consultant
+                </h2>
+            </div>
             <div className="">
                 <div className="grid grid-cols-1 lg:grid-cols-2">
                     {/* Khối nội dung */}
                     <div className="p-2 2xl:p-12 flex flex-col gap-6 text-white justify-center">
-                        <div>
+                        {/* <div>
                             <p className="uppercase tracking-[0.2em] text-lg sm:text-xl text-white/80">Cấp độ 2</p>
                             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-medium uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
                                 Senior Jewelry Consultant
                             </h2>
-                        </div>
+                        </div> */}
                         <div className="inline-flex w-full items-center justify-center bg-gradient-to-r from-[#be945f] to-[#fee08b] text-white font-semibold text-center text-xs md:text-base py-3 px-6 rounded-full shadow-lg">
                             Nâng tầm kỹ năng & Trở thành Chuyên viên Cao cấp thực thụ
                         </div>

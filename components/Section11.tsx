@@ -94,7 +94,15 @@ const Section11 = () => {
                     NỘI DUNG ĐÀO TẠO
                 </h2>
             </div> */}
-
+            <div className="w-full flex flex-col items-center justify-center py-10">
+                <span className="uppercase tracking-[0.2em] text-2xl text-white w-fit">CHỨNG CHỈ</span>
+                <h2 className="text-4xl 2xl:text-6xl font-medium uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
+                    Senior Jewelry Consultant
+                </h2>
+            </div>
+            {/* <p className="text-base text-white leading-relaxed mb-8 text-center max-w-4xl mx-auto py-4">
+                <span className="font-bold">Chứng chỉ được cấp bởi NOBLECO - Thương hiệu kim cương & trang sức đạt chuẩn quốc tế, cùng sự tham gia thẩm định nội dung bởi chuyên gia có chứng nhận GIA</span>. Đây là minh chứng rõ ràng cho kiến thức và kỹ năng chuyên môn mà học viên đã được đào tạo bài bản:
+            </p> */}
             <div className="max-w-7xl mx-auto px-2 2xl:px-0">
                 {/* <div className="mb-12 flex flex-col items-center">
                     <div className="rounded-full bg-gradient-to-t from-[#be945f] to-[#fee08b] p-1 inline-block w-full text-center mb-8 max-w-3xl">
@@ -220,23 +228,16 @@ const Section11 = () => {
 
                 {/* CHỨNG CHỈ Section */}
                 <div className="flex flex-col">
-                    <div className="w-full grid grid-cols-1 items-start mb-6">
-                        <p className="uppercase tracking-[0.2em] text-2xl text-white">CHỨNG CHỈ</p>
-                        <h2 className="text-4xl 2xl:text-6xl font-medium uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
-                            Senior Jewelry Consultant
-                        </h2>
-                    </div>
 
                     {/* Certificate Section */}
-                    <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                    <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                         {/* Left - Content */}
-                        <div className="text-white">
-                            <p className="text-base leading-relaxed mb-8 text-justify italic">
-                                <span className="font-bold not-italic">Chứng chỉ được cấp bởi NOBLECO - Thương hiệu kim cương & trang sức đạt chuẩn quốc tế, cùng sự tham gia thẩm định nội dung bởi chuyên gia có chứng nhận GIA.</span> Đây là minh chứng rõ ràng cho kiến thức và kỹ năng chuyên môn mà học viên đã được đào tạo bài bản:
+                        <div className="text-white order-2">
+                            <p className="text-base text-white leading-relaxed text-justify py-4 mx-auto">
+                                <span className="font-bold">Chứng chỉ được cấp bởi NOBLECO - Thương hiệu kim cương & trang sức đạt chuẩn quốc tế, cùng sự tham gia thẩm định nội dung bởi chuyên gia có chứng nhận GIA</span>. Đây là minh chứng rõ ràng cho kiến thức và kỹ năng chuyên môn mà học viên đã được đào tạo bài bản:
                             </p>
-
                             {/* Checklist */}
-                            <div className="space-y-6 lg:max-w-lg">
+                            <div className="space-y-6">
                                 <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
                                     <Image src="/images/section8/7.png" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
                                     <div className="text-sm text-deep-green">
@@ -267,7 +268,7 @@ const Section11 = () => {
                         </div>
 
                         {/* Right - Certificate Image */}
-                        <div className="flex justify-center lg:justify-end lg:h-full">
+                        <div className="flex justify-center lg:justify-end lg:h-full order-1">
                             <Image
                                 src="/images/section11/2-01.jpg"
                                 width={3840}

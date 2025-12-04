@@ -32,7 +32,7 @@ const PartnersAndTestimonialsSection = () => {
     return (
         <section className="w-full pt-16 bg-gradient-to-t from-[#87c5ab] to-[#04241a] px-2 2xl:px-0">
             <div className="max-w-7xl mx-auto overflow-hidden">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
+                <div className="grid grid-cols-1 lg:grid-cols-2  items-stretch">
                     {/* Partners */}
                     <div className="pr-0 lg:pr-16 flex flex-col h-full">
                         <p className="text-2xl tracking-[0.2em] uppercase text-white">

@@ -18,7 +18,8 @@ const ExpertSection = () => {
                 "- Người Việt Nam đầu tiên đạt chứng chỉ Gemologist của GIA.",
                 "- Có nhiều năm kinh nghiệm tại trung tâm trang sức JTC Bangkok và các mỏ đá quý Việt Nam, Myanmar.",
             ],
-            image: "/images/section4/N.png",
+            image: "/images/section4/9.png",
+            background: "/images/section4/bg-1.png",
         },
         {
             name: "LÀO TRÍ ĐƯỜNG",
@@ -27,7 +28,8 @@ const ExpertSection = () => {
                 "- Giám đốc Điều hành Công ty IVNCA Limited Canada.",
                 "- Từng đảm nhiệm vị trí Phó Tổng Giám đốc Công ty Cathay Life và Great Eastern - Tập đoàn bảo hiểm nhân thọ lâu đời nhất tại Singapore và Malaysia.",
             ],
-            image: "/images/section4/D.png",
+            image: "/images/section4/Duong.png",
+            background: "/images/section4/bg-2.png",
         },
     ]
 
@@ -41,8 +43,8 @@ const ExpertSection = () => {
                     </h2>
                 </div>
                 <div className="relative">
-                    <div className="max-w-7xl mx-auto">
-                        <div className="relative px-2 2xl:px-12 py-4">
+                    <div className="">
+                        <div className="relative">
                             <Carousel
                                 opts={{
                                     align: "center",
@@ -59,32 +61,38 @@ const ExpertSection = () => {
                                 <CarouselContent>
                                     {experts.map((expert) => (
                                         <CarouselItem key={expert.name}>
-                                            <div className="flex flex-col lg:flex-row gap-8 items-center justify-center lg:items-end h-full">
-                                                <div className="w-full lg:w-1/3">
-                                                    <Image
-                                                        src={expert.image}
-                                                        alt={expert.name}
-                                                        width={1500}
-                                                        height={2000}
-                                                        className="object-cover w-full aspect-[3/4]"
-                                                    />
+                                            <div className="h-full relative">
+                                                <Image src={expert.background} alt="Expert" width={500} height={2000} className="w-full" />
+                                                <div className="absolute bottom-0 left-0 w-full h-2/5 bg-[#04241a]">
+
                                                 </div>
-                                                <div className="w-full lg:w-1/3 text-center lg:text-left space-y-4">
-                                                    <div className="border-b border-white">
-                                                        <h3 className="text-2xl md:text-5xl font-semibold leading-tight bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
-                                                            {expert.name}
-                                                        </h3>
-                                                        <p className="text-white text-xl 2xl:text-2xl font-semibold uppercase pb-2">
-                                                            {expert.role}
-                                                        </p>
+                                                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 h-full flex items-end">
+                                                    <div className="w-full">
+                                                        <Image
+                                                            src={expert.image}
+                                                            alt={expert.name}
+                                                            width={1500}
+                                                            height={2000}
+                                                            className="object-cover w-full h-full"
+                                                        />
                                                     </div>
-                                                    <ul className="min-h-[120px] space-y-2 text-sm md:text-lg text-white pt-2">
-                                                        {expert.highlights.map((item) => (
-                                                            <li key={item} className="leading-relaxed text-justify">
-                                                                {item}
-                                                            </li>
-                                                        ))}
-                                                    </ul>
+                                                    <div className="w-full text-center lg:text-left space-y-4">
+                                                        <div className="border-b border-white">
+                                                            <h3 className="text-2xl md:text-5xl font-semibold leading-tight bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
+                                                                {expert.name}
+                                                            </h3>
+                                                            <p className="text-white text-xl 2xl:text-2xl font-semibold uppercase pb-2">
+                                                                {expert.role}
+                                                            </p>
+                                                        </div>
+                                                        <ul className="min-h-[120px] space-y-2 text-sm md:text-lg text-white pt-2">
+                                                            {expert.highlights.map((item) => (
+                                                                <li key={item} className="leading-relaxed text-justify">
+                                                                    {item}
+                                                                </li>
+                                                            ))}
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </CarouselItem>

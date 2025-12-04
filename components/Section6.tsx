@@ -1,5 +1,8 @@
 import Image from "next/image";
-
+import { Cormorant_Garamond } from "next/font/google";
+const cormorantGaramond = Cormorant_Garamond({
+    subsets: ["vietnamese"],
+});
 const Section6 = () => {
     const highlights = [
         "Kiến thức về kim cương, đá quý, trang sức",
@@ -10,15 +13,21 @@ const Section6 = () => {
 
     return (
         <section id="cap-do-1" className="w-full pt-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
+            <div className="w-full flex flex-col items-center justify-center border-b border-t border-white py-6">
+                <span className={`${cormorantGaramond.className} uppercase text-3xl font-bold text-white w-fit`}>Cấp độ <span className="text-5xl">1</span></span>
+                <h2 className={`${cormorantGaramond.className} text-4xl 2xl:text-7xl font-bold uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent`}>
+                    Jewelry Advisor
+                </h2>
+            </div>
             <div className="">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 2xl:gap-0">
                     {/* Khối nội dung */}
                     <div className="px-2 2xl:p-12 flex flex-col gap-6 text-white justify-center">
                         <div>
-                            <p className="uppercase tracking-[0.2em] text-2xl">Cấp độ 1</p>
+                            {/* <p className="uppercase tracking-[0.2em] text-2xl">Cấp độ 1</p>
                             <h2 className="text-4xl sm:text-[80px] font-medium uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
                                 Jewelry Advisor
-                            </h2>
+                            </h2> */}
                             <p className="text-base sm:text-xl mt-4 leading-relaxed">
                                 Trở thành Jewelry Advisor – Bắt đầu sự nghiệp trong ngành trang sức cao cấp cùng NOBLECO Academy.
                             </p>
@@ -59,7 +68,7 @@ const Section6 = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 
