@@ -18,14 +18,14 @@ const highlights: { title: ReactNode }[] = [
   {
     title: (
       <>
-        Cấp chứng chỉ từ <strong>chuyên gia GIA</strong>, học từ giảng viên quốc tế
+        Nghề nghiệp linh hoạt, dễ kết nối
       </>
     )
   },
   {
     title: (
       <>
-        <strong>Cơ hội</strong> phát triển nghề nghiệp và kinh doanh trong ngành kim hoàn
+        Nâng tầm vị thế, hội nhập cộng đồng tinh hoa
       </>
     )
   }

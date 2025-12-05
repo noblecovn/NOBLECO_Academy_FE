@@ -17,7 +17,7 @@ const Target = () => {
         },
         {
             image: "/images/target/3.svg",
-            text: "**Bạn là người tạm thất nghiệp**: Mong muốn khởi nghiệp lại trong một ngành có **giá trị cao**, cơ hội  **phát triển lâu dài** và lộ trình rõ ràng?",
+            text: "**Bạn cần một khởi đầu mới**: Mong muốn khởi nghiệp lại trong một ngành có **giá trị cao**, cơ hội  **phát triển lâu dài** và lộ trình rõ ràng?",
         },
     ];
     const cards2 = [
