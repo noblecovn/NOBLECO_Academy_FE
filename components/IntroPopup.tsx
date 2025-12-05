@@ -11,21 +11,32 @@ const highlights: { title: ReactNode }[] = [
   {
     title: (
       <>
-        Đột phá thu nhập và Ổn định tài chính
+        <ul className="list-disc md:min-h-[84px]">
+          <li>Nâng cao thu nhập</li>
+          <li>Ổn định tài chính</li>
+        </ul>
+
       </>
     )
   },
   {
     title: (
       <>
-        Nghề nghiệp linh hoạt, dễ kết nối
+        <ul className="list-disc md:min-h-[84px]">
+          <li>Nghề nghiệp linh hoạt</li>
+          <li>Dễ kết nối</li>
+        </ul>
+
       </>
     )
   },
   {
     title: (
       <>
-        Nâng tầm vị thế, hội nhập cộng đồng tinh hoa
+        <ul className="list-disc">
+          <li>Nâng tầm vị thế</li>
+          <li>Hội nhập cộng đồng tinh hoa</li>
+        </ul>
       </>
     )
   }
@@ -97,7 +108,7 @@ export default function IntroPopup() {
                     >
                       <Image src="/images/introPopup/3.png" alt="Icon" width={448} height={266} className="block md:hidden w-[310px] absolute -top-5 left-1/2 -translate-x-1/2 pointer-events-none select-none" />
                       <Image src="/images/introPopup/1.png" alt="Icon" width={200} height={253} className="hidden md:block md:w-auto absolute -top-10 left-1/2 -translate-x-1/2 pointer-events-none select-none" />
-                      <div className="text-sm md:text-xl relative z-10 font-medium text-white text-center md:text-justify-center max-w-[310px] md:max-w-[150px]">{item.title}</div>
+                      <div className="text-sm md:text-lg relative z-10 font-medium text-white text-left md:text-justify-center w-[160px] md:max-w-[160px]">{item.title}</div>
                     </div>
                   ))}
                 </div>
