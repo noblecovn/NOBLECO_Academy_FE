@@ -41,7 +41,7 @@ const Section15 = () => {
             <div className="relative z-10">
                 {/* Title */}
                 <div className="text-center mb-12 border-b border-t border-white py-6 flex flex-col">
-                    <h2 className={`${cormorantGaramond.className} text-white text-3xl md:text-4xl lg:text-5xl font-bold tracking-wide`}>
+                    <h2 className={`${cormorantGaramond.className} text-2xl md:text-4xl 2xl:text-5xl font-bold uppercase bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
                         CAM KẾT ĐỒNG HÀNH TỪ NOBLECO
                     </h2>
                 </div>

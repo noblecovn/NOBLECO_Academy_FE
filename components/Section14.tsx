@@ -100,10 +100,10 @@ const Section14 = () => {
     ];
 
     return (
-        <section className="w-full pt-16 xl:pt-0 bg-gradient-to-t from-[#87c5ab] to-[#04241a]">
+        <section className="w-full pt-0 bg-gradient-to-t from-[#87c5ab] to-[#04241a]">
             <div className="w-full flex flex-col items-center justify-center py-10">
                 <span className={`${cormorantGaramond.className} uppercase text-2xl md:text-4xl text-white w-fit`}>CHỨNG CHỈ</span>
-                <h2 className={`${cormorantGaramond.className} text-center text-4xl md:text-6xl font-medium uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent`}>
+                <h2 className={`${cormorantGaramond.className} text-center text-4xl 2xl:text-7xl font-bold uppercase bg-gradient-to-tr md:bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
                     Master Jewelry Stylist
                 </h2>
             </div>
@@ -120,7 +120,7 @@ const Section14 = () => {
                             {/* Checklist */}
                             <div className="space-y-6">
                                 <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
-                                    <Image src="/images/section8/7.png" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
+                                    <Image src="/images/section8/check.svg" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
                                     <div className="text-sm text-deep-green">
                                         <p className="font-bold">Khẳng định vị thế chuyên gia trong ngành trang sức cao cấp:</p>
                                         <ul className="list-none mt-1">
@@ -132,7 +132,7 @@ const Section14 = () => {
                                 </div>
 
                                 <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
-                                    <Image src="/images/section8/7.png" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
+                                    <Image src="/images/section8/check.svg" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
                                     <div className="text-sm text-deep-green">
                                         <p className="font-bold">Mở rộng cơ hội nghề nghiệp & thu nhập</p>
                                         <p>Có thể đảm nhiệm các vị trí cao cấp: Senior Stylist, Store Trainer, Product Specialist,...</p>

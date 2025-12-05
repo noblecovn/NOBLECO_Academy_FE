@@ -41,7 +41,7 @@ const ExpertSection = () => {
 
             <div className="relative z-10">
                 <div className="text-center py-6 border-b border-t border-white flex flex-col">
-                    <h2 className={`${cormorantGaramond.className} text-white text-2xl md:text-4xl 2xl:text-5xl font-bold`}>
+                    <h2 className={`${cormorantGaramond.className} text-2xl md:text-4xl 2xl:text-5xl font-bold uppercase bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
                         GIẢNG VIÊN & CHUYÊN GIA
                     </h2>
                 </div>
@@ -78,7 +78,7 @@ const ExpertSection = () => {
                                                     />
                                                     <div className="text-center md:text-left space-y-2 xl:space-y-4 md:w-2/5">
                                                         <div className="border-b border-white">
-                                                            <h3 className="text-3xl lg:text-4xl 2xl:text-5xl font-semibold leading-tight bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
+                                                            <h3 className="text-3xl lg:text-4xl 2xl:text-5xl font-semibold leading-tight bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent">
                                                                 {expert.name}
                                                             </h3>
                                                             <p className="text-white text-sm md:text-base 2xl:text-2xl font-semibold uppercase pb-2">

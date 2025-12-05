@@ -32,7 +32,7 @@ const TrainingProgramSection = () => {
         <section id="chuong-trinh-dao-tao" className="w-full pt-16 2xl:pt-0 min-h-fit bg-gradient-to-t from-[#87c5ab] to-[#04241a]">
             {/* Header */}
             <div className="text-center mb-12 border-b border-t border-white py-6 px-2 2xl:px-0 flex flex-col">
-                <h2 className={`${cormorantGaramond.className} text-white text-2xl md:text-4xl 2xl:text-5xl font-bold tracking-wide`}>
+                <h2 className={`${cormorantGaramond.className} text-2xl md:text-4xl 2xl:text-5xl font-bold uppercase bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
                     CHƯƠNG TRÌNH ĐÀO TẠO
                 </h2>
             </div>
@@ -59,10 +59,10 @@ const TrainingProgramSection = () => {
                             <div className="p-6 flex flex-col flex-grow">
                                 {/* Title */}
                                 <div className="text-center flex-grow">
-                                    <h4 className="bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent text-lg md:text-2xl font-bold">
+                                    <h4 className="bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent text-lg md:text-2xl font-bold">
                                         {program.level}
                                     </h4>
-                                    <h4 className="bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent text-lg md:text-2xl font-bold pb-2">
+                                    <h4 className="bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent text-lg md:text-2xl font-bold pb-2">
                                         {program.title}
                                     </h4>
                                     <p className="text-white text-sm md:text-base leading-relaxed text-justify-center flex-grow">

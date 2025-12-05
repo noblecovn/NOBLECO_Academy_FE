@@ -14,12 +14,12 @@ const Section12 = () => {
         <section id="cap-do-3" className="w-full pt-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             <div className="w-full flex flex-col items-center justify-center border-b border-t border-white py-6">
                 <span className={`${cormorantGaramond.className} uppercase text-3xl font-bold text-white w-fit`}>Cấp độ <span className="text-5xl">3</span></span>
-                <h2 className={`${cormorantGaramond.className} text-center text-4xl 2xl:text-7xl font-bold uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent`}>
+                <h2 className={`${cormorantGaramond.className} text-center text-4xl 2xl:text-7xl font-bold uppercase bg-gradient-to-tr md:bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
                     Master Jewelry Stylist
                 </h2>
             </div>
             <div className="">
-                <div className="grid grid-cols-1 lg:grid-cols-2">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0">
                     {/* Khối nội dung */}
                     <div className="p-2 2xl:p-12 flex flex-col gap-6 text-white justify-center">
                         <div className="inline-flex w-full items-center justify-center bg-gradient-to-r from-[#be945f] to-[#fee08b] text-white font-semibold text-center text-xs md:text-base py-3 px-6 rounded-full shadow-lg">
@@ -29,14 +29,14 @@ const Section12 = () => {
                             Trở thành chuyên gia thực thụ về:
                         </p>
 
-                        <ul className="space-y-4 text-lg">
+                        <div className="grid grid-cols-1 auto-rows-fr gap-4 text-lg">
                             {highlights.map((item, index) => (
-                                <li key={item} className="flex items-start gap-3">
+                                <div key={item} className="flex items-center gap-3">
                                     <Image src="/images/section6/1.png" alt="check" width={24} height={30} className="object-cover" />
-                                    <span className="w-4/5">{item}</span>
-                                </li>
+                                    <span className="w-9/10 text-justify">{item}</span>
+                                </div>
                             ))}
-                        </ul>
+                        </div>
                         {/* CTA Button */}
                         <div className="flex justify-center">
                             <div className="rounded-full bg-gradient-to-t from-[#c9956b] via-[#eab788] to-[#ffe4c7] p-1">
@@ -54,7 +54,7 @@ const Section12 = () => {
                             alt="Master Jewelry Stylist"
                             width={873}
                             height={686}
-                            className="object-cover w-full h-[560px]"
+                            className="object-cover w-full lg:h-[560px]"
                             priority
                         />
                     </div>

@@ -5,27 +5,27 @@ const cormorantGaramond = Cormorant_Garamond({
 });
 const PartnersAndTestimonialsSection = () => {
     const partners = [
-        { name: "SJC", subtitle: "Saigon Jewelry Company", image: "/images/section5/1.png" },
-        { name: "SJA", subtitle: "Saigon Jewelry Academy", image: "/images/section5/2.png" },
-        { name: "NOBLECO", subtitle: "American Grown Diamonds", image: "/images/section5/3.png" },
-        { name: "Clarity", subtitle: "Diamond", image: "/images/section5/7.png" },
+        { name: "SJC", subtitle: "Saigon Jewelry Company", image: "/images/partners/SJC.svg" },
+        { name: "SJA", subtitle: "Saigon Jewelry Academy", image: "/images/partners/SJA.svg" },
+        { name: "NOBLECO", subtitle: "American Grown Diamonds", image: "/images/partners/NOBLECO.svg" },
+        { name: "Clarity", subtitle: "Diamond", image: "/images/partners/Clarity.svg" },
     ];
 
     const testimonials = [
         {
-            image: "/images/section5/4.png",
+            image: "/images/partners/4.png",
             name: "Anh Nam",
             title: "Học viên Jewelry Advisor",
             quote: "Hoàn thành khóa học Jewelry Advisor của NOBLECO ACADEMY mang đến cho tôi nền tảng kiến thức vững chắc và góc nhìn tinh tế hơn về nghệ thuật trang sức.",
         },
         {
-            image: "/images/section5/5.png",
+            image: "/images/partners/5.png",
             name: "Anh Quang",
             title: "Học viên Senior Jewelry Consultant",
             quote: "Khóa học chuyên sâu giúp tôi tự tin hơn khi tư vấn khách hàng cao cấp và xây dựng phong thái chuyên nghiệp.",
         },
         {
-            image: "/images/section5/6.png",
+            image: "/images/partners/6.png",
             name: "Chị Vy",
             title: "Học viên Master Jewelry Stylist",
             quote: "Tôi mở rộng tư duy thẩm mỹ và tự tin hơn trong việc xây dựng phong cách trang sức cho khách hàng VIP.",
@@ -37,25 +37,25 @@ const PartnersAndTestimonialsSection = () => {
             <div className="max-w-7xl mx-auto overflow-hidden">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0 items-stretch">
                     {/* Partners */}
-                    <div className="pr-0 lg:pr-16 flex flex-col h-full">
-                        <p className={`${cormorantGaramond.className} text-2xl uppercase text-white`}>
+                    <div className="pr-0 lg:pr-16 flex flex-col h-full min-h-0">
+                        <p className={`${cormorantGaramond.className} text-2xl uppercase bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
                             MẠNG LƯỚI
                         </p>
-                        <h3 className={`${cormorantGaramond.className} text-6xl text-white font-semibold leading-tight`}>
+                        <h3 className={`${cormorantGaramond.className} text-6xl font-semibold leading-tight bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
                             ĐỐI TÁC
                         </h3>
-                        <div className="grid grid-cols-2 gap-12 md:gap-20 xl:gap-16 mt-10 flex-grow">
+                        <div className="grid grid-cols-2 gap-12 md:gap-20 xl:gap-16 mt-10 flex-1 min-h-0">
                             {partners.map((partner) => (
                                 <div
                                     key={partner.name}
-                                    className=""
+                                    className="bg-white h-full flex items-center justify-center"
                                 >
                                     <Image
                                         src={partner.image}
                                         alt={partner.name}
                                         width={160}
                                         height={160}
-                                        className="w-full lg:h-full lg:w-auto"
+                                        className=""
                                     />
                                 </div>
                             ))}
@@ -63,14 +63,14 @@ const PartnersAndTestimonialsSection = () => {
                     </div>
 
                     {/* Testimonials */}
-                    <div className="flex flex-col h-full">
-                        <p className={`${cormorantGaramond.className} text-2xl uppercase text-white`}>
+                    <div className="flex flex-col h-full min-h-0">
+                        <p className={`${cormorantGaramond.className} text-2xl uppercase bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
                             Chia sẻ từ
                         </p>
-                        <h3 className={`${cormorantGaramond.className} text-6xl text-white font-semibold uppercase leading-tight`}>
+                        <h3 className={`${cormorantGaramond.className} text-6xl font-semibold uppercase leading-tight bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
                             HỌC viên
                         </h3>
-                        <div className="mt-10 space-y-6 flex-grow flex flex-col">
+                        <div className="mt-10 space-y-6 flex-1 flex flex-col min-h-0">
                             {testimonials.map((testimonial) => (
                                 <div
                                     key={testimonial.name}

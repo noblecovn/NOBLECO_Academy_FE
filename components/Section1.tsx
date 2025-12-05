@@ -22,12 +22,12 @@ const NoblecoAcademySection = () => {
         <section className="w-full 2xl:pb-16 min-h-fit bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             {/* Header */}
             <div className="text-center mb-12 border-b border-t border-white py-6 flex flex-col px-2 2xl:px-0">
-                <h2 className={`${cormorantGaramond.className} text-white text-xl md:text-4xl 2xl:text-5xl mb-2`}>
+                <h2 className={`${cormorantGaramond.className} text-xl md:text-4xl 2xl:text-5xl font-bold uppercase bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
                     BƯỚC VÀO NGÀNH TRANG SỨC CÙNG
                 </h2>
-                <h3 className={`${cormorantGaramond.className} text-white text-xl md:text-4xl 2xl:text-5xl font-bold`}>
+                <h2 className={`${cormorantGaramond.className} text-xl md:text-4xl 2xl:text-5xl font-bold uppercase bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
                     NOBLECO ACADEMY
-                </h3>
+                </h2>
             </div>
             <div className="max-w-7xl mx-auto px-2 2xl:px-0">
                 {/* Cards Grid */}
@@ -37,7 +37,7 @@ const NoblecoAcademySection = () => {
                             key={index}
                             className="relative p-8 hover:transform hover:scale-105 transition-transform duration-300 bg-[#043022] rounded-2xl"
                         >
-                            <h4 className="relative z-10 text-xl md:text-4xl font-bold mb-2 2xl:mb-6 text-center bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
+                            <h4 className="relative z-10 text-xl md:text-4xl font-bold mb-2 2xl:mb-6 text-center bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent">
                                 {card.title}
                             </h4>
                             <p className="relative z-10 text-white text-sm md:text-xl leading-relaxed text-center text-justify-center">

@@ -178,7 +178,7 @@ const Section16 = () => {
 
                         {/* Privacy Notice */}
                         <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                            <h2 className="text-2xl md:text-3xl text-center font-medium uppercase leading-tight tracking-wide bg-gradient-to-t from-[#be945f] to-[#fee08b] bg-clip-text text-transparent">
+                            <h2 className="text-2xl md:text-3xl text-center font-medium uppercase bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent">
                                 Cam kết bảo mật thông tin
                             </h2>
                             <p className="text-white text-sm text-center leading-relaxed">

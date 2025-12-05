@@ -49,7 +49,7 @@ const Target = () => {
         <section className="w-full py-16 2xl:py-24 bg-gradient-to-t from-[#87c5ab] to-[#04241a] relative">
             <div className="max-w-7xl mx-auto px-2 2xl:px-0">
                 <div className="md:hidden w-full flex flex-col items-center justify-center pb-6">
-                    <h2 className={`${cormorantGaramond.className} text-3xl 2xl:text-7xl font-bold uppercase leading-tight tracking-wide bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
+                    <h2 className={`${cormorantGaramond.className} text-2xl md:text-4xl 2xl:text-5xl font-bold uppercase bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
                         KHÓA HỌC DÀNH CHO AI?
                     </h2>
                 </div>
