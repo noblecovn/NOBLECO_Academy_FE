@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 
-// API endpoint - có thể thay đổi thành biến môi trường
-const API_ENDPOINT = process.env.NEXT_PUBLIC_API_URL || "https://api.noblecovn.com/api/register";
+// API endpoint
+const API_ENDPOINT = "https://api.noblecovn.com/api/register-course";
 
 const Section16 = () => {
     const [formData, setFormData] = useState({
@@ -29,6 +29,9 @@ const Section16 = () => {
         type: "success" | "error" | null;
         message: string;
     }>({ type: null, message: "" });
+    const [errors, setErrors] = useState<{
+        [key: string]: string;
+    }>({});
 
     useEffect(() => {
         // Get or set target date in localStorage
@@ -73,18 +76,75 @@ const Section16 = () => {
         return () => clearInterval(timer);
     }, []);
 
+    // Regex patterns
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^(0|\+84)[0-9]{9}$/;
+
+    const validateEmail = (email: string): boolean => {
+        if (!email) return true; // Email không bắt buộc
+        return emailRegex.test(email);
+    };
+
+    const validatePhone = (phone: string): boolean => {
+        if (!phone) return false; // Phone bắt buộc
+        return phoneRegex.test(phone);
+    };
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        
         setFormData({
             ...formData,
-            [e.target.name]: e.target.value,
+            [name]: value,
         });
+
+        // Clear error của field này khi người dùng nhập lại
+        if (errors[name]) {
+            const newErrors = { ...errors };
+            delete newErrors[name];
+            setErrors(newErrors);
+        }
+
+        // Validate khi người dùng nhập (client-side validation)
+        if (name === "email") {
+            if (value && !validateEmail(value)) {
+                setErrors({ ...errors, email: "Email không hợp lệ" });
+            }
+        }
+
+        if (name === "phoneNumber") {
+            if (!validatePhone(value)) {
+                setErrors({ ...errors, phoneNumber: "Số điện thoại không hợp lệ. Vui lòng nhập số điện thoại Việt Nam (10 số, bắt đầu bằng 0 hoặc +84)" });
+            }
+        }
     };
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
+        // Validate form
+        const newErrors: { email?: string; phoneNumber?: string } = {};
+        
+        if (formData.email && !validateEmail(formData.email)) {
+            newErrors.email = "Email không hợp lệ";
+        }
+        
+        if (!validatePhone(formData.phoneNumber)) {
+            newErrors.phoneNumber = "Số điện thoại không hợp lệ. Vui lòng nhập số điện thoại Việt Nam (10 số, bắt đầu bằng 0 hoặc +84)";
+        }
+
+        if (Object.keys(newErrors).length > 0) {
+            setErrors(newErrors);
+            setSubmitStatus({
+                type: "error",
+                message: "Vui lòng kiểm tra lại thông tin đã nhập.",
+            });
+            return;
+        }
+
         // Reset status
         setSubmitStatus({ type: null, message: "" });
+        setErrors({});
         setIsSubmitting(true);
 
         try {
@@ -98,10 +158,12 @@ const Section16 = () => {
 
             const data = await response.json();
 
-            if (response.ok) {
+            // Xử lý response theo cấu trúc mới
+            if (response.status === 201 && data.success) {
+                // Success (201)
                 setSubmitStatus({
                     type: "success",
-                    message: "Đăng ký thành công! Chúng tôi sẽ liên hệ với bạn trong 24h làm việc.",
+                    message: data.message || "Đăng ký khóa học thành công! Chúng tôi sẽ liên hệ với bạn trong 24h làm việc.",
                 });
                 // Reset form sau khi submit thành công
                 setFormData({
@@ -114,10 +176,34 @@ const Section16 = () => {
                     time: "",
                     referral: "",
                 });
-            } else {
+                setErrors({});
+            } else if (response.status === 422 && !data.success) {
+                // Validation Error (422)
+                const serverErrors: { [key: string]: string } = {};
+                
+                // Map errors từ server vào state errors
+                if (data.errors) {
+                    Object.keys(data.errors).forEach((key) => {
+                        const errorMessages = data.errors[key];
+                        // Nếu errors là array, lấy message đầu tiên
+                        if (Array.isArray(errorMessages)) {
+                            serverErrors[key] = errorMessages[0];
+                        } else if (typeof errorMessages === "string") {
+                            serverErrors[key] = errorMessages;
+                        }
+                    });
+                }
+                
+                setErrors(serverErrors);
                 setSubmitStatus({
                     type: "error",
-                    message: data.message || "Đã có lỗi xảy ra. Vui lòng thử lại sau.",
+                    message: data.message || "Dữ liệu đầu vào không hợp lệ. Vui lòng kiểm tra lại thông tin đã nhập.",
+                });
+            } else {
+                // Other errors (500, etc.)
+                setSubmitStatus({
+                    type: "error",
+                    message: data.message || "Có lỗi xảy ra khi đăng ký khóa học. Vui lòng thử lại sau.",
                 });
             }
         } catch (error) {
@@ -215,48 +301,77 @@ const Section16 = () => {
                         )}
 
                         <form onSubmit={handleSubmit} className="space-y-2">
-                            <input
-                                type="text"
-                                name="name"
-                                placeholder="Họ tên của bạn:"
-                                value={formData.name}
-                                onChange={handleChange}
-                                required
-                                disabled={isSubmitting}
-                                className="w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f] disabled:opacity-50 disabled:cursor-not-allowed"
-                            />
+                            <div>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder="Họ tên của bạn*:"
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                    required
+                                    disabled={isSubmitting}
+                                    className={`w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border rounded-full px-4 py-2 mt-1 text-sm focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed ${
+                                        errors.name ? "border-red-500 focus:border-red-500" : "border-[#0a5c3f] focus:border-[#0a5c3f]"
+                                    }`}
+                                />
+                                {errors.name && (
+                                    <p className="text-red-500 text-xs mt-1 ml-2">{errors.name}</p>
+                                )}
+                            </div>
 
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="Email:"
-                                value={formData.email}
-                                onChange={handleChange}
-                                required
-                                disabled={isSubmitting}
-                                className="w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f] disabled:opacity-50 disabled:cursor-not-allowed"
-                            />
+                            <div>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Email:"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    pattern="[^\s@]+@[^\s@]+\.[^\s@]+"
+                                    disabled={isSubmitting}
+                                    className={`w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border rounded-full px-4 py-2 mt-1 text-sm focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed ${
+                                        errors.email ? "border-red-500 focus:border-red-500" : "border-[#0a5c3f] focus:border-[#0a5c3f]"
+                                    }`}
+                                />
+                                {errors.email && (
+                                    <p className="text-red-500 text-xs mt-1 ml-2">{errors.email}</p>
+                                )}
+                            </div>
 
-                            <input
-                                type="tel"
-                                name="phoneNumber"
-                                placeholder="Số điện thoại:"
-                                value={formData.phoneNumber}
-                                onChange={handleChange}
-                                required
-                                disabled={isSubmitting}
-                                className="w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f] disabled:opacity-50 disabled:cursor-not-allowed"
-                            />
+                            <div>
+                                <input
+                                    type="tel"
+                                    name="phoneNumber"
+                                    placeholder="Số điện thoại*:"
+                                    value={formData.phoneNumber}
+                                    onChange={handleChange}
+                                    pattern="^(0|\+84)[0-9]{9}$"
+                                    required
+                                    disabled={isSubmitting}
+                                    className={`w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border rounded-full px-4 py-2 mt-1 text-sm focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed ${
+                                        errors.phoneNumber ? "border-red-500 focus:border-red-500" : "border-[#0a5c3f] focus:border-[#0a5c3f]"
+                                    }`}
+                                />
+                                {errors.phoneNumber && (
+                                    <p className="text-red-500 text-xs mt-1 ml-2">{errors.phoneNumber}</p>
+                                )}
+                            </div>
 
-                            <input
-                                type="text"
-                                name="dateOfBirth"
-                                placeholder="Năm sinh:"
-                                value={formData.dateOfBirth}
-                                onChange={handleChange}
-                                disabled={isSubmitting}
-                                className="w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f] disabled:opacity-50 disabled:cursor-not-allowed"
-                            />
+                            <div>
+                                <input
+                                    type="text"
+                                    name="dateOfBirth"
+                                    placeholder="Năm sinh:"
+                                    value={formData.dateOfBirth}
+                                    onChange={handleChange}
+                                    disabled={isSubmitting}
+                                    className={`w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border rounded-full px-4 py-2 mt-1 text-sm focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed ${
+                                        errors.dateOfBirth ? "border-red-500 focus:border-red-500" : "border-[#0a5c3f] focus:border-[#0a5c3f]"
+                                    }`}
+                                />
+                                {errors.dateOfBirth && (
+                                    <p className="text-red-500 text-xs mt-1 ml-2">{errors.dateOfBirth}</p>
+                                )}
+                            </div>
 
                             <div>
                                 <label className="text-deep-green text-sm font-medium">Cấp độ đào tạo bạn quan tâm *</label>
@@ -266,7 +381,9 @@ const Section16 = () => {
                                     onChange={handleChange}
                                     required
                                     disabled={isSubmitting}
-                                    className="w-full font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f] bg-mint text-deep-green appearance-none cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                                    className={`w-full font-medium border rounded-full px-4 py-2 mt-1 text-sm focus:outline-none bg-mint text-deep-green appearance-none cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed ${
+                                        errors.levelOfInterest ? "border-red-500 focus:border-red-500" : "border-[#0a5c3f] focus:border-[#0a5c3f]"
+                                    }`}
                                     style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%230a5c3f'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 1rem center', backgroundSize: '1rem' }}
                                 >
                                     <option value=""></option>
@@ -274,6 +391,9 @@ const Section16 = () => {
                                     <option className="text-deep-green font-medium" value="cap2">Cấp độ 2 - Senior Jewelry Consultant</option>
                                     <option className="text-deep-green font-medium" value="cap3">Cấp độ 3 - Master Jewelry Stylist</option>
                                 </select>
+                                {errors.levelOfInterest && (
+                                    <p className="text-red-500 text-xs mt-1 ml-2">{errors.levelOfInterest}</p>
+                                )}
                             </div>
 
                             <div>
@@ -285,8 +405,13 @@ const Section16 = () => {
                                     onChange={handleChange}
                                     required
                                     disabled={isSubmitting}
-                                    className="w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f] disabled:opacity-50 disabled:cursor-not-allowed"
+                                    className={`w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border rounded-full px-4 py-2 mt-1 text-sm focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed ${
+                                        errors.desire ? "border-red-500 focus:border-red-500" : "border-[#0a5c3f] focus:border-[#0a5c3f]"
+                                    }`}
                                 />
+                                {errors.desire && (
+                                    <p className="text-red-500 text-xs mt-1 ml-2">{errors.desire}</p>
+                                )}
                             </div>
 
                             <div>
@@ -297,8 +422,13 @@ const Section16 = () => {
                                     value={formData.time}
                                     onChange={handleChange}
                                     disabled={isSubmitting}
-                                    className="w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border border-[#0a5c3f] rounded-full px-4 py-2 mt-1 text-sm focus:outline-none focus:border-[#0a5c3f] disabled:opacity-50 disabled:cursor-not-allowed"
+                                    className={`w-full bg-mint text-deep-green placeholder:text-deep-green placeholder:font-medium border rounded-full px-4 py-2 mt-1 text-sm focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed ${
+                                        errors.time ? "border-red-500 focus:border-red-500" : "border-[#0a5c3f] focus:border-[#0a5c3f]"
+                                    }`}
                                 />
+                                {errors.time && (
+                                    <p className="text-red-500 text-xs mt-1 ml-2">{errors.time}</p>
+                                )}
                             </div>
 
                             <div className="flex justify-center pt-6">

@@ -8,29 +8,29 @@ const cormorantGaramond = Cormorant_Garamond({
 const Target = () => {
     const cards1 = [
         {
-            image: "/images/target/1.png",
+            image: "/images/target/1.svg",
             text: "**Bạn là dân văn phòng**: Muốn công việc tay trái linh hoạt, có thể chăm sóc gia đình mà vẫn **tăng thu nhập** đáng kể?",
         },
         {
-            image: "/images/target/2.png",
+            image: "/images/target/2.svg",
             text: "**Bạn khao khát độc lập**: Thích công việc linh động, chinh phục thử thách và muốn **kiếm được nhiều tiền hơn** mức hiện tại?",
         },
         {
-            image: "/images/target/3.png",
+            image: "/images/target/3.svg",
             text: "**Bạn là người tạm thất nghiệp**: Mong muốn khởi nghiệp lại trong một ngành có **giá trị cao**, cơ hội  **phát triển lâu dài** và lộ trình rõ ràng?",
         },
     ];
     const cards2 = [
         {
-            image: "/images/target/4.png",
+            image: "/images/target/4.svg",
             text: "**Bạn muốn nâng tầm uy tín**: Cần profile đẹp, mở rộng **mối quan hệ chất lượng** và trở thành chuyên gia có bằng cấp, **được công nhận**?",
         },
         {
-            image: "/images/target/5.png",
+            image: "/images/target/5.svg",
             text: "**Bạn là Doanh nghiệp/Kinh doanh**: Cần giải pháp **tăng lợi nhuận**, nâng giá trị hóa đơn và gia tăng tỷ lệ chuyển đổi mà không tốn thêm chi phi marketing?",
         },
         {
-            image: "/images/target/6.png",
+            image: "/images/target/6.svg",
             text: "**Bạn làm trong ngành Dịch vụ cao cấp (Stylist, Sự kiện, Thẩm mỹ):** Muốn nâng tầm uy tín nghề nghiệp, dễ dàng nhận booking **sự kiện lớn** và tiếp cận nhóm **khách hàng thượng lưu?**",
         },
     ];
