@@ -58,7 +58,7 @@ const Section6 = () => {
                             alt="Học viên Jewelry Advisor"
                             width={2693}
                             height={686}
-                            className="object-cover w-full :h-[560px]"
+                            className="object-cover w-full lg:h-[560px]"
                             priority
                         />
                     </div>
