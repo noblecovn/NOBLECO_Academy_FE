@@ -15,7 +15,7 @@ const Section6 = () => {
         <section id="cap-do-1" className="w-full pt-16 bg-gradient-to-b from-[#87c5ab] to-[#04241a]">
             <div className="w-full flex flex-col items-center justify-center border-b border-t border-white py-6">
                 <span className={`${cormorantGaramond.className} uppercase text-3xl font-bold text-white w-fit`}>Cấp độ <span className="text-5xl">1</span></span>
-                <h2 className={`${cormorantGaramond.className} text-4xl 2xl:text-7xl font-bold uppercase leading-tight tracking-wide bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
+                <h2 className={`${cormorantGaramond.className} text-4xl 2xl:text-7xl font-bold uppercase bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
                     Jewelry Advisor
                 </h2>
             </div>

@@ -13,19 +13,19 @@ const PartnersAndTestimonialsSection = () => {
 
     const testimonials = [
         {
-            image: "/images/partners/4.png",
+            image: "/images/partners/2.png",
             name: "Anh Nam",
             title: "Học viên Jewelry Advisor",
             quote: "Hoàn thành khóa học Jewelry Advisor của NOBLECO ACADEMY mang đến cho tôi nền tảng kiến thức vững chắc và góc nhìn tinh tế hơn về nghệ thuật trang sức.",
         },
         {
-            image: "/images/partners/5.png",
+            image: "/images/partners/3.png",
             name: "Anh Quang",
             title: "Học viên Senior Jewelry Consultant",
             quote: "Khóa học chuyên sâu giúp tôi tự tin hơn khi tư vấn khách hàng cao cấp và xây dựng phong thái chuyên nghiệp.",
         },
         {
-            image: "/images/partners/6.png",
+            image: "/images/partners/1.jpg",
             name: "Chị Vy",
             title: "Học viên Master Jewelry Stylist",
             quote: "Tôi mở rộng tư duy thẩm mỹ và tự tin hơn trong việc xây dựng phong cách trang sức cho khách hàng VIP.",
@@ -55,7 +55,6 @@ const PartnersAndTestimonialsSection = () => {
                                         alt={partner.name}
                                         width={160}
                                         height={160}
-                                        className=""
                                     />
                                 </div>
                             ))}
@@ -76,13 +75,13 @@ const PartnersAndTestimonialsSection = () => {
                                     key={testimonial.name}
                                     className="bg-white border border-deep-green grid grid-cols-4 gap-3 rounded-r-3xl items-center"
                                 >
-                                    <div className="col-span-1 h-full">
+                                    <div className="col-span-1 h-full aspect-square">
                                         <Image
                                             src={testimonial.image}
                                             alt={testimonial.name}
-                                            width={128}
-                                            height={128}
-                                            className="h-full"
+                                            width={1024}
+                                            height={1024}
+                                            className="h-full object-cover"
                                         />
                                     </div>
                                     <div className="max-w-xs 2xl:max-w-md col-span-3">

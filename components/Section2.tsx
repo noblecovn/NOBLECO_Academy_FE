@@ -6,22 +6,22 @@ const cormorantGaramond = Cormorant_Garamond({
 const TrainingProgramSection = () => {
     const programs = [
         {
-            level: "CẤP ĐỘ 1",
-            title: "\"JEWELRY ADVISOR\"",
+            level: "CẤP ĐỘ ",
+            title: "JEWELRY ADVISOR",
             description: "<span class='font-bold'>Jewelry Advisor</span> được thiết kế tinh gọn để giúp học viên nhanh chóng trở thành một Tư vấn viên chuyên nghiệp – người có khả năng nắm vững sản phẩm, tự tin  thuyết phục, chốt sale và xây dựng mối quan hệ với khách hàng bền vững.",
             image: "/images/section2/1.png",
             href: "#cap-do-1"
         },
         {
-            level: "CẤP ĐỘ 2",
-            title: "\"SENIOR JEWELRY CONSULTANT\"",
+            level: "CẤP ĐỘ ",
+            title: "SENIOR JEWELRY CONSULTANT",
             description: "<span class='font-bold'>Senior Jewelry Consultant</span> là lộ trình chuyên sâu được thiết kế để giúp học viên đi từ Tư vấn viên lên Chuyên viên cấp cao. Chương trình học kết hợp tinh hoa giữa kỹ năng đàm phán, chốt sale và phát triển năng lực huấn luyện cấp dưới, giúp bạn mở rộng cơ hội thăng tiến và khẳng định vị thế vững chắc trong phân khúc khách hàng cao cấp.",
             image: "/images/section2/2.jpg",
             href: "#cap-do-2"
         },
         {
-            level: "CẤP ĐỘ 3",
-            title: "\"MASTER JEWELRY STYLIST\"",
+            level: "CẤP ĐỘ ",
+            title: "MASTER JEWELRY STYLIST",
             description: "<span class='font-bold'>Master Jewelry Stylist</span> là cấp độ đào tạo cao nhất, giúp học viên trở thành một Chuyên gia trang sức thực thụ với kiến thức sâu rộng. Ở vị trí này, học viên sẽ đảm nhận vai trò Lãnh đạo, Cố vấn chuyên môn, và phát triển năng lực cho toàn bộ đội ngũ.",
             image: "/images/section2/3.jpg",
             href: "#cap-do-3"
@@ -59,12 +59,10 @@ const TrainingProgramSection = () => {
                             <div className="p-6 flex flex-col flex-grow">
                                 {/* Title */}
                                 <div className="text-center flex-grow">
-                                    <h4 className="bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent text-lg md:text-2xl font-bold">
-                                        {program.level}
-                                    </h4>
-                                    <h4 className="bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent text-lg md:text-2xl font-bold pb-2">
+                                    <span className={`${cormorantGaramond.className} uppercase text-lg font-bold text-white w-fit`}>{program.level} <span className="text-3xl">{index + 1}</span></span>
+                                    <h2 className={`${cormorantGaramond.className} text-2xl font-bold uppercase bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
                                         {program.title}
-                                    </h4>
+                                    </h2>
                                     <p className="text-white text-sm md:text-base leading-relaxed text-justify-center flex-grow">
                                         <span dangerouslySetInnerHTML={{ __html: program.description }} />
                                     </p>

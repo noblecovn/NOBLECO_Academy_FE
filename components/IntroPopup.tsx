@@ -2,6 +2,10 @@
 
 import Image from "next/image";
 import { ReactNode, useEffect, useState } from "react";
+import { Cormorant_Garamond } from "next/font/google";
+const cormorantGaramond = Cormorant_Garamond({
+  subsets: ["vietnamese"],
+});
 
 const highlights: { title: ReactNode }[] = [
   {
@@ -77,28 +81,28 @@ export default function IntroPopup() {
 
           <div className="relative w-full">
             <div className="w-full overflow-hidden rounded-[28px] bg-white/95 text-center shadow-2xl">
-              <div className="bg-gradient-to-b from-[#87c5ab] to-[#0e392b] px-6 py-8 text-white md:px-10 md:py-10">
-                <h2 className="text-lg 2xl:text-2xl leading-snug md:text-3xl">
+              <div className="bg-gradient-to-b from-[#87c5ab] to-[#0e392b] px-6 py-8 md:px-10 md:py-10">
+                <h2 className={`${cormorantGaramond.className} text-lg 2xl:text-4xl leading-snug md:text-3xl bg-gradient-to-tr from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
                   Trở thành Chuyên gia Trang sức <br /> chuẩn quốc tế cùng{" "}
                   <span className="font-bold">NOBLECO Academy</span>
                 </h2>
               </div>
 
-              <div className="bg-white px-3 pb-8 pt-6 md:pb-10">
-                <div className="grid gap-6 text-left text-emerald-900 md:grid-cols-3">
+              <div className="bg-white px-5 lg:px-15 2xl:px-20 pb-8 md:pt-6 md:pb-10">
+                <div className="grid gap-0 text-left text-emerald-900 md:grid-cols-3">
                   {highlights.map((item, index) => (
                     <div
                       key={index}
-                      className={`relative flex flex-col gap-2 text-base md:text-lg lg:text-xl justify-center items-center min-h-[120px] md:min-h-[200px]`}
+                      className={`relative flex flex-col gap-2 text-base md:text-lg lg:text-xl justify-center items-center min-h-[110px] md:min-h-[200px]`}
                     >
-                      <Image src="/images/introPopup/1.png" alt="Icon" width={200} height={253} className="w-[120px] md:w-auto absolute -top-10 left-1/2 -translate-x-1/2 pointer-events-none select-none" />
-                      <div className="text-xs md:text-base relative z-10 font-medium text-white text-center md:text-justify-center max-w-[90px] md:max-w-[150px]">{item.title}</div>
+                      <Image src="/images/introPopup/3.png" alt="Icon" width={448} height={266} className="block md:hidden w-[310px] absolute -top-5 left-1/2 -translate-x-1/2 pointer-events-none select-none" />
+                      <Image src="/images/introPopup/1.png" alt="Icon" width={200} height={253} className="hidden md:block md:w-auto absolute -top-10 left-1/2 -translate-x-1/2 pointer-events-none select-none" />
+                      <div className="text-sm md:text-xl relative z-10 font-medium text-white text-center md:text-justify-center max-w-[310px] md:max-w-[150px]">{item.title}</div>
                     </div>
                   ))}
                 </div>
-                <div className="text-center mt-auto pt-10 flex justify-center">
+                <div className="text-center mt-auto pt-5 md:pt-10 flex justify-center">
                   <div className="rounded-full bg-gradient-to-t from-[#c9956b] via-[#eab788] to-[#ffe4c7] p-[2px] w-fit">
-
                     <button
                       onClick={() => {
                         handleClose();

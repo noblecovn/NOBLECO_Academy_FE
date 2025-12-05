@@ -50,7 +50,7 @@ const Section12 = () => {
                     {/* Hình ảnh */}
                     <div className="relative min-h-[320px] lg:min-h-full">
                         <Image
-                            src="/images/section12/2.png"
+                            src="/images/section12/3.png"
                             alt="Master Jewelry Stylist"
                             width={2650}
                             height={2527}
