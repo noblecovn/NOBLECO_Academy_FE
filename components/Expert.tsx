@@ -69,15 +69,32 @@ const ExpertSection = () => {
                                                 <div className="absolute bottom-0 left-0 w-full md:h-1/2 lg:h-2/5 bg-[#04241a]">
                                                 </div>
                                                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full lg:w-2/3 h-full flex flex-col md:flex-row items-center md:items-end justify-end md:justify-center px-2 md:px-0">
+                                                    <div className="md:hidden border-b border-white flex items-end">
+                                                        <Image
+                                                            src={expert.image}
+                                                            alt={expert.name}
+                                                            width={1500}
+                                                            height={2000}
+                                                            className="object-cover w-[55%] md:w-4/10 lg:w-1/2"
+                                                        />
+                                                        <div >
+                                                            <h3 className="text-2xl lg:text-4xl 2xl:text-5xl font-semibold leading-tight bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent">
+                                                                {expert.name}
+                                                            </h3>
+                                                            <p className="text-white text-sm md:text-base 2xl:text-2xl font-semibold uppercase pb-2">
+                                                                {expert.role}
+                                                            </p>
+                                                        </div>
+                                                    </div>
                                                     <Image
                                                         src={expert.image}
                                                         alt={expert.name}
                                                         width={1500}
                                                         height={2000}
-                                                        className="object-cover w-[45%] md:w-4/10 lg:w-1/2"
+                                                        className="hidden md:block object-cover w-[45%] md:w-4/10 lg:w-1/2"
                                                     />
                                                     <div className="text-center md:text-left space-y-2 xl:space-y-4 md:w-2/5">
-                                                        <div className="border-b border-white">
+                                                        <div className="border-b border-white hidden md:block">
                                                             <h3 className="text-3xl lg:text-4xl 2xl:text-5xl font-semibold leading-tight bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent">
                                                                 {expert.name}
                                                             </h3>
