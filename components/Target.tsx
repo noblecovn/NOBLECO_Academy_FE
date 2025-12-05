@@ -56,7 +56,7 @@ const Target = () => {
                 {/* Central Oval with Title */}
                 <div className="hidden md:block absolute left-1/2 top-1/2 -translate-1/2 ">
                     <div className="rounded-full bg-gradient-to-t from-[#0b2d1f] to-[#3f6c5a] p-2 inline-block w-full text-center max-w-3xl">
-                        <div className="bg-gradient-to-t from-[#0d3729] via-[#10382a]  to-[#34614e] rounded-full md:w-40 md:h-40 lg:w-60 lg:h-60 xl:w-70 xl:h-70 flex items-center justify-center">
+                        <div className="bg-gradient-to-t from-[#0d3729] via-[#10382a]  to-[#34614e] rounded-full md:w-40 md:h-40 lg:w-55 lg:h-55 xl:w-65 xl:h-65 2xl:w-70 2xl:h-70 flex items-center justify-center">
                             <h2 className={`bg-gradient-to-br from-[#e1b880] to-[#f6e3c9] bg-clip-text text-transparent text-2xl lg:text-3xl 2xl:text-4xl font-bold text-center uppercase leading-tight`}>
                                 KHÓA HỌC <br /> DÀNH CHO <br /> AI?
                             </h2>
@@ -82,7 +82,7 @@ const Target = () => {
                                     <div className="w-[2px] h-16 2xl:h-25 bg-deep-green flex-shrink-0" />
 
                                     {/* Text */}
-                                    <div className="flex-grow text-gray-800 text-sm md:text-sm xl:text-base 2xl:text-lg md:max-w-[215px] lg:max-w-[270px] xl:max-w-[370px] text-justify">
+                                    <div className="flex-grow text-gray-800 text-sm md:text-sm xl:text-base 2xl:text-lg md:max-w-[215px] lg:max-w-3/5 text-justify">
                                         {formatText(card.text)}
                                     </div>
                                 </div>
@@ -97,7 +97,7 @@ const Target = () => {
                                     className="bg-white rounded-2xl md:min-h-[116px] lg:min-h-[112px] xl:min-h-[128px] 2xl:min-h-[144px] p-2 lg:p-4 flex items-center justify-end gap-2 lg:gap-4 shadow-lg hover:shadow-xl transition-shadow duration-300"
                                 >
                                     {/* Text */}
-                                    <div className="order-3 md:order-1 flex-grow text-gray-800 text-sm md:text-sm xl:text-base 2xl:text-lg md:max-w-[215px] lg:max-w-[270px] xl:max-w-[370px] text-justify">
+                                    <div className="order-3 md:order-1 flex-grow text-gray-800 text-sm md:text-sm xl:text-base 2xl:text-lg md:max-w-[215px] lg:max-w-3/5 text-justify">
                                         {formatText(card.text)}
                                     </div>
                                     {/* Divider */}
