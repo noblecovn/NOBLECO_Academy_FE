@@ -27,7 +27,7 @@ const Section9 = () => {
 
                         <div className="grid grid-cols-1 gap-4 text-lg mt-4">
                             {highlights.map((item) => (
-                                <div key={item} className="flex items-start gap-3">
+                                <div key={item} className="flex items-center gap-3">
                                     <Image src="/images/section6/1.png" alt="check" width={24} height={30} className="object-cover" />
                                     <span className="w-9/10 text-justify">{item}</span>
                                 </div>

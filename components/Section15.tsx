@@ -10,7 +10,7 @@ const Section15 = () => {
                 "NOBLECO đảm bảo học viên được tiếp cận kiến thức chuẩn quốc tế, nội dung được cố vấn bởi chuyên gia sở hữu chứng chỉ GIA. \nToàn bộ giáo trình được cập nhật liên tục theo thị trường kim cương trang sức cao cấp.",
         },
         {
-            title: "2. CAM KẾT HỖ TRỢ TRONG SUỐT QUÁ TRÌNH HỌC",
+            title: (<>2. CAM KẾT HỖ TRỢ TRONG SUỐT <br className="md:hidden" /> QUÁ TRÌNH HỌC</>),
             content:
                 "Đội ngũ chuyên môn luôn theo sát, giải đáp từng câu hỏi, kèm cặp 1:1 khi cần thiết.\nHọc viên được thực hành thực tế và làm bài tập ứng dụng để nắm vững kỹ năng.",
         },
@@ -25,7 +25,7 @@ const Section15 = () => {
                 "Học viên được tham gia cộng đồng nội bộ NOBLECO – nơi chia sẻ kiến thức, cơ hội và kinh nghiệm thực chiến từ các chuyên gia.\nChúng tôi đồng hành cùng bạn trên hành trình nâng cấp kỹ năng lẫn thu nhập.",
         },
         {
-            title: "5. CAM KẾT CƠ HỘI TRỞ THÀNH ĐỐI TÁC CHIẾN LƯỢC",
+            title: (<>5. CAM KẾT CƠ HỘI TRỞ THÀNH <br className="md:hidden" /> ĐỐI TÁC CHIẾN LƯỢC</>),
             content:
                 "Những học viên có định hướng rõ ràng, thể hiện năng lực tốt sẽ được ưu tiên tham gia các dự án kinh doanh, trở thành đối tác chiến lược trong hệ sinh thái của NOBLECO.",
         },
