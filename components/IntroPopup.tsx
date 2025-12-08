@@ -101,7 +101,7 @@ export default function IntroPopup() {
                   <Image src="/images/introPopup/Christmas-tree.svg" alt="Logo" width={130} height={191} className="w-[80px] md:w-[130px] absolute -top-5 md:-top-10 -left-5" />
                   <Image src="/images/introPopup/text.svg" alt="Logo" width={700} height={140} className="w-[250px] md:w-[500px] lg:w-[700px] absolute -bottom-5 md:-bottom-15 right-1/2 translate-x-1/2" />
                   <Image src="/images/introPopup/Ornament.svg" alt="Logo" width={40} height={60} className="w-[30px] md:w-[40px] absolute top-0 right-10 md:right-20 lg:right-35" />
-                  <Image src="/images/introPopup/Ornament.svg" alt="Logo" width={60} height={90} className="hidden absolute top-0 md:right-5 lg:right-15" />
+                  <Image src="/images/introPopup/Ornament.svg" alt="Logo" width={60} height={90} className="hidden md:block absolute top-0 md:right-5 lg:right-15" />
                 </div>
               </div>
               <div className="px-1 md:px-5 lg:px-15 2xl:px-20 pb-8 pt-5 md:pt-15 md:pb-10 relative overflow-hidden rounded-[28px]">
@@ -111,10 +111,10 @@ export default function IntroPopup() {
                       key={index}
                       className={`bg-gradient-to-b from-[#265038] to-[#012218] p-1 rounded-xl grid grid-cols-3 md:grid-cols-1 md:grid-rows-2 h-full text-base md:text-lg lg:text-xl`}
                     >
-                      <div className="w-full h-30 md:h-40 overflow-hidden rounded-l-lg md:rounded-t-lg">
+                      <div className="w-full h-30 md:h-40 overflow-hidden rounded-l-lg md:rounded-none md:rounded-t-lg">
                         <Image src={item.image} alt="Logo" width={4800} height={100} className="w-full h-full object-cover  md:object-[0%_30%]" />
                       </div>
-                      <div className="col-span-2 md:col-span-1 bg-white rounded-r-lg md:rounded-b-lg text-xs md:text-sm relative z-10 font-medium text-deep-green text-left md:text-justify-center p-2">{item.title}</div>
+                      <div className="col-span-2 md:col-span-1 bg-white rounded-r-lg md:rounded-none md:rounded-b-lg text-xs md:text-sm relative z-10 font-medium text-deep-green text-left md:text-justify-center p-2 flex items-center md:items-start">{item.title}</div>
                     </div>
                   ))}
                 </div>
