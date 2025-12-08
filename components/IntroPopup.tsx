@@ -94,18 +94,18 @@ export default function IntroPopup() {
           <div className="relative w-full">
             <div className="w-full text-center shadow-2xl">
               <div className="bg-gradient-to-b from-[#265038] to-[#012218] p-2 rounded-[28px]">
-                <div className="px-6 py-8 md:px-10 md:pb-20 relative bg-white rounded-[20px]">
-                  <h2 className={`uppercase text-lg 2xl:text-2xl font-bold leading-snug md:text-3xl text-[#1b4336]`}>
+                <div className="px-6 pt-10 pb-15 md:px-10 lg:pb-20 relative bg-white rounded-[20px]">
+                  <h2 className={`uppercase md:text-lg lg:text-2xl text-[#1b4336] font-bold leading-snug `}>
                     Trở thành Chuyên gia Trang sức chuẩn quốc tế cùng
                   </h2>
                   <Image src="/images/introPopup/Christmas-tree.svg" alt="Logo" width={130} height={191} className="absolute -top-10 -left-5" />
-                  <Image src="/images/introPopup/text.svg" alt="Logo" width={700} height={140} className="absolute -bottom-15 right-1/2 translate-x-1/2" />
-                  <Image src="/images/introPopup/Ornament.svg" alt="Logo" width={40} height={60} className="absolute top-0 right-35" />
-                  <Image src="/images/introPopup/Ornament.svg" alt="Logo" width={60} height={90} className="absolute top-0 right-15" />
+                  <Image src="/images/introPopup/text.svg" alt="Logo" width={700} height={140} className="w-[500px] lg:w-[700px] absolute -bottom-15 right-1/2 translate-x-1/2" />
+                  <Image src="/images/introPopup/Ornament.svg" alt="Logo" width={40} height={60} className="absolute top-0 md:right-20 lg:right-35" />
+                  <Image src="/images/introPopup/Ornament.svg" alt="Logo" width={60} height={90} className="absolute top-0 md:right-5 lg:right-15" />
                 </div>
               </div>
               <div className="px-5 lg:px-15 2xl:px-20 pb-8 md:pt-15 md:pb-10 relative overflow-hidden rounded-[28px]">
-                <div className="grid gap-15 text-left text-emerald-900 md:grid-cols-3">
+                <div className="grid gap-3 lg:gap-15 text-left text-emerald-900 md:grid-cols-3">
                   {highlights.map((item, index) => (
                     <div
                       key={index}
@@ -118,7 +118,7 @@ export default function IntroPopup() {
                     </div>
                   ))}
                 </div>
-                <div className="text-white pt-2 text-sm pb-20">
+                <div className="text-white pt-2 text-xs lg:text-sm pb-20">
                   Không yêu cầu kinh nghiệm trang sức - phù hợp nhân viên văn phòng, freelancer, bán hàng online, livestream, spa - thẩm mỹ, makeup
                 </div>
                 <div className="text-center mt-auto flex justify-center absolute bottom-10 left-1/2 -translate-x-1/2 z-20">
@@ -140,7 +140,7 @@ export default function IntroPopup() {
                 }} className="cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 z-10" />
                 <Image src="/images/introPopup/snow.svg" alt="Logo" width={1024} height={123} className="w-full absolute bottom-0 left-0" />
                 <Image src="/images/introPopup/Santa-Claus.svg" alt="Logo" width={200} height={72} className="-rotate-15 absolute bottom-10 left-15 z-25" />
-                <Image src="/images/introPopup/snowmen.svg" alt="Logo" width={160} height={163} className="absolute bottom-0 right-0 z-25" />
+                <Image src="/images/introPopup/snowmen.svg" alt="Logo" width={160} height={163} className="md:w-[110px] lg:w-[140px] xl:w-[160px] absolute bottom-0 right-0 z-25" />
               </div>
             </div>
           </div>
