@@ -27,7 +27,7 @@ const Target = () => {
         },
         {
             image: "/images/target/5.svg",
-            text: "**Bạn là Doanh nghiệp/Kinh doanh**: Cần giải pháp **tăng lợi nhuận**, nâng giá trị hóa đơn và gia tăng tỷ lệ chuyển đổi mà không tốn thêm chi phi marketing?",
+            text: "**Bạn là Doanh nghiệp/Kinh doanh**: Cần giải pháp **tăng lợi nhuận**, nâng giá trị hóa đơn và gia tăng tỷ lệ chuyển đổi mà không tốn thêm chi phí marketing?",
         },
         {
             image: "/images/target/6.svg",
@@ -53,10 +53,10 @@ const Target = () => {
                         KHÓA HỌC DÀNH CHO AI?
                     </h2>
                 </div>
-                {/* Central Oval with Title */}
                 <div className="hidden md:block absolute left-1/2 top-1/2 -translate-1/2 ">
-                    <div className="rounded-full bg-gradient-to-t from-[#0b2d1f] to-[#3f6c5a] p-2 inline-block w-full text-center max-w-3xl">
-                        <div className="bg-gradient-to-t from-[#0d3729] via-[#10382a]  to-[#34614e] rounded-full md:w-40 md:h-40 lg:w-55 lg:h-55 xl:w-65 xl:h-65 2xl:w-70 2xl:h-70 flex items-center justify-center">
+                    <Image src="/images/target/icon.svg" alt="Logo" fill/>
+                    <div className="inline-block w-full text-center max-w-3xl relative z-10">
+                        <div className="md:w-45 md:h-45 lg:w-70 lg:h-70 xl:w-80 xl:h-80 2xl:w-90 2xl:h-90 flex items-center justify-center">
                             <h2 className={`bg-gradient-to-br from-[#e1b880] to-[#f6e3c9] bg-clip-text text-transparent text-2xl lg:text-3xl 2xl:text-4xl font-bold text-center uppercase leading-tight`}>
                                 KHÓA HỌC <br /> DÀNH CHO <br /> AI?
                             </h2>

@@ -281,10 +281,10 @@ const Section16 = () => {
 
                     {/* Right Column - Form */}
                     <div className="bg-white rounded-2xl p-8">
-                        <h3 className="text-[#0a5c3f] font-bold text-xl mb-2">
+                        <h3 className="text-[#0a5c3f] font-bold text-lg md:text-xl mb-2">
                             Đăng ký đào tạo tại NOBLECO Academy
                         </h3>
-                        <p className="text-deep-green text-base mb-2">
+                        <p className="text-deep-green text-sm md:text-base mb-2">
                             Vui lòng điền đầy đủ các thông tin dưới đây. Chúng tôi sẽ liên lạc lại trong 24h làm việc.
                         </p>
 
