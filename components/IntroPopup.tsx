@@ -7,38 +7,39 @@ const cormorantGaramond = Cormorant_Garamond({
   subsets: ["vietnamese"],
 });
 
-const highlights: { title: ReactNode }[] = [
+const highlights: { title: ReactNode, image: string }[] = [
   {
     title: (
       <>
-        <ul className="list-disc md:min-h-[84px]">
-          <li>Nâng cao thu nhập</li>
-          <li>Ổn định tài chính</li>
+        <ul className="">
+          <li>- Bùng nổ lợi nhuận và nâng thu nhập lên 15-30 triệu/tháng chỉ trong 3 tháng.</li>
+          <li>- Đột phá tài chính, thiết lập nguồn thu nhập bền vững không giới hạn.</li>
         </ul>
-
       </>
-    )
+    ),
+    image: "/images/introPopup/image-1.jpg"
   },
   {
     title: (
       <>
-        <ul className="list-disc md:min-h-[84px]">
-          <li>Nghề nghiệp linh hoạt</li>
-          <li>Dễ kết nối</li>
+        <ul className="">
+          <li>- Bắt đầu như một nghề thứ hai linh hoạt, dành trọn vẹn thời gian cho gia đình, sức khoẻ và đam mê.</li>
+          <li>- Nghề nghiệp sang trọng với hình ảnh chuyên nghiệp và phong thái tự tin, tạo dấu ấn đẳng cấp.</li>
         </ul>
-
       </>
-    )
+    ),
+    image: "/images/introPopup/image-2.jpg"
   },
   {
     title: (
       <>
-        <ul className="list-disc">
-          <li>Nâng tầm vị thế</li>
-          <li>Hội nhập cộng đồng tinh hoa</li>
+        <ul className="">
+          <li>- Hội nhập cộng đồng tinh hoa, kết nối với những người yêu trang sức và ngành hàng Luxury.</li>
+          <li>- Nâng tầm vị thế xã hội, gặp gỡ các đối tác tiềm năng và những người có tầm ảnh hưởng trong cộng đồng Luxury.</li>
         </ul>
       </>
-    )
+    ),
+    image: "/images/introPopup/image-3.jpg"
   }
 ];
 
@@ -78,55 +79,68 @@ export default function IntroPopup() {
         }`}
     >
       <div
-        className={`relative w-full max-w-4xl rounded-[32px] bg-gradient-to-t from-[#c9956b] via-[#eab788] to-[#ffe4c7] p-1 shadow-2xl transition-all duration-200 ${isClosing ? "scale-95 opacity-0" : "scale-100 opacity-100"
+        className={`relative w-full max-w-5xl shadow-2xl transition-all duration-200 ${isClosing ? "scale-95 opacity-0" : "scale-100 opacity-100"
           }`}
       >
-        <div className="relative w-full overflow-hidden rounded-[30px] bg-white">
+        <div className="relative w-full bg-gradient-to-b from-[#265038] to-[#012218] rounded-[28px]">
           <button
             onClick={handleClose}
             aria-label="Đóng popup"
-            className="absolute right-4 top-4 z-10 flex h-6 w-6 2xl:h-10 2xl:w-10 items-center justify-center rounded-full bg-white/80 text-emerald-900 shadow-md transition hover:bg-white"
+            className="absolute right-4 top-4 z-10 flex h-6 w-6 2xl:h-10 2xl:w-10 items-center justify-center rounded-full bg-deep-green/80 text-white shadow-md transition hover:bg-deep-green/50"
           >
             ✕
           </button>
 
           <div className="relative w-full">
-            <div className="w-full overflow-hidden rounded-[28px] bg-white/95 text-center shadow-2xl">
-              <div className="bg-gradient-to-b from-[#87c5ab] to-[#0e392b] px-6 py-8 md:px-10 md:py-10">
-                <h2 className={`${cormorantGaramond.className} text-lg 2xl:text-4xl leading-snug md:text-3xl bg-gradient-to-tr from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
-                  Trở thành Chuyên gia Trang sức <br /> chuẩn quốc tế cùng{" "}
-                  <span className="font-bold">NOBLECO Academy</span>
-                </h2>
+            <div className="w-full text-center shadow-2xl">
+              <div className="bg-gradient-to-b from-[#265038] to-[#012218] p-2 rounded-[28px]">
+                <div className="px-6 py-8 md:px-10 md:pb-20 relative bg-white rounded-[20px]">
+                  <h2 className={`uppercase text-lg 2xl:text-2xl font-bold leading-snug md:text-3xl text-[#1b4336]`}>
+                    Trở thành Chuyên gia Trang sức chuẩn quốc tế cùng
+                  </h2>
+                  <Image src="/images/introPopup/Christmas-tree.svg" alt="Logo" width={130} height={191} className="absolute -top-10 -left-5" />
+                  <Image src="/images/introPopup/text.svg" alt="Logo" width={700} height={140} className="absolute -bottom-15 right-1/2 translate-x-1/2" />
+                  <Image src="/images/introPopup/Ornament.svg" alt="Logo" width={40} height={60} className="absolute top-0 right-35" />
+                  <Image src="/images/introPopup/Ornament.svg" alt="Logo" width={60} height={90} className="absolute top-0 right-15" />
+                </div>
               </div>
-
-              <div className="bg-white px-5 lg:px-15 2xl:px-20 pb-8 md:pt-6 md:pb-10">
-                <div className="grid gap-0 text-left text-emerald-900 md:grid-cols-3">
+              <div className="px-5 lg:px-15 2xl:px-20 pb-8 md:pt-15 md:pb-10 relative overflow-hidden rounded-[28px]">
+                <div className="grid gap-15 text-left text-emerald-900 md:grid-cols-3">
                   {highlights.map((item, index) => (
                     <div
                       key={index}
-                      className={`relative flex flex-col gap-2 text-base md:text-lg lg:text-xl justify-center items-center min-h-[110px] md:min-h-[200px]`}
+                      className={`bg-gradient-to-b from-[#265038] to-[#012218] p-1 rounded-xl grid grid-cols-1 grid-rows-2 h-full text-base md:text-lg lg:text-xl`}
                     >
-                      <Image src="/images/introPopup/3.png" alt="Icon" width={448} height={266} className="block md:hidden w-[310px] absolute -top-5 left-1/2 -translate-x-1/2 pointer-events-none select-none" />
-                      <Image src="/images/introPopup/1.png" alt="Icon" width={200} height={253} className="hidden md:block md:w-auto absolute -top-10 left-1/2 -translate-x-1/2 pointer-events-none select-none" />
-                      <div className="text-sm md:text-lg relative z-10 font-medium text-white text-left md:text-justify-center w-[160px] md:max-w-[160px]">{item.title}</div>
+                      <div className="w-full h-40 overflow-hidden rounded-t-lg">
+                        <img src={item.image} alt="Logo" width={200} height={100} className="w-full h-full object-cover object-[0%_30%]" />
+                      </div>
+                      <div className="bg-white rounded-b-lg text-sm relative z-10 font-medium text-deep-green text-left md:text-justify-center p-2">{item.title}</div>
                     </div>
                   ))}
                 </div>
-                <div className="text-center mt-auto pt-5 md:pt-10 flex justify-center">
-                  <div className="rounded-full bg-gradient-to-t from-[#c9956b] via-[#eab788] to-[#ffe4c7] p-[2px] w-fit">
+                <div className="text-white pt-2 text-sm pb-20">
+                  Không yêu cầu kinh nghiệm trang sức - phù hợp nhân viên văn phòng, freelancer, bán hàng online, livestream, spa - thẩm mỹ, makeup
+                </div>
+                <div className="text-center mt-auto flex justify-center absolute bottom-10 left-1/2 -translate-x-1/2 z-20">
+                  <div className="rounded-full p-[2px] w-fit">
                     <button
-                      onClick={() => {
-                        handleClose();
-                        setTimeout(() => {
-                          document.getElementById("chuong-trinh-dao-tao")?.scrollIntoView({ behavior: "smooth" });
-                        }, 250);
-                      }}
-                      className="cursor-pointer bg-gradient-to-b from-[#87c5ab] to-[#0e392b] inline-block px-20 py-2 rounded-full text-white text-sm md:text-2xl font-bold"
+                      className="relative z-30 cursor-pointer inline-block rounded-full text-white text-sm md:text-xl font-bold "
                     >
-                      TÌM HIỂU NGAY
+                      <span className="bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent">
+                        TÌM HIỂU NGAY
+                      </span>
                     </button>
                   </div>
                 </div>
+                <Image src="/images/introPopup/button.png" alt="Logo" width={200} height={110} onClick={() => {
+                  handleClose();
+                  setTimeout(() => {
+                    document.getElementById("chuong-trinh-dao-tao")?.scrollIntoView({ behavior: "smooth" });
+                  }, 250);
+                }} className="cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 z-10" />
+                <Image src="/images/introPopup/snow.svg" alt="Logo" width={1024} height={123} className="w-full absolute bottom-0 left-0" />
+                <Image src="/images/introPopup/Santa-Claus.svg" alt="Logo" width={200} height={72} className="-rotate-15 absolute bottom-10 left-15 z-25" />
+                <Image src="/images/introPopup/snowmen.svg" alt="Logo" width={160} height={163} className="absolute bottom-0 right-0 z-25" />
               </div>
             </div>
           </div>

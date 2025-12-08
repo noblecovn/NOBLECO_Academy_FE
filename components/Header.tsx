@@ -114,7 +114,7 @@ export function Header() {
             className="flex items-center gap-3 px-6 py-4 text-[16px] font-semibold text-[#0E3D27] hover:bg-[#f0f7f4] transition"
             onClick={closeMobileMenu}
           >
-            <Image src="/images/home.png" alt="" width={20} height={20} />
+            <Image src="/images/home.png" alt="" width={20} height={16} />
             Trang chủ
           </Link>
 
@@ -138,7 +138,7 @@ export function Header() {
                   src="/images/dropdown.png"
                   alt=""
                   width={16}
-                  height={16}
+                  height={13}
                   className={`transition-transform duration-200 ${trainingExpanded ? "rotate-180" : ""}`}
                 />
               </button>
