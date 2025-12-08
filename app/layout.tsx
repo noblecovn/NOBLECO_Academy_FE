@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import Decoration from "@/components/Decoration";
+import RegistrationNotificationPopup from "@/components/RegistrationNotificationPopup";
 
 const afacadFlux = Afacad_Flux({
   subsets: ["latin"],
@@ -98,6 +99,7 @@ export default function RootLayout({
         <Header />
         <main className="w-full">{children}</main>
         <Footer />
+        <RegistrationNotificationPopup />
       </body>
     </html>
   );
