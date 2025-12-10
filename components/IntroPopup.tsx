@@ -124,6 +124,12 @@ export default function IntroPopup() {
                 <div className="text-center mt-auto flex justify-center absolute bottom-5 md:bottom-10 left-1/2 -translate-x-1/2 z-20">
                   <div className="rounded-full p-[2px] w-fit">
                     <button
+                      onClick={() => {
+                        handleClose();
+                        setTimeout(() => {
+                          document.getElementById("target")?.scrollIntoView({ behavior: "smooth" });
+                        }, 250);
+                      }}
                       className="relative z-30 cursor-pointer inline-block rounded-full text-white text-xs md:text-xl font-bold "
                     >
                       <span className="bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent">
