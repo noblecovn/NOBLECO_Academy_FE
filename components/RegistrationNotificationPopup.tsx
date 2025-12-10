@@ -23,7 +23,7 @@ const fakeRegistrations: RegistrationData[] = [
     avatar: "/images/notification/2.jpg",
     name: "Trần Văn Minh",
     timeAgo: "5 phút trước",
-    course: "Senior Jewelry Consultant",
+    course: "Jewelry Advisor",
     duration: 6,
   },
   {
@@ -77,7 +77,7 @@ export default function RegistrationNotificationPopup() {
 
   // Hàm lấy thời gian ngẫu nhiên từ 30-45 giây
   const getRandomInterval = () => {
-    return Math.floor(Math.random() * (45000 - 30000 + 1)) + 30000; // 30-45 giây tính bằng milliseconds
+    return Math.floor(Math.random() * (30000 - 20000 + 1)) + 20000; // 30-45 giây tính bằng milliseconds
   };
 
   // Hàm chọn ngẫu nhiên một đăng ký
@@ -152,13 +152,13 @@ export default function RegistrationNotificationPopup() {
         <div className="p-4">
           <div className="flex items-start gap-3">
             {/* Avatar */}
-            <div className="relative flex-shrink-0">
+            <div className="relative flex-shrink-0 w-12 h-12">
               <Image
                 src={currentRegistration.avatar}
                 alt={currentRegistration.name}
-                width={48}
-                height={48}
-                className="rounded-full border-2 border-[#B6CCBE]"
+                width={200}
+                height={200}
+                className="w-full h-full object-cover rounded-full border-2 border-[#B6CCBE]"
               />
               <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></div>
             </div>
