@@ -112,7 +112,7 @@ export default function IntroPopup() {
                       className={`bg-gradient-to-b from-[#265038] to-[#012218] p-1 rounded-xl grid grid-cols-3 md:grid-cols-1 md:grid-rows-2 h-full text-base md:text-lg lg:text-xl`}
                     >
                       <div className="w-full h-30 md:h-40 overflow-hidden rounded-l-lg md:rounded-none md:rounded-t-lg">
-                        <Image src={item.image} alt="Logo" width={4800} height={100} className="w-full h-full object-cover  md:object-[0%_30%]" />
+                        <Image src={item.image} alt="Logo" width={2000} height={100} className="w-full h-full object-cover  md:object-[0%_30%]" />
                       </div>
                       <div className="col-span-2 md:col-span-1 bg-white rounded-r-lg md:rounded-none md:rounded-b-lg text-xs md:text-sm relative z-10 font-medium text-deep-green text-left md:text-justify-center p-2 flex items-center md:items-start">{item.title}</div>
                     </div>
