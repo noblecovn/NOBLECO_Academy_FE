@@ -96,7 +96,7 @@ export default function IntroPopup() {
               <div className="bg-gradient-to-b from-[#265038] to-[#012218] p-2 rounded-[28px]">
                 <div className="px-0 md:px-6 pt-5 pb-10 md:pt-10 md:pb-15 md:px-10 lg:pb-20 relative bg-white rounded-[20px]">
                   <h2 className={`uppercase text-xs md:text-lg lg:text-2xl text-[#1b4336] font-bold leading-snug `}>
-                    Trở thành Chuyên gia Trang sức <br className="md:hidden"/> chuẩn quốc tế cùng
+                    Trở thành Chuyên gia Trang sức <br className="md:hidden" /> chuẩn quốc tế cùng
                   </h2>
                   <Image src="/images/introPopup/Christmas-tree.svg" alt="Logo" width={130} height={191} className="w-[80px] md:w-[130px] absolute -top-5 md:-top-10 -left-5" />
                   <Image src="/images/introPopup/text.svg" alt="Logo" width={700} height={140} className="w-[250px] md:w-[500px] lg:w-[700px] absolute -bottom-5 md:-bottom-15 right-1/2 translate-x-1/2" />
@@ -132,12 +132,18 @@ export default function IntroPopup() {
                     </button>
                   </div>
                 </div>
-                <Image src="/images/introPopup/button.png" alt="Logo" width={200} height={110} onClick={() => {
-                  handleClose();
-                  setTimeout(() => {
-                    document.getElementById("chuong-trinh-dao-tao")?.scrollIntoView({ behavior: "smooth" });
-                  }, 250);
-                }} className="w-[120px] md:w-[200px] cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 z-10" />
+                <button
+                  onClick={() => {
+                    handleClose();
+                    setTimeout(() => {
+                      document.getElementById("target")?.scrollIntoView({ behavior: "smooth" });
+                    }, 250);
+                  }}
+                  className="w-[120px] md:w-[200px] cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 z-10 bg-transparent border-none p-0"
+                  aria-label="Tìm hiểu ngay"
+                >
+                  <Image src="/images/introPopup/button.png" alt="Logo" width={200} height={110} className="w-full h-auto" />
+                </button>
                 <Image src="/images/introPopup/snow.svg" alt="Logo" width={1024} height={123} className="w-full absolute bottom-0 left-0" />
                 <Image src="/images/introPopup/Santa-Claus.svg" alt="Logo" width={200} height={72} className="w-[130px] md:w-[200px] -rotate-15 absolute bottom-10 left-0 md:left-15 z-25" />
                 <Image src="/images/introPopup/snowmen.svg" alt="Logo" width={160} height={163} className="w-[100px] md:w-[110px] lg:w-[140px] xl:w-[160px] absolute bottom-0 right-0 z-25" />

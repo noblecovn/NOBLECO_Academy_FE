@@ -46,7 +46,7 @@ const Target = () => {
     };
 
     return (
-        <section className="w-full py-16 2xl:py-24 bg-gradient-to-t from-[#87c5ab] to-[#04241a] relative">
+        <section id="target" className="w-full py-16 2xl:py-24 bg-gradient-to-t from-[#87c5ab] to-[#04241a] relative">
             <div className="max-w-7xl mx-auto px-2 2xl:px-0">
                 <div className="md:hidden w-full flex flex-col items-center justify-center pb-6">
                     <h2 className={`${cormorantGaramond.className} text-2xl md:text-4xl 2xl:text-5xl font-bold uppercase bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
@@ -54,7 +54,7 @@ const Target = () => {
                     </h2>
                 </div>
                 <div className="hidden md:block absolute left-1/2 top-1/2 -translate-1/2 ">
-                    <Image src="/images/target/icon.svg" alt="Logo" fill/>
+                    <Image src="/images/target/icon1.svg" alt="Logo" fill/>
                     <div className="inline-block w-full text-center max-w-3xl relative z-10">
                         <div className="md:w-45 md:h-45 lg:w-70 lg:h-70 xl:w-80 xl:h-80 2xl:w-90 2xl:h-90 flex items-center justify-center">
                             <h2 className={`bg-gradient-to-br from-[#e1b880] to-[#f6e3c9] bg-clip-text text-transparent text-2xl lg:text-3xl 2xl:text-4xl font-bold text-center uppercase leading-tight`}>
