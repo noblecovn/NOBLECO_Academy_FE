@@ -1,21 +1,60 @@
+import dynamic from "next/dynamic";
 import Section1 from "@/components/Section1";
 import Section2 from "@/components/Section2";
-import WorkshopSection from "@/components/Workshop";
-import ExpertSection from "@/components/Expert";
-import PartnersAndTestimonialsSection from "@/components/Partners";
-import Section6 from "@/components/Section6";
-import Section8 from "@/components/Section8";
-import Section9 from "@/components/Section9";
-import Section11 from "@/components/Section11";
-import Section12 from "@/components/Section12";
-import Section14 from "@/components/Section14";
-import Section15 from "@/components/Section15";
-import Section16 from "@/components/Section16";
-import IntroPopup from "@/components/IntroPopup";
 import AboutUs from "@/components/AboutUs";
 import Target from "@/components/Target";
 import JsonLd from "@/components/JsonLd";
 import type { Metadata } from "next";
+
+// Dynamic import cho IntroPopup - chỉ hiển thị sau 300ms
+const IntroPopup = dynamic(() => import("@/components/IntroPopup"), {
+  loading: () => null, // Không hiển thị gì khi đang load
+});
+
+// Dynamic import cho các section dưới fold - lazy load để cải thiện FCP
+const WorkshopSection = dynamic(() => import("@/components/Workshop"), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+
+const ExpertSection = dynamic(() => import("@/components/Expert"), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+
+const PartnersAndTestimonialsSection = dynamic(() => import("@/components/Partners"), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+
+const Section6 = dynamic(() => import("@/components/Section6"), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+
+const Section8 = dynamic(() => import("@/components/Section8"), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+
+const Section9 = dynamic(() => import("@/components/Section9"), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+
+const Section11 = dynamic(() => import("@/components/Section11"), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+
+const Section12 = dynamic(() => import("@/components/Section12"), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+
+const Section14 = dynamic(() => import("@/components/Section14"), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+
+const Section15 = dynamic(() => import("@/components/Section15"), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+
+const Section16 = dynamic(() => import("@/components/Section16"), {
+  loading: () => <div className="min-h-[400px]" />,
+});
 
 export const metadata: Metadata = {
   title: "Trang Chủ",

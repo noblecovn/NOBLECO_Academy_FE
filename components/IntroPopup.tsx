@@ -98,10 +98,43 @@ export default function IntroPopup() {
                   <h2 className={`uppercase text-xs md:text-lg lg:text-2xl text-[#1b4336] font-bold leading-snug `}>
                     Trở thành Chuyên gia Trang sức <br className="md:hidden" /> chuẩn quốc tế cùng
                   </h2>
-                  <Image src="/images/introPopup/Christmas-tree.svg" alt="Logo" width={130} height={191} className="w-[80px] md:w-[130px] absolute -top-5 md:-top-10 -left-5" />
-                  <Image src="/images/introPopup/text.svg" alt="Logo" width={700} height={140} className="w-[250px] md:w-[500px] lg:w-[700px] absolute -bottom-5 md:-bottom-15 right-1/2 translate-x-1/2" />
-                  <Image src="/images/introPopup/Ornament.svg" alt="Logo" width={40} height={60} className="w-[30px] md:w-[40px] absolute top-0 right-10 md:right-20 lg:right-35" />
-                  <Image src="/images/introPopup/Ornament.svg" alt="Logo" width={60} height={90} className="hidden md:block absolute top-0 md:right-5 lg:right-15" />
+                  <Image
+                    src="/images/introPopup/Christmas-tree.svg"
+                    alt="Cây thông Noel trang trí"
+                    width={130}
+                    height={191}
+                    className="w-[80px] md:w-[130px] absolute -top-5 md:-top-10 -left-5"
+                    priority
+                    quality={90}
+                  />
+                  <Image
+                    src="/images/introPopup/text.svg"
+                    alt="Nobleco Academy"
+                    width={700}
+                    height={140}
+                    className="w-[250px] md:w-[500px] lg:w-[700px] absolute -bottom-5 md:-bottom-15 right-1/2 translate-x-1/2"
+                    priority
+                    quality={90}
+                    sizes="(max-width: 768px) 250px, (max-width: 1024px) 500px, 700px"
+                  />
+                  <Image
+                    src="/images/introPopup/Ornament.svg"
+                    alt="Đồ trang trí Noel"
+                    width={40}
+                    height={60}
+                    className="w-[30px] md:w-[40px] absolute top-0 right-10 md:right-20 lg:right-35"
+                    loading="lazy"
+                    quality={85}
+                  />
+                  <Image
+                    src="/images/introPopup/Ornament.svg"
+                    alt="Đồ trang trí Noel"
+                    width={60}
+                    height={90}
+                    className="hidden md:block absolute top-0 md:right-5 lg:right-15"
+                    loading="lazy"
+                    quality={85}
+                  />
                 </div>
               </div>
               <div className="px-1 md:px-5 lg:px-15 2xl:px-20 pb-8 pt-5 md:pt-15 md:pb-10 relative overflow-hidden rounded-[28px]">
@@ -148,11 +181,11 @@ export default function IntroPopup() {
                   className="w-[120px] md:w-[200px] cursor-pointer absolute bottom-0 left-1/2 -translate-x-1/2 z-10 bg-transparent border-none p-0"
                   aria-label="Tìm hiểu ngay"
                 >
-                  <Image src="/images/introPopup/button.png" alt="Logo" width={200} height={110} className="w-full h-auto" />
+                  <Image src="/images/introPopup/button.png" alt="Logo" width={200} height={110} loading="lazy" className="w-full h-auto" />
                 </button>
-                <Image src="/images/introPopup/snow.svg" alt="Logo" width={1024} height={123} className="w-full absolute bottom-0 left-0" />
-                <Image src="/images/introPopup/Santa-Claus.svg" alt="Logo" width={200} height={72} className="w-[130px] md:w-[200px] -rotate-15 absolute bottom-10 left-0 md:left-15 z-25" />
-                <Image src="/images/introPopup/snowmen.svg" alt="Logo" width={160} height={163} className="w-[100px] md:w-[110px] lg:w-[140px] xl:w-[160px] absolute bottom-0 right-0 z-25" />
+                <Image src="/images/introPopup/snow.svg" alt="Logo" width={1024} height={123} loading="lazy" className="w-full absolute bottom-0 left-0" />
+                <Image src="/images/introPopup/Santa-Claus.svg" alt="Logo" width={200} height={72} loading="lazy" className="w-[130px] md:w-[200px] -rotate-15 absolute bottom-10 left-0 md:left-15 z-25" />
+                <Image src="/images/introPopup/snowmen.svg" alt="Logo" width={160} height={163} loading="lazy" className="w-[100px] md:w-[110px] lg:w-[140px] xl:w-[160px] absolute bottom-0 right-0 z-25" />
               </div>
             </div>
           </div>
