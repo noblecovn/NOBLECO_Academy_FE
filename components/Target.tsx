@@ -13,17 +13,17 @@ const Target = () => {
         },
         {
             image: "/images/target/2.svg",
-            text: "**Bạn khao khát độc lập**: Thích công việc linh động, chinh phục thử thách và muốn **kiếm được nhiều tiền hơn** mức hiện tại?",
+            text: "**Bạn là Quản lý/Trưởng nhóm giàu kinh nghiệm** nhưng đang chạm trần thu nhập cố định tại công ty, khao khát cơ hội **tài chính xứng tầm với năng lực** và giá trị thực tế, **tự chủ hoàn toàn về thời gian và thu nhập?**",
         },
         {
             image: "/images/target/3.svg",
-            text: "**Bạn cần một khởi đầu mới**: Mong muốn khởi nghiệp lại trong một ngành có **giá trị cao**, cơ hội  **phát triển lâu dài** và lộ trình rõ ràng?",
+            text: "**Bạn đang ở ngã rẽ sự nghiệp** hoặc **muốn khởi nghiệp lại**: lĩnh vực có **giá trị cao**, **ổn định và tiềm năng dài hạn**, để đảm bảo mỗi khoản đầu tư về thời gian và vốn đều mang lại kết quả bền vững?",
         },
     ];
     const cards2 = [
         {
             image: "/images/target/4.svg",
-            text: "**Bạn muốn nâng tầm uy tín**: Cần profile đẹp, mở rộng **mối quan hệ chất lượng** và trở thành chuyên gia có bằng cấp, **được công nhận**?",
+            text: "**Bạn cần một Profile đẳng cấp** (chứng chỉ/danh hiệu) để **xây dựng mạng lưới quan hệ chất lượng cao** giúp khách hàng lớn/doanh nghiệp chủ động tìm đến mình?",
         },
         {
             image: "/images/target/5.svg",
