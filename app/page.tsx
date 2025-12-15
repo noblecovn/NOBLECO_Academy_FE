@@ -1,22 +1,57 @@
-import Section1 from "@/components/Section1";
-import Section2 from "@/components/Section2";
-import WorkshopSection from "@/components/Workshop";
-import ExpertSection from "@/components/Expert";
-import PartnersAndTestimonialsSection from "@/components/Partners";
-import Section6 from "@/components/Section6";
-import Section8 from "@/components/Section8";
-import Section9 from "@/components/Section9";
-import Section11 from "@/components/Section11";
-import Section12 from "@/components/Section12";
-import Section14 from "@/components/Section14";
-import Section15 from "@/components/Section15";
-import Section16 from "@/components/Section16";
-import IntroPopup from "@/components/IntroPopup";
-import AboutUs from "@/components/AboutUs";
-import Target from "@/components/Target";
-import JsonLd from "@/components/JsonLd";
+import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 
+const Section1 = dynamic(() => import("@/components/Section1"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+});
+const Section2 = dynamic(() => import("@/components/Section2"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+});
+const WorkshopSection = dynamic(() => import("@/components/Workshop"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+});
+const ExpertSection = dynamic(() => import("@/components/Expert"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+});
+const PartnersAndTestimonialsSection = dynamic(() => import("@/components/Partners"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+});
+const Section6 = dynamic(() => import("@/components/Section6"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+});
+const Section8 = dynamic(() => import("@/components/Section8"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+});
+const Section9 = dynamic(() => import("@/components/Section9"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+});
+const Section11 = dynamic(() => import("@/components/Section11"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+});
+const Section12 = dynamic(() => import("@/components/Section12"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+});
+const Section14 = dynamic(() => import("@/components/Section14"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+});
+const Section15 = dynamic(() => import("@/components/Section15"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+});
+const Section16 = dynamic(() => import("@/components/Section16"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+});
+const IntroPopup = dynamic(() => import("@/components/IntroPopup"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+});
+const AboutUs = dynamic(() => import("@/components/AboutUs"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+});
+const Target = dynamic(() => import("@/components/Target"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+});
+const JsonLd = dynamic(() => import("@/components/JsonLd"), {
+  loading: () => <div className="h-96 bg-gray-100 animate-pulse" />
+});
 export const metadata: Metadata = {
   title: "Trang Chủ",
   description:
