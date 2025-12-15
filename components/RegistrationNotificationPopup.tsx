@@ -118,7 +118,7 @@ export default function RegistrationNotificationPopup() {
     // Hiển thị popup đầu tiên sau 3 giây khi component mount
     showTimer = setTimeout(() => {
       showNextNotification();
-    }, 3000);
+    }, 30000);
 
     return () => {
       if (showTimer) clearTimeout(showTimer);
