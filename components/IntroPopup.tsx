@@ -150,7 +150,7 @@ export default function IntroPopup() {
                 >
                   <Image src="/images/introPopup/button.png" alt="Logo" width={200} height={110} className="w-full h-auto" />
                 </button>
-                <Image src="/images/introPopup/snow.svg" alt="Logo" width={1024} height={123} className="w-full absolute bottom-0 left-0" />
+                <Image src="/images/introPopup/snow.svg" alt="Logo" width={1024} height={123} className="w-full absolute bottom-0 left-0" priority fetchPriority="high" />
                 <Image src="/images/introPopup/Santa-Claus.svg" alt="Logo" width={200} height={72} className="w-[130px] md:w-[200px] -rotate-15 absolute bottom-10 left-0 md:left-15 z-25" />
                 <Image src="/images/introPopup/snowmen.svg" alt="Logo" width={160} height={163} className="w-[100px] md:w-[110px] lg:w-[140px] xl:w-[160px] absolute bottom-0 right-0 z-25" />
               </div>
