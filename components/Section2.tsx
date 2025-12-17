@@ -8,21 +8,36 @@ const TrainingProgramSection = () => {
         {
             level: "CẤP ĐỘ ",
             title: "JEWELRY ADVISOR",
-            description: "<span class='font-bold'>Jewelry Advisor</span> được thiết kế tinh gọn để giúp học viên nhanh chóng trở thành một Tư vấn viên chuyên nghiệp – người có khả năng nắm vững sản phẩm, tự tin  thuyết phục, chốt sale và xây dựng mối quan hệ với khách hàng bền vững.",
+            description: <>
+                Sau khóa học, bạn hoàn toàn có thể:
+                Tự tin ứng tuyển vị trí Jewelry Advisor tại các thương hiệu lớn với thu nhập từ 8 - 15 triệu VNĐ (+ hoa hồng).
+                Kết hợp kinh doanh trang sức vào các lĩnh vực sẵn có (Stylist, Sales, Luxury Services) để tối ưu lợi nhuận.
+                Tạo bước đệm vững chắc lên cấp độ Senior, sẵn sàng lộ trình Khởi nghiệp trang sức & đá quý tự thân.
+            </>,
             image: "/images/section2/1.png",
             href: "#cap-do-1"
         },
         {
             level: "CẤP ĐỘ ",
             title: "SENIOR JEWELRY CONSULTANT",
-            description: "<span class='font-bold'>Senior Jewelry Consultant</span> là lộ trình chuyên sâu được thiết kế để giúp học viên đi từ Tư vấn viên lên Chuyên viên cấp cao. Chương trình học kết hợp tinh hoa giữa kỹ năng đàm phán, chốt sale và phát triển năng lực huấn luyện cấp dưới, giúp bạn mở rộng cơ hội thăng tiến và khẳng định vị thế vững chắc trong phân khúc khách hàng cao cấp.",
+            description: <>
+                Lộ trình chuyên sâu dành cho mục tiêu thăng tiến và làm chủ:
+                Trở thành Chuyên viên cấp cao với kỹ năng đàm phán và thuyết phục phân khúc khách hàng siêu giàu (VVIP).
+                Phát triển năng lực dẫn dắt đội ngũ, mở rộng cơ hội thăng tiến lên cấp Quản lý/Giám đốc showroom.
+                Trang bị tư duy vận hành và nguồn hàng để tự tin xây dựng thương hiệu trang sức riêng.
+            </>,
             image: "/images/section2/2.jpg",
             href: "#cap-do-2"
         },
         {
             level: "CẤP ĐỘ ",
             title: "MASTER JEWELRY STYLIST",
-            description: "<span class='font-bold'>Master Jewelry Stylist</span> là cấp độ đào tạo cao nhất, giúp học viên trở thành một Chuyên gia trang sức thực thụ với kiến thức sâu rộng. Ở vị trí này, học viên sẽ đảm nhận vai trò Lãnh đạo, Cố vấn chuyên môn, và phát triển năng lực cho toàn bộ đội ngũ.",
+            description: <>
+                Cấp độ đào tạo cao nhất, định hình tầm vóc chuyên gia đầu ngành:
+                Làm chủ kiến thức chuyên sâu, trở thành người định hình phong cách và cố vấn đầu tư cho giới thượng lưu.
+                Phát triển năng lực lãnh đạo, vận hành hệ thống kinh doanh trang sức quy mô lớn.
+                Trở thành người đào tạo và phát triển năng lực chuyên môn cho toàn bộ đội ngũ kế cận.
+            </>,
             image: "/images/section2/3.jpg",
             href: "#cap-do-3"
         }
@@ -39,11 +54,11 @@ const TrainingProgramSection = () => {
             <div className="max-w-7xl mx-auto">
 
                 {/* Programs Grid */}
-                <div className="grid grid-cols-1 xl:grid-cols-7 gap-y-6 xl:gap-x-6 items-stretch px-2 2xl:px-0">
+                <div className="grid grid-cols-1 xl:grid-cols-3 gap-y-6 xl:gap-x-6 items-stretch px-2 2xl:px-0">
                     {programs.map((program, index) => (
                         <div
                             key={index}
-                            className={`w-full relative bg-[#0e392b] border border-[#2d5a4a] rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-transform duration-300 flex flex-col ${index === 0 ? 'md:col-span-2' : index === 1 ? 'md:col-span-3' : 'md:col-span-2'}`}
+                            className={`w-full relative bg-[#0e392b] border border-[#2d5a4a] rounded-2xl overflow-hidden hover:transform hover:scale-105 transition-transform duration-300 flex flex-col`}
                         >
                             {/* Image */}
                             <div className="relative w-full h-48 md:h-90 2xl:h-56">
@@ -64,7 +79,7 @@ const TrainingProgramSection = () => {
                                         {program.title}
                                     </h2>
                                     <p className="text-white text-sm md:text-base leading-relaxed text-justify-center flex-grow">
-                                        <span dangerouslySetInnerHTML={{ __html: program.description }} />
+                                        {program.description}
                                     </p>
                                 </div>
 
