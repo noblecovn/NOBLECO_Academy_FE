@@ -19,21 +19,14 @@ const Section8 = () => {
                         {/* Left - Content */}
                         <div className="text-white order-2">
                             <p className="text-base text-white leading-relaxed text-justify py-4 mx-auto">
-                                <span className="font-bold">Chứng nhận được cấp bởi NOBLECO - Thương hiệu kim cương & trang sức đạt chuẩn quốc tế, cùng sự tham gia thẩm định nội dung bởi chuyên gia có chứng nhận GIA</span>. Đây là minh chứng rõ ràng cho kiến thức và kỹ năng chuyên môn mà học viên đã được đào tạo bài bản:
+                                <span className="font-bold">Chứng nhận được cấp bởi NOBLECO - Thương hiệu kim cương & trang sức đạt chuẩn quốc tế, cùng sự tham gia thẩm định nội dung bởi chuyên gia có chứng nhận GIA.</span>
                             </p>
                             {/* Checklist */}
                             <div className="space-y-6 ">
                                 <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
                                     <Image src="/images/section8/check.svg" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
                                     <p className="text-sm text-deep-green">
-                                        Nắm vững kiến thức kim cương & trang sức. Bao gồm cấu trúc, phân loại, tiêu chuẩn GIA, cách đọc – phân tích – diễn giải báo cáo kiểm định.
-                                    </p>
-                                </div>
-
-                                <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
-                                    <Image src="/images/section8/check.svg" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
-                                    <p className="text-sm text-deep-green">
-                                        Thành thạo kỹ năng tư vấn & bán hàng trong ngành trang sức cao cấp. Khả năng tiếp cận, phân tích nhu cầu và thuyết phục khách hàng dựa trên giá trị sản phẩm.
+                                        Nắm vững kiến thức kim cương & trang sức. Thành thạo kỹ năng tư vấn & bán hàng trong ngành trang sức cao cấp.
                                     </p>
                                 </div>
 
@@ -41,6 +34,13 @@ const Section8 = () => {
                                     <Image src="/images/section8/check.svg" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
                                     <p className="text-sm text-deep-green">
                                         Có đủ chuyên môn để làm việc tại showroom, boutique hoặc ngành bán lẻ cao cấp. Chứng nhận giúp học viên được đánh giá cao trong quy trình tuyển dụng.
+                                    </p>
+                                </div>
+
+                                <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
+                                    <Image src="/images/section8/check.svg" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
+                                    <p className="text-sm text-deep-green">
+                                        Tự tin Start-up lĩnh vực trang sức, phát triển dịch vụ tư vấn độc lập, hoặc tích hợp vào công việc hiện tại (Stylist, Tư vấn Phong cách) để gia tăng giá trị thu nhập cá nhân.
                                     </p>
                                 </div>
                             </div>

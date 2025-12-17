@@ -20,7 +20,7 @@ const Section11 = () => {
                         {/* Left - Content */}
                         <div className="text-white order-2">
                             <p className="text-base text-white leading-relaxed text-justify py-4 mx-auto">
-                                <span className="font-bold">Chứng nhận được cấp bởi NOBLECO - Thương hiệu kim cương & trang sức đạt chuẩn quốc tế, cùng sự tham gia thẩm định nội dung bởi chuyên gia có chứng nhận GIA</span>. Đây là minh chứng rõ ràng cho kiến thức và kỹ năng chuyên môn mà học viên đã được đào tạo bài bản:
+                                <span className="font-bold">Chứng nhận được cấp bởi NOBLECO - Thương hiệu kim cương & trang sức đạt chuẩn quốc tế, cùng sự tham gia thẩm định nội dung bởi chuyên gia có chứng nhận GIA.</span>
                             </p>
                             {/* Checklist */}
                             <div className="space-y-6">
