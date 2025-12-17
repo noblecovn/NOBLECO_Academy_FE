@@ -262,16 +262,6 @@ const Section16 = () => {
                             />
                         </div>
 
-                        {/* Privacy Notice */}
-                        <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                            <h2 className="text-2xl md:text-3xl text-center font-medium uppercase bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent">
-                                Cam kết bảo mật thông tin
-                            </h2>
-                            <p className="text-white text-sm text-center leading-relaxed">
-                                Khi tham gia đào tạo, bạn đồng ý rằng các nội dung trong chương trình đào tạo là tài sản trí tuệ của NOBLECO Academy. Việc chia sẻ tài liệu ra ngoài là xâm phạm quyền sở hữu trí tuệ và có thể phải chịu mọi trách nhiệm trước pháp luật theo điều 225, 226 bộ luật hình sự.
-                            </p>
-                        </div>
-
                         {/* Support Text */}
                         <p className="text-white text-center text-sm">
                             Nếu bạn gặp lỗi trong quá trình đăng ký vui lòng liên hệ<br />

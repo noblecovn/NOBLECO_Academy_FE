@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | NOBLECO Academy",
   },
   description:
-    "NOBLECO Academy - Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế với chứng chỉ GIA, cấp độ từ Jewelry Advisor đến Master Jewelry Stylist. Đội ngũ chuyên gia hàng đầu, mạng lưới đối tác rộng khắp.",
+    "NOBLECO Academy - Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế, cấp độ từ Jewelry Advisor đến Master Jewelry Stylist. Đội ngũ chuyên gia hàng đầu, mạng lưới đối tác rộng khắp.",
   keywords: [
     "NOBLECO Academy",
     "đào tạo trang sức",
@@ -24,7 +24,6 @@ export const metadata: Metadata = {
     "Jewelry Advisor",
     "Senior Jewelry Consultant",
     "Master Jewelry Stylist",
-    "chứng chỉ GIA",
     "đào tạo kim cương",
     "trang sức cao cấp",
     "đào tạo ngành trang sức",
@@ -51,7 +50,7 @@ export const metadata: Metadata = {
     siteName: "NOBLECO Academy",
     title: "NOBLECO Academy - Đào Tạo Trang Sức Cao Cấp Chuẩn Quốc Tế",
     description:
-      "Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế với chứng chỉ GIA, cấp độ từ Jewelry Advisor đến Master Jewelry Stylist.",
+      "Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế, cấp độ từ Jewelry Advisor đến Master Jewelry Stylist.",
     images: [
       {
         url: "/images/logo.png",
@@ -65,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "NOBLECO Academy - Đào Tạo Trang Sức Cao Cấp Chuẩn Quốc Tế",
     description:
-      "Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế với chứng chỉ GIA.",
+      "Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế.",
     images: ["/images/logo.png"],
   },
   robots: {

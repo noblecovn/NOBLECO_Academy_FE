@@ -55,11 +55,11 @@ const JsonLd = dynamic(() => import("@/components/JsonLd"), {
 export const metadata: Metadata = {
   title: "Trang Chủ",
   description:
-    "NOBLECO Academy - Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế với chứng chỉ GIA. Khám phá các khóa học từ Jewelry Advisor đến Master Jewelry Stylist.",
+    "NOBLECO Academy - Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế. Khám phá các khóa học từ Jewelry Advisor đến Master Jewelry Stylist.",
   openGraph: {
     title: "NOBLECO Academy - Đào Tạo Trang Sức Cao Cấp Chuẩn Quốc Tế",
     description:
-      "Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế với chứng chỉ GIA, cấp độ từ Jewelry Advisor đến Master Jewelry Stylist.",
+      "Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế, cấp độ từ Jewelry Advisor đến Master Jewelry Stylist.",
     images: [
       {
         url: "/images/logo.png",
@@ -79,7 +79,7 @@ export default function Home() {
     "@type": "EducationalOrganization",
     name: "NOBLECO Academy",
     description:
-      "Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế với chứng chỉ GIA.",
+      "Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế.",
     url: baseUrl,
     logo: `${baseUrl}/images/logo.png`,
     image: `${baseUrl}/images/logo.png`,
@@ -97,7 +97,7 @@ export default function Home() {
       "@type": "Offer",
       name: "Chương trình đào tạo trang sức cao cấp",
       description:
-        "Đào tạo từ cấp độ Jewelry Advisor đến Master Jewelry Stylist với chứng chỉ GIA quốc tế",
+        "Đào tạo từ cấp độ Jewelry Advisor đến Master Jewelry Stylist",
     },
     hasOfferCatalog: {
       "@type": "OfferCatalog",

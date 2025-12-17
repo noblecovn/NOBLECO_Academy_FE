@@ -23,7 +23,7 @@ const Target = () => {
     const cards2 = [
         {
             image: "/images/target/4.svg",
-            text: "**Bạn cần một Profile đẳng cấp** (chứng chỉ/danh hiệu) để **xây dựng mạng lưới quan hệ chất lượng cao** giúp khách hàng lớn/doanh nghiệp chủ động tìm đến mình?",
+            text: "**Bạn cần một Profile đẳng cấp** (chứng nhận/danh hiệu) để **xây dựng mạng lưới quan hệ chất lượng cao** giúp khách hàng lớn/doanh nghiệp chủ động tìm đến mình?",
         },
         {
             image: "/images/target/5.svg",

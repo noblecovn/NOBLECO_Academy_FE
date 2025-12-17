@@ -6,7 +6,7 @@ const NoblecoAcademySection = () => {
     const cards = [
         {
             title: '#ĐÀO TẠO',
-            content: 'NOBLECO Academy áp dụng mô hình đào tạo chuẩn quốc tế, và được nhận chứng chỉ uy tín từ chuyên gia GIA. Chương trình học được thiết kế tinh gọn, ưu tiên kết hợp lý thuyết với trải nghiệm thực tế, đảm bảo học viên được trang bị trọn vẹn kiến thức chuyên môn vững vàng và kỹ năng làm việc chuyên nghiệp.'
+            content: 'NOBLECO Academy áp dụng mô hình đào tạo chuẩn quốc tế, và được nhận chứng nhận uy tín từ chuyên gia GIA. Chương trình học được thiết kế tinh gọn, ưu tiên kết hợp lý thuyết với trải nghiệm thực tế, đảm bảo học viên được trang bị trọn vẹn kiến thức chuyên môn vững vàng và kỹ năng làm việc chuyên nghiệp.'
         },
         {
             title: '#CỘNG ĐỒNG',

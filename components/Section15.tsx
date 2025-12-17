@@ -25,14 +25,14 @@ const Section15 = () => {
                 "Học viên được tham gia cộng đồng nội bộ NOBLECO – nơi chia sẻ kiến thức, cơ hội và kinh nghiệm thực chiến từ các chuyên gia.\nChúng tôi đồng hành cùng bạn trên hành trình nâng cấp kỹ năng lẫn thu nhập.",
         },
         {
-            title: (<>5. CAM KẾT CƠ HỘI TRỞ THÀNH <br className="md:hidden" /> ĐỐI TÁC CHIẾN LƯỢC</>),
+            title: (<>5. CAM KẾT CƠ HỘI TRỞ THÀNH <br className="md:hidden" /> ĐỐI TÁC PHÁT TRIỂN</>),
             content:
-                "Những học viên có định hướng rõ ràng, thể hiện năng lực tốt sẽ được ưu tiên tham gia các dự án kinh doanh, trở thành đối tác chiến lược trong hệ sinh thái của NOBLECO.",
+                "Những học viên đạt thành tích xuất sắc, có định hướng kinh doanh rõ ràng sẽ được ưu tiên tham gia vào các dự án kinh doanh chiến lược của Học viện, mở ra cơ hội trở thành Đối tác Phát triển chính thức trong mạng lưới của chúng tôi.",
         },
         {
             title: "6. CAM KẾT MINH BẠCH – UY TÍN",
             content:
-                "Mọi quyền lợi, tài liệu, chứng chỉ đều được công bố rõ ràng.\nNOBLECO đề cao đạo đức nghề nghiệp, tính minh bạch và chất lượng thật điều tạo nên giá trị bền vững của thương hiệu.",
+                "Mọi quyền lợi, tài liệu, chứng nhận đều được công bố rõ ràng.\nNOBLECO đề cao đạo đức nghề nghiệp, tính minh bạch và chất lượng thật điều tạo nên giá trị bền vững của thương hiệu.",
         },
     ];
 
@@ -58,7 +58,7 @@ const Section15 = () => {
                                             {item.title}
                                         </div>
                                     </div>
-                                    <div className={`bg-dark-green rounded-3xl p-6 shadow-lg border-2 border-[#c9a86c] ${index === 2 ? 'min-h-[156px]' : ''}`}>
+                                    <div className={`bg-dark-green rounded-3xl p-6 shadow-lg border-2 border-[#c9a86c] lg:min-h-[181px] xl:min-h-[156px]`}>
                                         <p className="text-sm md:text-base leading-relaxed whitespace-pre-line">
                                             {item.content}
                                         </p>
@@ -75,7 +75,7 @@ const Section15 = () => {
                                             {item.title}
                                         </div>
                                     </div>
-                                    <div className={`bg-dark-green rounded-3xl p-6 shadow-lg border-2 border-[#c9a86c] lg:min-h-[156px] xl:min-h-1 ${index === 2 ? 'lg:min-h-[181px] xl:min-h-[156px]' : ''}`}>
+                                    <div className={`bg-dark-green rounded-3xl p-6 shadow-lg border-2 border-[#c9a86c] lg:min-h-[156px] xl:min-h-1 lg:min-h-[181px] xl:min-h-[156px]`}>
                                         <p className="text-sm md:text-base leading-relaxed whitespace-pre-line">
                                             {item.content}
                                         </p>

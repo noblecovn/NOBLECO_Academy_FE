@@ -82,7 +82,7 @@ const AboutUs = () => {
                 <div className="flex items-start gap-3 md:gap-4">
                   <Check className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-green-400 flex-shrink-0 mt-0.5" />
                   <p className="text-sm md:text-base lg:text-lg text-white leading-relaxed">
-                    Đăng ký tự do (có thu phí), <strong>KHÔNG CẦN</strong> cam kết trở thành nhân viên của <strong>NOBLECO</strong>.
+                    Đăng ký tự do, <strong>KHÔNG CẦN</strong> cam kết trở thành nhân viên của <strong>NOBLECO</strong>.
                   </p>
                 </div>
               </div>
