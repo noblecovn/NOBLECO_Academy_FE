@@ -6,9 +6,9 @@ const cormorantGaramond = Cormorant_Garamond({
 });
 const Section12 = () => {
     const highlights = [
-        "Chất lượng kim cương, đá quý và trang sức.",
-        "Thiết kế, phong cách (styling), bespoke (thiết kế theo yêu cầu).",
-        "Nghệ thuật kể chuyện thương hiệu (Branding Storytelling).",
+        "Định hình phong cách và cố vấn danh mục đầu tư trang sức cho giới siêu giàu.",
+        "Vận hành hệ thống kinh doanh quy mô lớn và khẳng định uy tín cá nhân trong ngành Luxury.",
+        "Truyền cảm hứng, đào tạo chuyên môn và xây dựng tiêu chuẩn chuyên nghiệp.",
     ];
 
     return (
