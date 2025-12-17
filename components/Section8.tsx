@@ -36,13 +36,6 @@ const Section8 = () => {
                                         Có đủ chuyên môn để làm việc tại showroom, boutique hoặc ngành bán lẻ cao cấp. Chứng nhận giúp học viên được đánh giá cao trong quy trình tuyển dụng.
                                     </p>
                                 </div>
-
-                                <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
-                                    <Image src="/images/section8/check.svg" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
-                                    <p className="text-sm text-deep-green">
-                                        Tự tin Start-up lĩnh vực trang sức, phát triển dịch vụ tư vấn độc lập, hoặc tích hợp vào công việc hiện tại (Stylist, Tư vấn Phong cách) để gia tăng giá trị thu nhập cá nhân.
-                                    </p>
-                                </div>
                             </div>
                         </div>
 

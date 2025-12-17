@@ -24,7 +24,7 @@ const Section12 = () => {
                     {/* Khối nội dung */}
                     <div className="p-2 2xl:p-12 flex flex-col gap-6 text-white justify-center">
                         <div className="inline-flex w-full items-center justify-center bg-gradient-to-r from-[#be945f] to-[#fee08b] text-white font-semibold text-center text-xs md:text-base py-3 px-6 rounded-full shadow-lg">
-                            Nâng tầm kỹ năng & Trở thành Chuyên viên Cao cấp thực thụ
+                            Trở thành Chuyên gia thực thụ định hình phong cách và cố vấn chiến lược
                         </div>
                         <div className="text-lg">
                             Tổng số buổi học: 20 buổi vào buổi tối và cuối tuần
