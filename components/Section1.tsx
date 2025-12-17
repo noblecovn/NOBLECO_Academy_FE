@@ -6,15 +6,15 @@ const NoblecoAcademySection = () => {
     const cards = [
         {
             title: '#ĐÀO TẠO',
-            content: 'NOBLECO Academy áp dụng mô hình đào tạo chuẩn quốc tế, và được nhận chứng nhận uy tín từ chuyên gia GIA. Chương trình học được thiết kế tinh gọn, ưu tiên kết hợp lý thuyết với trải nghiệm thực tế, đảm bảo học viên được trang bị trọn vẹn kiến thức chuyên môn vững vàng và kỹ năng làm việc chuyên nghiệp.'
+            content: 'Chương trình chuẩn quốc tế, được chứng nhận bởi chuyên gia GIA. Lộ trình tinh gọn, ưu tiên thực hành thực tế giúp học viên làm chủ kiến thức và kỹ năng chuyên nghiệp trong thời gian ngắn nhất.'
         },
         {
             title: '#CỘNG ĐỒNG',
-            content: 'Tham gia cộng đồng NOBLECO Academy – nơi kết nối những cá nhân đam mê và khát khao phát triển trong ngành trang sức cao cấp. Mở rộng mạng lưới quan hệ với các chuyên gia, giảng viên, khách hàng, đồng thời mở rộng cơ hội hợp tác và kinh doanh.'
+            content: 'Kết nối mạng lưới chuyên gia, giảng viên và những cá nhân cùng đam mê. Đây là không gian mở rộng quan hệ, chia sẻ kinh nghiệm và tìm kiếm cơ hội hợp tác kinh doanh bền vững.'
         },
         {
             title: '#DÀI HẠN',
-            content: 'NOBLECO Academy tự hào sở hữu mạng lưới Đối tác chiến lược rộng khắp Việt Nam và quốc tế. Mạng lưới này là cầu nối vững chắc, cam kết mở ra cánh cửa cơ hội nghề nghiệp và phát triển kinh doanh cho các học viên thông qua chương trình đào tạo chuyên sâu và hợp tác dài lâu.'
+            content: 'Mạng lưới đối tác chiến lược rộng khắp trong và ngoài nước, là cầu nối vững chắc, cam kết mở ra cơ hội nghề nghiệp và hỗ trợ học viên phát triển kinh doanh dài lâu.'
         }
     ];
 
