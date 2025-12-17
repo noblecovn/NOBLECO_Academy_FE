@@ -33,8 +33,10 @@ const Section6 = () => {
                         <div className="inline-flex w-full items-center justify-center bg-gradient-to-r from-[#be945f] to-[#fee08b] text-white font-semibold text-center text-xs md:text-base py-3 px-6 rounded-full shadow-lg">
                             Học cùng chuyên gia - Thực chiến mỗi ngày - Bứt phá nghề nghiệp
                         </div>
-
-                        <div className="grid grid-cols-1 auto-rows-fr gap-4 text-lg mt-4">
+                        <div className="text-lg">
+                            Tổng số buổi học: 12 buổi vào buổi tối và cuối tuần
+                        </div>
+                        <div className="grid grid-cols-1 auto-rows-fr gap-4 text-lg">
                             {highlights.map((item) => (
                                 <div key={item} className="flex items-center gap-3 h-full">
                                     <Image src="/images/section6/7.svg" alt="check" width={24} height={30} className="object-cover" />

@@ -26,7 +26,7 @@ const Section8 = () => {
                                 <div className="flex items-center gap-4 bg-white rounded-2xl p-4 border border-[#2a5a4a]">
                                     <Image src="/images/section8/check.svg" width={32} height={33} alt="Check" className="flex-shrink-0 mt-1" />
                                     <p className="text-sm text-deep-green">
-                                        Nắm vững kiến thức kim cương & trang sức. Thành thạo kỹ năng tư vấn & bán hàng trong ngành trang sức cao cấp.
+                                        Từ nền tảng kiến thức vững chắc đến kỹ năng sale thực chiến trong ngành trang sức cao cấp.
                                     </p>
                                 </div>
 

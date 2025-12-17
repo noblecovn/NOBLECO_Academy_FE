@@ -25,8 +25,10 @@ const Section9 = () => {
                         <div className="inline-flex w-full items-center justify-center bg-gradient-to-r from-[#be945f] to-[#fee08b] text-white font-semibold text-center text-xs md:text-base py-3 px-6 rounded-full shadow-lg">
                             Nâng tầm kỹ năng & Trở thành Chuyên viên Cao cấp thực thụ
                         </div>
-
-                        <div className="grid grid-cols-1 gap-4 text-lg mt-4">
+                        <div className="text-lg">
+                            Tổng số buổi học: 13 buổi vào buổi tối và cuối tuần
+                        </div>
+                        <div className="grid grid-cols-1 gap-4 text-lg">
                             {highlights.map((item) => (
                                 <div key={item} className="flex items-center gap-3">
                                     <Image src="/images/section6/7.svg" alt="check" width={24} height={30} className="object-cover" />
