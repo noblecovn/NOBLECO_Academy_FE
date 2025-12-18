@@ -10,7 +10,7 @@ const AboutUs = () => {
   const featureCards = [
     {
       title: "TIỀM NĂNG TÀI CHÍNH",
-      content: "Tiếp cận kiến thức và mô hình vận hành kinh doanh trong ngành Trang sức Cao cấp, mở ra cơ hội tài chính lớn cho mọi cá nhân muốn gia tăng thu nhập.",
+      content: "Làm chủ kiến thức sản phẩm, thấu hiểu tâm lý khách hàng và quy trình bán hàng chuyên nghiệp trong ngành Trang sức Cao cấp, mở ra cơ hội tài chính lớn cho mọi cá nhân muốn gia tăng thu nhập.",
       image: "/images/about-us/5.png"
     },
     {
@@ -20,7 +20,7 @@ const AboutUs = () => {
     },
     {
       title: "CƠ HỘI KẾT NỐI VÀ NGHỀ NGHIỆP",
-      content: "Gia nhập mạng lưới đối tác, chuyên gia chất lượng (trong ngành trang sức, thời trang, làm đẹp), mở rộng các mối quan hệ, cơ hội hợp tác, việc làm tự do.",
+      content: "Mở rộng cơ hội kết nối với nhiều đối tác chiến lược và chuyên gia hàng đầu trong hệ sinh thái Trang sức – Thời trang – Làm đẹp, tìm kiếm cơ hội hợp tác và phát triển sự nghiệp tự do bền vững.",
       image: "/images/about-us/7.png"
     }
   ];
@@ -43,7 +43,7 @@ const AboutUs = () => {
     },
     {
       icon: "/images/about-us/4-1.svg",
-      label: <>TĂNG THU NHẬP <br /> & <br /> NÂNG CẤP HÌNH ẢNH</>,
+      label: <>Có kinh nghiệm bán hàng Premium</>,
       alt: "TĂNG THU NHẬP & NÂNG CẤP HÌNH ẢNH"
     }
   ];
@@ -105,7 +105,7 @@ const AboutUs = () => {
                       className="w-full h-full object-contain filter brightness-0 invert"
                     />
                   </div>
-                  <p className="text-xs md:text-sm lg:text-base text-white font-medium leading-tight">
+                  <p className="text-xs md:text-sm lg:text-base text-white font-medium uppercase">
                     {item.label}
                   </p>
                 </div>
