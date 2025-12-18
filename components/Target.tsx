@@ -9,11 +9,11 @@ const Target = () => {
     const cards1 = [
         {
             image: "/images/target/1.svg",
-            text: "**Bạn là dân văn phòng**: Muốn công việc tay trái linh hoạt, có thể chăm sóc gia đình mà vẫn **tăng thu nhập** đáng kể?",
+            text: "**Bạn là dân văn phòng (Kế toán, Marketing, Hành chính...)**: Muốn xây dựng nghề tay trái linh hoạt, thu nhập 8 – 15 triệu/tháng mà không cần bỏ việc ngay, vừa chăm sóc gia đình vừa **tăng thu nhập** đáng kể?",
         },
         {
             image: "/images/target/2.svg",
-            text: "**Bạn là Quản lý/Trưởng nhóm giàu kinh nghiệm** nhưng đang chạm trần thu nhập cố định tại công ty, khao khát cơ hội **tài chính xứng tầm với năng lực** và giá trị thực tế, **tự chủ hoàn toàn về thời gian và thu nhập?**",
+            text: "**Bạn là Quản lý/Trưởng nhóm giàu kinh nghiệm**: Đang chạm trần thu nhập tại công ty và khao khát cơ hội **tài chính xứng tầm với năng lực**, **tự chủ thời gian** và sở hữu nguồn **thu nhập không giới hạn**?",
         },
         {
             image: "/images/target/3.svg",
@@ -23,15 +23,15 @@ const Target = () => {
     const cards2 = [
         {
             image: "/images/target/4.svg",
-            text: "**Bạn cần một Profile đẳng cấp** (chứng nhận/danh hiệu) để **xây dựng mạng lưới quan hệ chất lượng cao** giúp khách hàng lớn/doanh nghiệp chủ động tìm đến mình?",
+            text: "**Bạn cần một Profile đẳng cấp** (chứng nhận/danh hiệu): Để khẳng định vị thế chuyên gia, **xây dựng mạng lưới quan hệ chất lượng cao** giúp khách hàng thượng lưu và các doanh nghiệp lớn chủ động tìm đến mình?",
         },
         {
             image: "/images/target/5.svg",
-            text: "**Bạn là Doanh nghiệp/Kinh doanh**: Cần giải pháp **tăng lợi nhuận**, nâng giá trị hóa đơn và gia tăng tỷ lệ chuyển đổi mà không tốn thêm chi phí marketing?",
+            text: "**Bạn là Chủ doanh nghiệp/Shop trang sức & thời trang**: Cần bộ kiến thức chuẩn để đào tạo đội ngũ, nâng cấp cửa hàng lên phân khúc Premium nhằm **tăng giá trị hóa đơn và lợi nhuận** mà không tốn thêm chi phí Marketing?",
         },
         {
             image: "/images/target/6.svg",
-            text: "**Bạn làm trong ngành Dịch vụ cao cấp (Stylist, Sự kiện, Thẩm mỹ):** Muốn nâng tầm uy tín nghề nghiệp, dễ dàng nhận booking **sự kiện lớn** và tiếp cận nhóm **khách hàng thượng lưu?**",
+            text: "**Bạn làm trong ngành Dịch vụ cao cấp (Stylist, Spa, Thẩm mỹ, Salon):** Muốn am hiểu sâu về Kim cương – Đá quý để **nâng tầm uy tín**, tự tin tư vấn đơn hàng lớn từ tệp **khách hàng thượng lưu** sẵn có?",
         },
     ];
 
@@ -97,7 +97,7 @@ const Target = () => {
                                     className="bg-white rounded-2xl md:min-h-[116px] lg:min-h-[112px] xl:min-h-[128px] 2xl:min-h-[144px] p-2 lg:p-4 flex items-center justify-end gap-2 lg:gap-4 shadow-lg hover:shadow-xl transition-shadow duration-300"
                                 >
                                     {/* Text */}
-                                    <div className="order-3 md:order-1 flex-grow text-gray-800 text-sm md:text-sm xl:text-base 2xl:text-lg md:max-w-[215px] lg:max-w-3/5 text-justify">
+                                    <div className="lg:pl-2 order-3 md:order-1 flex-grow text-gray-800 text-sm md:text-sm xl:text-base 2xl:text-lg md:max-w-[215px] lg:max-w-13/20 text-justify">
                                         {formatText(card.text)}
                                     </div>
                                     {/* Divider */}
