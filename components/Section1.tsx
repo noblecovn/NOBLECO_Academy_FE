@@ -6,7 +6,7 @@ const NoblecoAcademySection = () => {
     const cards = [
         {
             title: '#ĐÀO TẠO',
-            content: 'Chương trình chuẩn quốc tế, được chứng nhận bởi chuyên gia GIA. Lộ trình tinh gọn, ưu tiên thực hành thực tế giúp học viên làm chủ kiến thức và kỹ năng chuyên nghiệp trong thời gian ngắn nhất.'
+            content: 'Chương trình chuẩn quốc tế, được chứng nhận bởi chuyên gia GIA. Lộ trình tinh gọn, ưu tiên thực hành thực tế giúp học viên làm chủ kiến thức và kỹ năng kết nối với khách hàng trong thời gian ngắn nhất.'
         },
         {
             title: '#CỘNG ĐỒNG',
@@ -14,7 +14,7 @@ const NoblecoAcademySection = () => {
         },
         {
             title: '#DÀI HẠN',
-            content: 'Mạng lưới đối tác chiến lược rộng khắp trong và ngoài nước, là cầu nối vững chắc, cam kết mở ra cơ hội nghề nghiệp và hỗ trợ học viên phát triển kinh doanh dài lâu.'
+            content: 'Mạng lưới đối tác phát triển rộng khắp trong và ngoài nước, là cầu nối vững chắc, cam kết mở ra cơ hội nghề nghiệp và hỗ trợ học viên phát triển kinh doanh dài lâu.'
         }
     ];
 

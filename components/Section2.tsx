@@ -9,10 +9,7 @@ const TrainingProgramSection = () => {
             level: "CẤP ĐỘ ",
             title: "JEWELRY ADVISOR",
             description: <>
-                Sau khóa học, bạn hoàn toàn có thể:
-                Tự tin ứng tuyển vị trí Jewelry Advisor tại các thương hiệu lớn với thu nhập từ 8 - 15 triệu VNĐ (+ hoa hồng).
-                Kết hợp kinh doanh trang sức vào các lĩnh vực sẵn có (Stylist, Sales, Luxury Services) để tối ưu lợi nhuận.
-                Tạo bước đệm vững chắc lên cấp độ Senior, sẵn sàng lộ trình Khởi nghiệp trang sức & đá quý tự thân.
+                Sau khóa học, bạn hoàn toàn có thể: Tự tin ứng tuyển vị trí Jewelry Advisor tại các thương hiệu lớn với thu nhập từ 8 - 15 triệu VNĐ (+ hoa hồng). Kết hợp kinh doanh trang sức cùng các công việc sẵn có (Stylist, Sales, Luxury Services) để gia tăng thu nhập. Tạo bước đệm vững chắc lên cấp độ Senior, sẵn sàng Khởi nghiệp trang sức & đá quý tự thân.
             </>,
             image: "/images/section2/1.png",
             href: "#cap-do-1"
@@ -21,10 +18,7 @@ const TrainingProgramSection = () => {
             level: "CẤP ĐỘ ",
             title: "SENIOR JEWELRY CONSULTANT",
             description: <>
-                Lộ trình chuyên sâu dành cho mục tiêu thăng tiến và làm chủ:
-                Trở thành Chuyên viên cấp cao với kỹ năng đàm phán và thuyết phục phân khúc khách hàng siêu giàu (VVIP).
-                Phát triển năng lực dẫn dắt đội ngũ, mở rộng cơ hội thăng tiến lên cấp Quản lý/Giám đốc showroom.
-                Trang bị tư duy vận hành và nguồn hàng để tự tin xây dựng thương hiệu trang sức riêng.
+                Lộ trình chuyên sâu dành cho mục tiêu thăng tiến và làm chủ: Trở thành Chuyên viên cấp cao với kỹ năng đàm phán và thuyết phục khách hàng thượng lưu (VVIP). Phát triển năng lực dẫn dắt đội ngũ, mở rộng cơ hội thăng tiến lên cấp Quản lý/Giám đốc showroom. Trang bị tư duy vận hành và nguồn hàng để tự tin xây dựng thương hiệu trang sức cá nhân.
             </>,
             image: "/images/section2/2.jpg",
             href: "#cap-do-2"
@@ -33,10 +27,7 @@ const TrainingProgramSection = () => {
             level: "CẤP ĐỘ ",
             title: "MASTER JEWELRY STYLIST",
             description: <>
-                Cấp độ đào tạo cao nhất, định hình tầm vóc chuyên gia đầu ngành:
-                Làm chủ kiến thức chuyên sâu, trở thành người định hình phong cách và cố vấn đầu tư cho giới thượng lưu.
-                Phát triển năng lực lãnh đạo, vận hành hệ thống kinh doanh trang sức quy mô lớn.
-                Trở thành người đào tạo và phát triển năng lực chuyên môn cho toàn bộ đội ngũ kế cận.
+                Khẳng định vị thế chuyên gia thực thụ với tầm vóc dẫn dắt và cố vấn chiến lược: Làm chủ tri thức chuyên sâu để định hình phong cách và cố vấn danh mục đầu tư cho giới thượng lưu. Phát triển năng lực quản trị, vận hành hệ thống kinh doanh trang sức quy mô lớn và chuyên nghiệp. Trở thành người dẫn dắt, đào tạo và phát triển năng lực chuyên môn cho thế hệ đội ngũ kế cận.
             </>,
             image: "/images/section2/3.jpg",
             href: "#cap-do-3"
