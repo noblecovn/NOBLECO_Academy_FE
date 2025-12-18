@@ -29,9 +29,6 @@ const Section12 = () => {
                         <div className="text-lg">
                             Tổng số buổi học: 20 buổi vào buổi tối và cuối tuần
                         </div>
-                        <p className="text-white font-semibold text-lg">
-                            Trở thành chuyên gia thực thụ về:
-                        </p>
                         <div className="grid grid-cols-1 auto-rows-fr gap-4 text-lg">
                             {highlights.map((item, index) => (
                                 <div key={item} className="flex items-center gap-3">
