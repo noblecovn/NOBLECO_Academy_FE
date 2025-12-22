@@ -5,7 +5,7 @@ const cormorantGaramond = Cormorant_Garamond({
 });
 const PartnersAndTestimonialsSection = () => {
     const partners = [
-        { name: "SJC", subtitle: "Saigon Jewelry Company", image: "/images/partners/SJC.svg" },
+        { name: "ChristopherDesigns", subtitle: "Christopher Designs", image: "/images/partners/ChristopherDesigns_logo.jpg" },
         { name: "SJA", subtitle: "Saigon Jewelry Academy", image: "/images/partners/SJA.svg" },
         { name: "NOBLECO", subtitle: "American Grown Diamonds", image: "/images/partners/NOBLECO.svg" },
         { name: "Clarity", subtitle: "Diamond", image: "/images/partners/Clarity.svg" },
@@ -15,19 +15,19 @@ const PartnersAndTestimonialsSection = () => {
         {
             image: "/images/partners/2.png",
             name: "Anh Nam",
-            title: "Học viên Jewelry Advisor",
-            quote: "Hoàn thành khóa học Jewelry Advisor của NOBLECO ACADEMY mang đến cho tôi nền tảng kiến thức vững chắc và góc nhìn tinh tế hơn về nghệ thuật trang sức.",
+            title: "Jewelry Advisor: Giải tỏa áp lực tài chính bằng nghề tay trái",
+            quote: "Hoàn thành khóa học Jewelry Advisor của NOBLE ACADEMY mang đến cho tôi nền tảng kiến thức vững chắc và góc nhìn tinh tế hơn về nghệ thuật trang sức.",
         },
         {
             image: "/images/partners/3.png",
             name: "Anh Quang",
-            title: "Học viên Senior Jewelry Consultant",
+            title: "Senior Jewelry Consultant: Nâng tầm dịch vụ Wedding Planner",
             quote: "Khóa học chuyên sâu giúp tôi tự tin hơn khi tư vấn khách hàng cao cấp và xây dựng phong thái chuyên nghiệp.",
         },
         {
             image: "/images/partners/1.jpg",
             name: "Chị Vy",
-            title: "Học viên Master Jewelry Stylist",
+            title: "Master Jewelry Stylist: Cố vấn chiến lược cho giới siêu giàu",
             quote: "Tôi mở rộng tư duy thẩm mỹ và tự tin hơn trong việc xây dựng phong cách trang sức cho khách hàng VIP.",
         },
     ];

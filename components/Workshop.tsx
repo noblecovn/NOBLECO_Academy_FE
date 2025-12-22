@@ -27,6 +27,7 @@ const WorkshopSection = () => {
                     <h2 className={`${cormorantGaramond.className} text-2xl md:text-4xl 2xl:text-5xl font-bold uppercase bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
                         WORKSHOP
                     </h2>
+                    <p className="text-white">Học viên được tận mắt xem quy trình khai thác, chọn lọc và chế tác đá quý – trải nghiệm này giúp tư vấn tự tin, kể lại câu chuyện sản phẩm sống động cho khách hàng</p>
                 </div>
 
                 {/* Workshop Grid */}

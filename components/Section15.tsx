@@ -7,7 +7,7 @@ const Section15 = () => {
         {
             title: "1. CAM KẾT VỀ CHẤT LƯỢNG ĐÀO TẠO",
             content:
-                "NOBLECO đảm bảo học viên được tiếp cận kiến thức chuẩn quốc tế, nội dung được cố vấn bởi chuyên gia sở hữu chứng chỉ GIA. \nToàn bộ giáo trình được cập nhật liên tục theo thị trường kim cương trang sức cao cấp.",
+                "NOBLE đảm bảo học viên được tiếp cận kiến thức chuẩn quốc tế, nội dung được cố vấn bởi chuyên gia sở hữu chứng chỉ GIA. \nToàn bộ giáo trình được cập nhật liên tục theo thị trường kim cương trang sức cao cấp.",
         },
         {
             title: (<>2. CAM KẾT HỖ TRỢ TRONG SUỐT <br className="md:hidden" /> QUÁ TRÌNH HỌC</>),
@@ -17,12 +17,12 @@ const Section15 = () => {
         {
             title: "3. CAM KẾT SAU KHI TỐT NGHIỆP",
             content:
-                "NOBLECO không ngừng đồng hành ngay cả khi bạn hoàn thành khóa học:\n Định hướng nghề nghiệp phù hợp\n Hỗ trợ bố cục CV – portfolio chuyên ngành\n Hợp tác kinh doanh bền vững cùng NOBLECO",
+                "NOBLE không ngừng đồng hành ngay cả khi bạn hoàn thành khóa học:\n Định hướng nghề nghiệp phù hợp\n Hỗ trợ bố cục CV – portfolio chuyên ngành\n Hợp tác kinh doanh bền vững cùng NOBLE",
         },
         {
             title: "4. CAM KẾT PHÁT TRIỂN LÂU DÀI",
             content:
-                "Học viên được tham gia cộng đồng nội bộ NOBLECO – nơi chia sẻ kiến thức, cơ hội và kinh nghiệm thực chiến từ các chuyên gia.\nChúng tôi đồng hành cùng bạn trên hành trình nâng cấp kỹ năng lẫn thu nhập.",
+                "Học viên được tham gia cộng đồng nội bộ NOBLE – nơi chia sẻ kiến thức, cơ hội và kinh nghiệm thực chiến từ các chuyên gia.\nChúng tôi đồng hành cùng bạn trên hành trình nâng cấp kỹ năng lẫn thu nhập.",
         },
         {
             title: (<>5. CAM KẾT CƠ HỘI TRỞ THÀNH <br className="md:hidden" /> ĐỐI TÁC PHÁT TRIỂN</>),
@@ -32,7 +32,7 @@ const Section15 = () => {
         {
             title: "6. CAM KẾT MINH BẠCH – UY TÍN",
             content:
-                "Mọi quyền lợi, tài liệu, chứng nhận đều được công bố rõ ràng.\nNOBLECO đề cao đạo đức nghề nghiệp, tính minh bạch và chất lượng thật điều tạo nên giá trị bền vững của thương hiệu.",
+                "Mọi quyền lợi, tài liệu, chứng nhận đều được công bố rõ ràng.\nNOBLE đề cao đạo đức nghề nghiệp, tính minh bạch và chất lượng thật điều tạo nên giá trị bền vững của thương hiệu.",
         },
     ];
 
@@ -42,7 +42,7 @@ const Section15 = () => {
                 {/* Title */}
                 <div className="text-center mb-12 border-b border-t border-white py-6 flex flex-col">
                     <h2 className={`${cormorantGaramond.className} text-2xl md:text-4xl 2xl:text-5xl font-bold uppercase bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
-                        CAM KẾT ĐỒNG HÀNH TỪ NOBLECO
+                        CAM KẾT ĐỒNG HÀNH TỪ NOBLE
                     </h2>
                 </div>
 

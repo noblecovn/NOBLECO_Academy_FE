@@ -11,16 +11,16 @@ const TrainingProgramSection = () => {
             description: <>
                 Sau khóa học, bạn hoàn toàn có thể: <br />
                 <div className="flex flex-col gap-2">
-                    <div className="flex items-center gap-2">
-                        <Image src="/images/section2/check.svg" width={15} height={11} alt="Check" className="flex-shrink-0" />
+                    <div className="flex gap-2 items-start">
+                        <Image src="/images/section2/check.svg" width={15} height={11} alt="Check" className="flex-shrink-0 mt-2" />
                         <p>Tự tin ứng tuyển vị trí Jewelry Advisor tại các thương hiệu lớn với thu nhập từ 8 - 15 triệu VNĐ (+ hoa hồng).</p>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <Image src="/images/section2/check.svg" width={15} height={11} alt="Check" className="flex-shrink-0" />
+                    <div className="flex gap-2 items-start">
+                        <Image src="/images/section2/check.svg" width={15} height={11} alt="Check" className="flex-shrink-0 mt-2" />
                         <p>Kết hợp kinh doanh trang sức cùng các công việc sẵn có (Stylist, Sales, Luxury Services) để gia tăng thu nhập.</p>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <Image src="/images/section2/check.svg" width={15} height={11} alt="Check" className="flex-shrink-0" />
+                    <div className="flex gap-2 items-start">
+                        <Image src="/images/section2/check.svg" width={15} height={11} alt="Check" className="flex-shrink-0 mt-2" />
                         <p>Tạo bước đệm vững chắc lên cấp độ Senior, sẵn sàng Khởi nghiệp trang sức & đá quý tự thân.</p>
                     </div>
                 </div>
@@ -34,16 +34,16 @@ const TrainingProgramSection = () => {
             description: <>
                 Lộ trình chuyên sâu dành cho mục tiêu thăng tiến và làm chủ: <br />
                 <div className="flex flex-col gap-2">
-                    <div className="flex items-center gap-2">
-                        <Image src="/images/section2/check.svg" width={15} height={11} alt="Check" className="flex-shrink-0" />
+                    <div className="flex gap-2 items-start">
+                        <Image src="/images/section2/check.svg" width={15} height={11} alt="Check" className="flex-shrink-0 mt-2" />
                         <p>Trở thành Chuyên viên cấp cao với kỹ năng đàm phán và thuyết phục khách hàng thượng lưu (VVIP).</p>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <Image src="/images/section2/check.svg" width={15} height={11} alt="Check" className="flex-shrink-0" />
+                    <div className="flex gap-2 items-start">
+                        <Image src="/images/section2/check.svg" width={15} height={11} alt="Check" className="flex-shrink-0 mt-2" />
                         <p>Phát triển năng lực dẫn dắt đội ngũ, mở rộng cơ hội thăng tiến lên cấp Quản lý/Giám đốc showroom.</p>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <Image src="/images/section2/check.svg" width={15} height={11} alt="Check" className="flex-shrink-0" />
+                    <div className="flex gap-2 items-start">
+                        <Image src="/images/section2/check.svg" width={15} height={11} alt="Check" className="flex-shrink-0 mt-2" />
                         <p>Trang bị tư duy vận hành và nguồn hàng để tự tin xây dựng thương hiệu trang sức cá nhân.</p>
                     </div>
                 </div>
@@ -57,16 +57,16 @@ const TrainingProgramSection = () => {
             description: <>
                 Khẳng định vị thế chuyên gia thực thụ với tầm vóc dẫn dắt và cố vấn chiến lược: <br />
                 <div className="flex flex-col gap-2">
-                    <div className="flex items-center gap-2">
-                        <Image src="/images/section2/check.svg" width={15} height={11} alt="Check" className="flex-shrink-0" />
+                    <div className="flex gap-2 items-start">
+                        <Image src="/images/section2/check.svg" width={15} height={11} alt="Check" className="flex-shrink-0 mt-2" />
                         <p>Làm chủ tri thức chuyên sâu để định hình phong cách và cố vấn danh mục đầu tư cho giới thượng lưu.</p>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <Image src="/images/section2/check.svg" width={15} height={11} alt="Check" className="flex-shrink-0" />
+                    <div className="flex gap-2 items-start">
+                        <Image src="/images/section2/check.svg" width={15} height={11} alt="Check" className="flex-shrink-0 mt-2" />
                         <p>Phát triển năng lực quản trị, vận hành hệ thống kinh doanh trang sức quy mô lớn và chuyên nghiệp.</p>
                     </div>
-                    <div className="flex items-center gap-2">
-                        <Image src="/images/section2/check.svg" width={15} height={11} alt="Check" className="flex-shrink-0" />
+                    <div className="flex gap-2 items-start">
+                        <Image src="/images/section2/check.svg" width={15} height={11} alt="Check" className="flex-shrink-0 mt-2" />
                         <p>Trở thành người dẫn dắt, đào tạo và phát triển năng lực chuyên môn cho thế hệ đội ngũ kế cận.</p>
                     </div>
                 </div>
@@ -108,7 +108,7 @@ const TrainingProgramSection = () => {
                                 {/* Title */}
                                 <div className="text-center flex-grow">
                                     <span className={`${cormorantGaramond.className} uppercase text-lg font-bold text-white w-fit`}>{program.level} <span className="text-3xl">{index + 1}</span></span>
-                                    <h2 className={`${cormorantGaramond.className} text-2xl font-bold uppercase bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
+                                    <h2 className={`${cormorantGaramond.className}  text-xl 2xl:text-2xl font-bold uppercase bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
                                         {program.title}
                                     </h2>
                                     <div className="text-white text-sm md:text-base leading-relaxed text-left flex-grow">

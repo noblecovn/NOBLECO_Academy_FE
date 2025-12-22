@@ -265,14 +265,14 @@ const Section16 = () => {
                         {/* Support Text */}
                         <p className="text-white text-center text-sm">
                             Nếu bạn gặp lỗi trong quá trình đăng ký vui lòng liên hệ<br />
-                            <span className="font-bold">NOBLECO Academy để được hỗ trợ</span>
+                            <span className="font-bold">NOBLE Academy để được hỗ trợ</span>
                         </p>
                     </div>
 
                     {/* Right Column - Form */}
                     <div className="bg-white rounded-2xl p-8">
                         <h3 className="text-[#0a5c3f] font-bold text-lg md:text-xl mb-2">
-                            Đăng ký đào tạo tại NOBLECO Academy
+                            Đăng ký đào tạo tại NOBLE Academy
                         </h3>
                         <p className="text-deep-green text-sm md:text-base mb-2">
                             Vui lòng điền đầy đủ các thông tin dưới đây. Chúng tôi sẽ liên lạc lại trong 24h làm việc.
@@ -405,7 +405,7 @@ const Section16 = () => {
                             </div>
 
                             <div>
-                                <label className="text-deep-green text-sm font-medium">Khoảng thời gian phù hợp để NOBLECO Academy tư vấn cho bạn</label>
+                                <label className="text-deep-green text-sm font-medium">Khoảng thời gian phù hợp để NOBLE Academy tư vấn cho bạn</label>
                                 <input
                                     type="text"
                                     name="time"

@@ -10,17 +10,17 @@ const AboutUs = () => {
   const featureCards = [
     {
       title: "TIỀM NĂNG TÀI CHÍNH",
-      content: "Làm chủ kiến thức sản phẩm, thấu hiểu tâm lý khách hàng và quy trình bán hàng chuyên nghiệp trong ngành Trang sức Cao cấp, mở ra cơ hội tài chính lớn cho mọi cá nhân muốn gia tăng thu nhập.",
+      content: "Làm chủ kiến thức sản phẩm để không còn lúng túng khi khách hỏi sâu về kim cương, đá quý hay giá trị thật của món trang sức.Thấu hiểu tâm lý khách hàng và quy trình bán hàng chuyên nghiệp trong ngành Trang sức Cao cấp, mở ra cơ hội tài chính lớn cho mọi cá nhân muốn gia tăng thu nhập.",
       image: "/images/about-us/5.png"
     },
     {
       title: "CHUYÊN MÔN TOÀN DIỆN",
-      content: "Học hỏi kiến thức chuẩn quốc tế, phát triển kỹ năng toàn diện để trở thành chuyên gia và nhận chứng nhận hoàn thành từ Học viện.",
+      content: "Học hỏi kiến thức chuẩn quốc tế để tự tin đứng vị thế \"chuyên gia\" trước khách hàng cao cấp, thay vì chỉ là một nhân viên bán hàng. Truyền đạt kiến thức, kỹ năng một cách hiệu quả và nhận chứng nhận hoàn thành từ Học viện.",
       image: "/images/about-us/6.png"
     },
     {
       title: "CƠ HỘI KẾT NỐI VÀ NGHỀ NGHIỆP",
-      content: "Mở rộng cơ hội kết nối với nhiều đối tác chiến lược và chuyên gia hàng đầu trong hệ sinh thái Trang sức – Thời trang – Làm đẹp, tìm kiếm cơ hội hợp tác và phát triển sự nghiệp tự do bền vững.",
+      content: "Mở rộng cơ hội kết nối với nhiều đối tác chiến lược và chuyên gia hàng đầu trong hệ sinh thái Trang sức – Thời trang – Làm đẹp như chủ boutique, stylist, thương hiệu thời trang, spa…, từ đó mở ra cơ hội hợp tác, nhận khách mới hoặc dự án riêng.",
       image: "/images/about-us/7.png"
     }
   ];
@@ -55,7 +55,7 @@ const AboutUs = () => {
       {/* Tiêu đề trên nền trắng với biểu tượng */}
       <div className="py-6 md:py-8 relative px-2 md:px-0">
         <div className="relative flex justify-center items-center">
-          <Image src="/images/about-us/text.png" alt="Logo" width={500} height={43} />
+          <Image src="/images/about-us/text-1.png" alt="Logo" width={500} height={43} />
         </div>
       </div>
 
@@ -64,7 +64,7 @@ const AboutUs = () => {
         <div className="pb-10 text-white space-y-10">
           {/* Mô tả giới thiệu */}
           <p className="text-base md:text-xl leading-relaxed text-center text-white">
-            NOBLECO ACADEMY được xây dựng trên nền tảng chuyên môn vững chắc của NOBLECO – thương hiệu tiên phong, dẫn đầu thị trường kim cương <br className="hidden xl:block" /> Lab-grown cao cấp chuẩn Hoa Kỳ tại Việt Nam.
+            NOBLE Academy được xây dựng trên nền tảng chuyên môn của NOBLE – thương hiệu tiên phong về kim cương Lab‑grown chuẩn Hoa Kỳ tại Việt Nam. <br className="hidden xl:block" /> Đây là chương trình đào tạo PUBLIC, có thu phí, KHÔNG phải tuyển dụng/đào tạo nội bộ: bạn đăng ký tự do và không cần cam kết trở thành nhân viên NOBLE.
           </p>
           <div className="bg-gradient-to-l from-[#547C6D] to-[#072D1F] p-1 rounded-xl">
             {/* Phần HỌC VIỆN MỞ CHO CÔNG CHÚNG */}
@@ -82,7 +82,7 @@ const AboutUs = () => {
                 <div className="flex items-start gap-3 md:gap-4">
                   <Check className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-green-400 flex-shrink-0 mt-0.5" />
                   <p className="text-sm md:text-base lg:text-lg text-white leading-relaxed">
-                    Đăng ký tự do, <strong>KHÔNG CẦN</strong> cam kết trở thành nhân viên của <strong>NOBLECO</strong>.
+                    Đăng ký tự do, <strong>KHÔNG CẦN</strong> cam kết trở thành nhân viên của <strong>NOBLE</strong>.
                   </p>
                 </div>
               </div>
@@ -111,6 +111,7 @@ const AboutUs = () => {
                 </div>
               ))}
             </div>
+            <p className="text-center">Phù hợp cho những ai muốn tăng thu nhập trong môi trường sang trọng, nâng cấp hình ảnh và xây dựng nghề bền vững với trang sức cao cấp.</p>
           </div>
 
           {/* Phần GIÁ TRỊ ĐỘC LẬP */}
@@ -162,7 +163,7 @@ const AboutUs = () => {
       {/* Phần cam kết */}
       <div className="bg-white py-6 md:py-8">
         <p className="px-2 md:px-0 max-w-7xl mx-auto text-base md:text-lg leading-relaxed text-center">
-          <span className="font-bold">NOBLECO ACADEMY</span> cam kết mang đến giá trị tri thức và kết nối đỉnh cao, đồng hành cùng mọi cá nhân xây dựng sự nghiệp tự chủ và thành công vượt mong đợi.
+          <span className="font-bold">NOBLE ACADEMY</span> cam kết mang đến kiến thức thực chiến và mạng lưới quan hệ chất lượng, đồng hành cùng bạn xây dựng sự nghiệp tự chủ và tăng trưởng thu nhập bền vững.
         </p>
       </div>
     </section>
