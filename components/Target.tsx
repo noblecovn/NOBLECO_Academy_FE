@@ -22,16 +22,16 @@ const Target = () => {
     ];
     const cards2 = [
         {
-            image: "/images/target/4.svg",
-            text: "**Bạn cần một Profile đẳng cấp** (chứng nhận/danh hiệu): Để khẳng định vị thế chuyên gia, **xây dựng mạng lưới quan hệ chất lượng cao** giúp khách hàng thượng lưu và các doanh nghiệp lớn chủ động tìm đến mình?",
+            image: "/images/target/6.svg",
+            text: "**Bạn làm trong ngành Dịch vụ cao cấp (Stylist, Spa, Thẩm mỹ, Salon):** Muốn am hiểu sâu về Kim cương – Đá quý để **nâng tầm uy tín**, tự tin tư vấn đơn hàng lớn từ tệp **khách hàng thượng lưu** sẵn có?",
         },
         {
             image: "/images/target/5.svg",
             text: "**Bạn là Chủ doanh nghiệp/Shop trang sức & thời trang**: Cần bộ kiến thức chuẩn để đào tạo đội ngũ, nâng cấp cửa hàng lên phân khúc Premium nhằm **tăng giá trị hóa đơn và lợi nhuận** mà không tốn thêm chi phí Marketing?",
         },
         {
-            image: "/images/target/6.svg",
-            text: "**Bạn làm trong ngành Dịch vụ cao cấp (Stylist, Spa, Thẩm mỹ, Salon):** Muốn am hiểu sâu về Kim cương – Đá quý để **nâng tầm uy tín**, tự tin tư vấn đơn hàng lớn từ tệp **khách hàng thượng lưu** sẵn có?",
+            image: "/images/target/4.svg",
+            text: "**Bạn cần một Profile đẳng cấp** (chứng nhận/danh hiệu): Để khẳng định vị thế chuyên gia, **xây dựng mạng lưới quan hệ chất lượng cao** giúp khách hàng thượng lưu và các doanh nghiệp lớn chủ động tìm đến mình?",
         },
     ];
 
