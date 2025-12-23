@@ -12,13 +12,13 @@ const afacadFlux = Afacad_Flux({
 
 export const metadata: Metadata = {
   title: {
-    default: "NOBLE Academy - Đào Tạo Trang Sức Cao Cấp Chuẩn Quốc Tế",
-    template: "%s | NOBLE Academy",
+    default: "NOBLECO Academy - Đào Tạo Trang Sức Cao Cấp Chuẩn Quốc Tế",
+    template: "%s | NOBLECO Academy",
   },
   description:
-    "NOBLE Academy - Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế, cấp độ từ Jewelry Advisor đến Master Jewelry Stylist. Đội ngũ chuyên gia hàng đầu, mạng lưới đối tác rộng khắp.",
+    "NOBLECO Academy - Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế, cấp độ từ Jewelry Advisor đến Master Jewelry Stylist. Đội ngũ chuyên gia hàng đầu, mạng lưới đối tác rộng khắp.",
   keywords: [
-    "NOBLE Academy",
+    "NOBLECO Academy",
     "đào tạo trang sức",
     "học viện trang sức",
     "Jewelry Advisor",
@@ -28,12 +28,12 @@ export const metadata: Metadata = {
     "trang sức cao cấp",
     "đào tạo ngành trang sức",
     "nghề trang sức",
-    "NOBLE",
+    "NOBLECO",
     "kim cương Lab-grown",
   ],
-  authors: [{ name: "NOBLE Academy" }],
-  creator: "NOBLE Academy",
-  publisher: "NOBLE Academy",
+  authors: [{ name: "NOBLECO Academy" }],
+  creator: "NOBLECO Academy",
+  publisher: "NOBLECO Academy",
   formatDetection: {
     email: false,
     address: false,
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "vi_VN",
     url: "/",
-    siteName: "NOBLE Academy",
-    title: "NOBLE Academy - Đào Tạo Trang Sức Cao Cấp Chuẩn Quốc Tế",
+    siteName: "NOBLECO Academy",
+    title: "NOBLECO Academy - Đào Tạo Trang Sức Cao Cấp Chuẩn Quốc Tế",
     description:
       "Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế, cấp độ từ Jewelry Advisor đến Master Jewelry Stylist.",
     images: [
@@ -56,13 +56,13 @@ export const metadata: Metadata = {
         url: "/images/logo_update-01.svg",
         width: 1200,
         height: 630,
-        alt: "NOBLE Academy - Đào Tạo Trang Sức Cao Cấp",
+        alt: "NOBLECO Academy - Đào Tạo Trang Sức Cao Cấp",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "NOBLE Academy - Đào Tạo Trang Sức Cao Cấp Chuẩn Quốc Tế",
+    title: "NOBLECO Academy - Đào Tạo Trang Sức Cao Cấp Chuẩn Quốc Tế",
     description:
       "Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế.",
     images: ["/images/logo_update-01.svg"],

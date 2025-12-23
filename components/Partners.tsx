@@ -7,7 +7,7 @@ const PartnersAndTestimonialsSection = () => {
     const partners = [
         { name: "ChristopherDesigns", subtitle: "Christopher Designs", image: "/images/partners/ChristopherDesigns_logo.jpg" },
         { name: "SJA", subtitle: "Saigon Jewelry Academy", image: "/images/partners/SJA.svg" },
-        { name: "NOBLE", subtitle: "American Grown Diamonds", image: "/images/partners/NOBLE.svg" },
+        { name: "NOBLECO", subtitle: "American Grown Diamonds", image: "/images/partners/NOBLECO.svg" },
         { name: "Clarity", subtitle: "Diamond", image: "/images/partners/Clarity.svg" },
     ];
 
@@ -16,7 +16,7 @@ const PartnersAndTestimonialsSection = () => {
             image: "/images/partners/2.png",
             name: "Anh Nam",
             title: "Jewelry Advisor: Giải tỏa áp lực tài chính bằng nghề tay trái",
-            quote: "Từng mắc kẹt với mức lương 10 triệu và áp lực trụ cột gia đình, tôi không dám bỏ việc vì gánh nặng cơm áo gạo tiền. Nhờ Noble Academy, tôi có thêm nghề tay trái tư vấn trang sức cao cấp. Hiện tại, tôi vừa duy trì việc văn phòng, vừa kiếm được thêm 8–15 triệu đồng/tháng vào thời gian rảnh, nhờ vậy mà tài chính gia đình đượcc arit hiện đáng kể.",
+            quote: "Từng mắc kẹt với mức lương 10 triệu và áp lực trụ cột gia đình, tôi không dám bỏ việc vì gánh nặng cơm áo gạo tiền. Nhờ Nobleco Academy, tôi có thêm nghề tay trái tư vấn trang sức cao cấp. Hiện tại, tôi vừa duy trì việc văn phòng, vừa kiếm được thêm 8–15 triệu đồng/tháng vào thời gian rảnh, nhờ vậy mà tài chính gia đình đượcc arit hiện đáng kể.",
         },
         {
             image: "/images/partners/3.png",

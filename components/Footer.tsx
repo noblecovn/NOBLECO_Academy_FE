@@ -170,7 +170,7 @@ export function Footer() {
             Cam kết bảo mật thông tin
           </h2>
           <p className="text-white text-xs text-center leading-relaxed">
-            Khi tham gia đào tạo, bạn đồng ý rằng các nội dung trong chương trình đào tạo là tài sản trí tuệ của NOBLE Academy. Việc chia sẻ tài liệu ra ngoài là xâm phạm quyền sở hữu trí tuệ và có thể phải chịu mọi trách nhiệm trước pháp luật.
+            Khi tham gia đào tạo, bạn đồng ý rằng các nội dung trong chương trình đào tạo là tài sản trí tuệ của NOBLECO Academy. Việc chia sẻ tài liệu ra ngoài là xâm phạm quyền sở hữu trí tuệ và có thể phải chịu mọi trách nhiệm trước pháp luật.
           </p>
         </div>
 

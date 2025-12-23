@@ -20,7 +20,7 @@ const Section11 = () => {
                         {/* Left - Content */}
                         <div className="text-white order-2">
                             <p className="text-base text-white leading-relaxed text-justify py-4 mx-auto">
-                                <span className="font-bold">Chứng nhận được cấp bởi NOBLE - Thương hiệu kim cương & trang sức đạt chuẩn quốc tế, cùng sự tham gia thẩm định nội dung bởi chuyên gia có chứng nhận GIA.</span>
+                                <span className="font-bold">Chứng nhận được cấp bởi NOBLECO - Thương hiệu kim cương & trang sức đạt chuẩn quốc tế, cùng sự tham gia thẩm định nội dung bởi chuyên gia có chứng nhận GIA.</span>
                             </p>
                             {/* Checklist */}
                             <div className="space-y-6">
@@ -56,7 +56,7 @@ const Section11 = () => {
                         {/* Right - Certificate Image */}
                         <div className="flex justify-center lg:justify-end lg:h-full order-1">
                             <Image
-                                src="/images/section11/1.jpg"
+                                src="/images/section11/2-01.jpg"
                                 width={3840}
                                 height={2789}
                                 alt="Certification of Completion - Senior Jewelry Consultant Training Program"

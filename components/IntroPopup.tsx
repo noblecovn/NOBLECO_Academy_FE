@@ -99,7 +99,7 @@ export default function IntroPopup() {
                     Trở thành Chuyên gia Trang sức <br className="md:hidden" /> chuẩn quốc tế cùng
                   </h2>
                   <Image src="/images/introPopup/Christmas-tree.svg" alt="Logo" width={130} height={191} className="w-[80px] md:w-[130px] absolute -top-5 md:-top-10 -left-5" />
-                  <Image src="/images/introPopup/text-1.svg" alt="Logo" width={700} height={140} className="w-[250px] md:w-[500px] lg:w-[700px] absolute -bottom-5 md:-bottom-15 right-1/2 translate-x-1/2" />
+                  <Image src="/images/introPopup/text.svg" alt="Logo" width={700} height={140} className="w-[250px] md:w-[500px] lg:w-[700px] absolute -bottom-5 md:-bottom-15 right-1/2 translate-x-1/2" />
                   <Image src="/images/introPopup/Ornament.svg" alt="Logo" width={40} height={60} className="w-[30px] md:w-[40px] absolute top-0 right-10 md:right-20 lg:right-35" />
                   <Image src="/images/introPopup/Ornament.svg" alt="Logo" width={60} height={90} className="hidden md:block absolute top-0 md:right-5 lg:right-15" />
                 </div>

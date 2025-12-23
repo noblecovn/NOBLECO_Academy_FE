@@ -19,7 +19,7 @@ const Section14 = () => {
                         {/* Left - Content */}
                         <div className="text-white order-2">
                             <p className="text-base text-white leading-relaxed text-justify py-4 mx-auto">
-                                <span className="font-bold">Chứng nhận được cấp bởi NOBLE - Thương hiệu kim cương & trang sức đạt chuẩn quốc tế, cùng sự tham gia thẩm định nội dung bởi chuyên gia có chứng nhận GIA.</span>
+                                <span className="font-bold">Chứng nhận được cấp bởi NOBLECO - Thương hiệu kim cương & trang sức đạt chuẩn quốc tế, cùng sự tham gia thẩm định nội dung bởi chuyên gia có chứng nhận GIA.</span>
                             </p>
                             {/* Checklist */}
                             <div className="space-y-6">
@@ -28,7 +28,7 @@ const Section14 = () => {
                                     <div className="text-sm text-deep-green">
                                         <p className="font-bold">Khẳng định vị thế chuyên gia trong ngành trang sức cao cấp:</p>
                                         <ul className="list-none mt-1">
-                                            <li>- Chứng nhận cấp độ cao nhất trong lộ trình đào tạo của NOBLE.</li>
+                                            <li>- Chứng nhận cấp độ cao nhất trong lộ trình đào tạo của NOBLECO.</li>
                                             <li>- Được công nhận về năng lực chuyên môn sâu.</li>
                                             <li>- Tạo lợi thế cạnh tranh nổi bật khi ứng tuyển hoặc hợp tác với thương hiệu cao cấp.</li>
                                         </ul>
@@ -54,7 +54,7 @@ const Section14 = () => {
                         {/* Right - Certificate Image */}
                         <div className="flex justify-center lg:justify-end lg:h-full order-1">
                             <Image
-                                src="/images/section14/1.jpg"
+                                src="/images/section14/2.jpg"
                                 width={3840}
                                 height={2789}
                                 alt="Certification of Completion - Master Jewelry Stylist Training Program"

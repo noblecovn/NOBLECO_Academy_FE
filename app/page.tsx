@@ -55,9 +55,9 @@ const JsonLd = dynamic(() => import("@/components/JsonLd"), {
 export const metadata: Metadata = {
   title: "Trang Chủ",
   description:
-    "NOBLE Academy - Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế. Khám phá các khóa học từ Jewelry Advisor đến Master Jewelry Stylist.",
+    "NOBLECO Academy - Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế. Khám phá các khóa học từ Jewelry Advisor đến Master Jewelry Stylist.",
   openGraph: {
-    title: "NOBLE Academy - Đào Tạo Trang Sức Cao Cấp Chuẩn Quốc Tế",
+    title: "NOBLECO Academy - Đào Tạo Trang Sức Cao Cấp Chuẩn Quốc Tế",
     description:
       "Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế, cấp độ từ Jewelry Advisor đến Master Jewelry Stylist.",
     images: [
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
         url: "/images/logo_update-01.svg",
         width: 1200,
         height: 630,
-        alt: "NOBLE Academy",
+        alt: "NOBLECO Academy",
       },
     ],
   },
@@ -77,7 +77,7 @@ export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
-    name: "NOBLE Academy",
+    name: "NOBLECO Academy",
     description:
       "Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế.",
     url: baseUrl,
@@ -101,7 +101,7 @@ export default function Home() {
     },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Chương trình đào tạo NOBLE Academy",
+      name: "Chương trình đào tạo NOBLECO Academy",
       itemListElement: [
         {
           "@type": "Course",
@@ -110,7 +110,7 @@ export default function Home() {
             "Chương trình đào tạo tư vấn viên trang sức chuyên nghiệp, nắm vững sản phẩm và kỹ năng bán hàng",
           provider: {
             "@type": "Organization",
-            name: "NOBLE Academy",
+            name: "NOBLECO Academy",
           },
         },
         {
@@ -120,7 +120,7 @@ export default function Home() {
             "Chương trình chuyên sâu giúp học viên trở thành chuyên viên cấp cao trong ngành trang sức",
           provider: {
             "@type": "Organization",
-            name: "NOBLE Academy",
+            name: "NOBLECO Academy",
           },
         },
         {
@@ -130,7 +130,7 @@ export default function Home() {
             "Cấp độ đào tạo cao nhất, trở thành chuyên gia trang sức thực thụ với kiến thức sâu rộng",
           provider: {
             "@type": "Organization",
-            name: "NOBLE Academy",
+            name: "NOBLECO Academy",
           },
         },
       ],
@@ -161,7 +161,7 @@ export default function Home() {
           allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
           allowFullScreen
           loading="lazy" // Lazy load video để cải thiện FCP
-          title="NOBLE Video"
+          title="NOBLECO Video"
         />
       </div>
 

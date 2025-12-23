@@ -24,8 +24,8 @@ export function Header() {
   return (
     <header className="w-full sticky top-0 z-50 border-b border-[#D5DADF] bg-white px-2 py-4 text-[var(--deep-green)]">
       <div className="mx-auto flex max-w-7xl items-center justify-between">
-        <Link href="/" className="flex items-center gap-3" aria-label="Trang chủ NOBLE Academy">
-          <Image src="/images/logo_update-01.svg" alt="NOBLE Academy" width={100} height={51} priority/>
+        <Link href="/" className="flex items-center gap-3" aria-label="Trang chủ NOBLECO Academy">
+          <Image src="/images/logo.png" alt="NOBLECO Academy" width={150} height={51} priority/>
         </Link>
 
         {/* Desktop Navigation */}
@@ -64,7 +64,7 @@ export function Header() {
           </div>
 
           <Link href="#thong-tin-nobleco" className="transition hover:text-[#2F6848]">
-            Thông tin về NOBLE Academy
+            Thông tin về NOBLECO Academy
           </Link>
         </nav>
 
@@ -169,7 +169,7 @@ export function Header() {
             className="flex items-center px-6 py-4 text-[16px] font-semibold text-[#0E3D27] hover:bg-[#f0f7f4] transition border-t border-[#E5E9EC]"
             onClick={closeMobileMenu}
           >
-            Thông tin về NOBLE Academy
+            Thông tin về NOBLECO Academy
           </Link>
         </div>
       </nav>

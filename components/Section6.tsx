@@ -26,7 +26,7 @@ const Section6 = () => {
                     <div className="px-2 2xl:p-12 flex flex-col gap-6 text-white justify-center">
                         <div>
                             <p className="text-base sm:text-xl mt-4 leading-relaxed">
-                                Trở thành Jewelry Advisor – Bắt đầu sự nghiệp trong ngành trang sức cao cấp cùng NOBLE Academy.
+                                Trở thành Jewelry Advisor – Bắt đầu sự nghiệp trong ngành trang sức cao cấp cùng NOBLECO Academy.
                             </p>
                         </div>
 

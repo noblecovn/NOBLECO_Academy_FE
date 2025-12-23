@@ -26,7 +26,7 @@ const NoblecoAcademySection = () => {
                     BƯỚC VÀO NGÀNH TRANG SỨC CÙNG
                 </h2>
                 <h2 className={`${cormorantGaramond.className} text-xl md:text-4xl 2xl:text-5xl font-bold uppercase bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
-                    NOBLE ACADEMY
+                    NOBLECO ACADEMY
                 </h2>
             </div>
             <div className="max-w-7xl mx-auto px-2 2xl:px-0">

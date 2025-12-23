@@ -55,7 +55,7 @@ const AboutUs = () => {
       {/* Tiêu đề trên nền trắng với biểu tượng */}
       <div className="py-6 md:py-8 relative px-2 md:px-0">
         <div className="relative flex justify-center items-center">
-          <Image src="/images/about-us/text-1.png" alt="Logo" width={500} height={43} />
+          <Image src="/images/about-us/text.png" alt="Logo" width={500} height={43} />
         </div>
       </div>
 
@@ -65,7 +65,7 @@ const AboutUs = () => {
           <div className="bg-gradient-to-l from-[#547C6D] to-[#072D1F] p-1 rounded-xl">
             {/* Phần HỌC VIỆN MỞ CHO CÔNG CHÚNG */}
             <div className="bg-gradient-to-b from-[#547C6D] to-[#072D1F] rounded-lg p-4 md:p-6 lg:p-8 space-y-4">
-              <p className="text-base md:text-lg text-white text-center leading-relaxed">NOBLE Academy được xây dựng trên nền tảng chuyên môn của NOBLE – thương hiệu tiên phong về kim cương Lab‑grown chuẩn Hoa Kỳ tại Việt Nam. Đây là chương trình đào tạo PUBLIC, có thu phí, KHÔNG phải tuyển dụng/đào tạo nội bộ: bạn đăng ký tự do và không cần cam kết trở thành nhân viên NOBLE.</p>
+              <p className="text-base md:text-lg text-white text-center leading-relaxed">NOBLECO Academy được xây dựng trên nền tảng chuyên môn của NOBLECO – thương hiệu tiên phong về kim cương Lab‑grown chuẩn Hoa Kỳ tại Việt Nam. Đây là chương trình đào tạo PUBLIC, có thu phí, KHÔNG phải tuyển dụng/đào tạo nội bộ: bạn đăng ký tự do và không cần cam kết trở thành nhân viên NOBLECO.</p>
             </div>
           </div>
           {/* Phần DÀNH CHO MỌI ĐỐI TƯỢNG với biểu tượng */}
@@ -143,7 +143,7 @@ const AboutUs = () => {
       {/* Phần cam kết */}
       <div className="bg-white py-6 md:py-8">
         <p className="px-2 md:px-0 max-w-7xl mx-auto text-base md:text-lg leading-relaxed text-center">
-          <span className="font-bold">NOBLE ACADEMY</span> cam kết mang đến kiến thức thực chiến và mạng lưới quan hệ chất lượng, đồng hành cùng bạn xây dựng sự nghiệp tự chủ và tăng trưởng thu nhập bền vững.
+          <span className="font-bold">NOBLECO ACADEMY</span> cam kết mang đến kiến thức thực chiến và mạng lưới quan hệ chất lượng, đồng hành cùng bạn xây dựng sự nghiệp tự chủ và tăng trưởng thu nhập bền vững.
         </p>
       </div>
     </section>
