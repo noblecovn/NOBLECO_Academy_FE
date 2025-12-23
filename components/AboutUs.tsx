@@ -62,37 +62,18 @@ const AboutUs = () => {
       <div className="px-2 2xl:px-0 max-w-7xl mx-auto">
         {/* Nội dung chính */}
         <div className="pb-10 text-white space-y-10">
-          {/* Mô tả giới thiệu */}
-          <p className="text-base md:text-xl leading-relaxed text-center text-white">
-            NOBLE Academy được xây dựng trên nền tảng chuyên môn của NOBLE – thương hiệu tiên phong về kim cương Lab‑grown chuẩn Hoa Kỳ tại Việt Nam. <br className="hidden xl:block" /> Đây là chương trình đào tạo PUBLIC, có thu phí, KHÔNG phải tuyển dụng/đào tạo nội bộ: bạn đăng ký tự do và không cần cam kết trở thành nhân viên NOBLE.
-          </p>
           <div className="bg-gradient-to-l from-[#547C6D] to-[#072D1F] p-1 rounded-xl">
             {/* Phần HỌC VIỆN MỞ CHO CÔNG CHÚNG */}
             <div className="bg-gradient-to-b from-[#547C6D] to-[#072D1F] rounded-lg p-4 md:p-6 lg:p-8 space-y-4">
-              <h3 className="text-base md:text-lg lg:text-3xl font-bold text-center mb-4 md:mb-6 bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent">
-                HỌC VIỆN MỞ CHO CÔNG CHÚNG VÀ HOÀN TOÀN ĐỘC LẬP.
-              </h3>
-              <div className="space-y-3 md:space-y-4">
-                <div className="flex items-start gap-3 md:gap-4">
-                  <X className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-red-500 flex-shrink-0 mt-0.5" />
-                  <p className="text-sm md:text-base lg:text-lg text-white leading-relaxed">
-                    <strong>KHÔNG</strong> phải chương trình tuyển dụng / đào tạo nội bộ.
-                  </p>
-                </div>
-                <div className="flex items-start gap-3 md:gap-4">
-                  <Check className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-green-400 flex-shrink-0 mt-0.5" />
-                  <p className="text-sm md:text-base lg:text-lg text-white leading-relaxed">
-                    Đăng ký tự do, <strong>KHÔNG CẦN</strong> cam kết trở thành nhân viên của <strong>NOBLE</strong>.
-                  </p>
-                </div>
-              </div>
+              <p className="text-base md:text-lg text-white text-center leading-relaxed">NOBLE Academy được xây dựng trên nền tảng chuyên môn của NOBLE – thương hiệu tiên phong về kim cương Lab‑grown chuẩn Hoa Kỳ tại Việt Nam. Đây là chương trình đào tạo PUBLIC, có thu phí, KHÔNG phải tuyển dụng/đào tạo nội bộ: bạn đăng ký tự do và không cần cam kết trở thành nhân viên NOBLE.</p>
             </div>
           </div>
           {/* Phần DÀNH CHO MỌI ĐỐI TƯỢNG với biểu tượng */}
-          <div className="space-y-4 md:space-y-6">
+          <div className="space-y-2">
             <h3 className="text-base md:text-lg lg:text-3xl font-bold text-center bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent">
               DÀNH CHO MỌI ĐỐI TƯỢNG
             </h3>
+            <p className="text-center pb-4">Phù hợp cho những ai muốn tăng thu nhập trong môi trường sang trọng, nâng cấp hình ảnh và xây dựng nghề bền vững với trang sức cao cấp.</p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
               {targetAudience.map((item, index) => (
                 <div key={index} className="flex flex-col items-center gap-2 md:gap-3 text-center">
@@ -111,7 +92,6 @@ const AboutUs = () => {
                 </div>
               ))}
             </div>
-            <p className="text-center">Phù hợp cho những ai muốn tăng thu nhập trong môi trường sang trọng, nâng cấp hình ảnh và xây dựng nghề bền vững với trang sức cao cấp.</p>
           </div>
 
           {/* Phần GIÁ TRỊ ĐỘC LẬP */}
