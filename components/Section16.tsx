@@ -249,7 +249,7 @@ const Section16 = () => {
                         {/* Referral Box */}
                         <div className="bg-white rounded-2xl p-6">
                             <p className="text-deep-green text-sm mb-2">
-                                Nếu đăng ký nhóm/ hoặc được cựu học viên giới thiệu, bạn hãy điền đầy đủ thông tin bạn của mình dưới đây
+                            Nếu đăng ký nhóm hoặc được cựu học viên giới thiệu, bạn sẽ nhận được voucher giảm 15% khi mua hàng trực tiếp tại NOBLECO và hãy điền đầy đủ thông tin bạn của mình dưới đây
                             </p>
                             <textarea
                                 rows={4}
