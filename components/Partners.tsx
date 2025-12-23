@@ -16,19 +16,19 @@ const PartnersAndTestimonialsSection = () => {
             image: "/images/partners/2.png",
             name: "Anh Nam",
             title: "Jewelry Advisor: Giải tỏa áp lực tài chính bằng nghề tay trái",
-            quote: "Tôi từng mắc kẹt trong vòng lặp của một nhân viên Sale với mức lương cố định 10 triệu đồng. Áp lực của người trụ cột gia đình đè nặng suốt nhiều năm khi thu nhập không đổi. Tôi luôn khao khát tìm một hướng đi mới nhưng không thể mạo hiểm bỏ việc ngay vì gánh nặng cơm áo. Noble Academy đã giúp tôi xây dựng một nghề tay trái linh hoạt trong ngành trang sức cao cấp. Tôi vẫn duy trì công việc văn phòng, nhưng tận dụng thời gian rảnh để tư vấn trang sức, mang về thêm 8–15 triệu đồng/tháng. Sự kết hợp này không chỉ giúp tôi gia tăng thu nhập đột phá mà còn giải quyết triệt để bài toán tài chính cho gia đình.",
+            quote: "Từng mắc kẹt với mức lương 10 triệu và áp lực trụ cột gia đình, tôi không dám bỏ việc vì gánh nặng cơm áo gạo tiền. Nhờ Noble Academy, tôi có thêm nghề tay trái tư vấn trang sức cao cấp. Hiện tại, tôi vừa duy trì việc văn phòng, vừa kiếm được thêm 8–15 triệu đồng/tháng vào thời gian rảnh, nhờ vậy mà tài chính gia đình đượcc arit hiện đáng kể.",
         },
         {
             image: "/images/partners/3.png",
             name: "Anh Quang",
             title: "Senior Jewelry Consultant: Nâng tầm dịch vụ Wedding Planner",
-            quote: "Là một Wedding Planner, tôi từng rất lúng túng mỗi khi khách hàng nhờ tư vấn về trang sức cưới. Vì thiếu kiến thức chuyên sâu, tôi đành đứng ngoài quy trình quan trọng này, vô tình bỏ lỡ cơ hội gia tăng doanh thu và khiến sự hài lòng của khách hàng chưa được trọn vẹn. Sau khóa học, tôi không chỉ điều phối hôn lễ mà đã trở thành một Cố vấn danh mục trang sức cưới thực thụ. Tôi tự tin dẫn dắt khách hàng lựa chọn những bộ trang sức tinh tế, phù hợp với ngân sách và phong cách riêng. Việc làm chủ tri thức chuyên sâu giúp tôi nâng tầm uy tín cá nhân, trở thành một Wedding Planner đa năng và chuyên nghiệp trong mắt giới thượng lưu.",
+            quote: "Trước đây, tôi thường lúng túng và bỏ lỡ cơ hội gia tăng doanh thu khi khách hỏi về trang sức cưới vì thiếu kiến thức chuyên sâu. Sau khóa học, tôi được thêm nghề cố vấn trang sức, giúp khách hàng lựa chọn những bộ trang sức tinh tế, phù hợp với ngân sách và phong cách riêng. Việc tự tin dẫn dắt khách hàng thượng lưu chọn bộ trang sức phù hợp đã giúp tôi nâng tầm uy tín, trở thành một Wedding Planner đa năng và chuyên nghiệp.",
         },
         {
             image: "/images/partners/1.jpg",
             name: "Chị Vy",
             title: "Master Jewelry Stylist: Cố vấn chiến lược cho giới siêu giàu",
-            quote: "Dù là Stylist cho người nổi tiếng, tôi vẫn gặp \"ngưỡng cản\" chuyên môn khi đối thoại về kim cương, đá quý với tệp khách VIP am tường. Sự lúng túng trong việc tư vấn chuyên sâu khiến tôi khó thuyết phục khách hàng đầu tư thêm, dẫn đến tỷ lệ khách quay lại thấp vì niềm tin chưa tuyệt đối. Tôi đã bứt phá thành Chuyên gia định hình phong cách và Cố vấn chiến lược đầu tư trang sức cho giới siêu giàu. Không chỉ phối đồ, tôi trực tiếp cố vấn những bộ sưu tập có giá trị bảo tồn và sinh lời lâu dài. Hiện tôi đang vận hành hệ thống kinh doanh trang sức quy mô lớn, khẳng định vị thế trong ngành Luxury và trực tiếp đào tạo đội ngũ kế cận theo tiêu chuẩn quốc tế.",
+            quote: "Dù là Stylist cho người nổi tiếng, tôi từng gặp rào cản khi tư vấn trang sức kim cương, đá quý với tệp khách VIP am tường. Sự lúng túng trong việc tư vấn chuyên sâu khiến tôi khó thuyết phục khách hàng đầu tư thêm, dẫn đến tỷ lệ khách quay lại thấp vì niềm tin chưa tuyệt đối. Sau khóa học, tôi tự tin là Chuyên gia định hình phong cách và Cố vấn đầu tư trang sức. Hiện tôi đang vận hành hệ thống kinh doanh trang sức quy mô lớn, khẳng định vị thế trong ngành Luxury và trực tiếp đào tạo đội ngũ kế cận theo tiêu chuẩn quốc tế.",
         },
     ];
 
@@ -80,7 +80,7 @@ const PartnersAndTestimonialsSection = () => {
                                         alt={testimonial.name}
                                         width={1024}
                                         height={1024}
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover object-center"
                                     />
                                 </div>
                                 <div className="p-6">
