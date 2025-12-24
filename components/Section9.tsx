@@ -26,7 +26,7 @@ const Section9 = () => {
                             Nâng tầm kỹ năng & Trở thành Chuyên viên Cao cấp thực thụ
                         </div>
                         <div className="text-lg">
-                            Tổng số buổi học: 13 buổi vào buổi tối và cuối tuần
+                            Tổng số buổi học: 15 buổi vào buổi tối và cuối tuần
                         </div>
                         <div className="grid grid-cols-1 gap-4 text-lg">
                             {highlights.map((item) => (
