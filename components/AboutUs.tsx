@@ -16,7 +16,7 @@ const AboutUs = () => {
     {
       title: "CHUYÊN MÔN TOÀN DIỆN",
       content: "Học hỏi kiến thức chuẩn quốc tế để tự tin đứng vị thế \"chuyên gia\" trước khách hàng cao cấp, thay vì chỉ là một nhân viên bán hàng. Truyền đạt kiến thức, kỹ năng một cách hiệu quả và nhận chứng nhận hoàn thành từ Học viện.",
-      image: "/images/about-us/6.png"
+      image: "/images/about-us/8.jpg"
     },
     {
       title: "CƠ HỘI KẾT NỐI VÀ NGHỀ NGHIỆP",
