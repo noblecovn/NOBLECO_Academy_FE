@@ -65,33 +65,31 @@ const AboutUs = () => {
           <div className="bg-gradient-to-l from-[#547C6D] to-[#072D1F] p-1 rounded-xl">
             {/* Phần HỌC VIỆN MỞ CHO CÔNG CHÚNG */}
             <div className="bg-gradient-to-b from-[#547C6D] to-[#072D1F] rounded-lg p-4 md:p-6 lg:p-8 space-y-4">
-              <p className="text-base md:text-lg text-white text-center leading-relaxed">NOBLECO Academy được xây dựng trên nền tảng chuyên môn của NOBLECO – thương hiệu tiên phong về kim cương Lab‑grown chuẩn Hoa Kỳ tại Việt Nam. Đây là chương trình đào tạo PUBLIC, có thu phí, KHÔNG phải tuyển dụng/đào tạo nội bộ: bạn đăng ký tự do và không cần cam kết trở thành nhân viên NOBLECO.</p>
+              <p className="text-base md:text-lg text-white text-center leading-relaxed">NOBLECO Academy được xây dựng trên nền tảng chuyên môn của NOBLECO – thương hiệu tiên phong về kim cương Lab‑grown chuẩn Hoa Kỳ tại Việt Nam. <br />Đây là chương trình đào tạo PUBLIC, có thu phí, KHÔNG phải tuyển dụng/đào tạo nội bộ: bạn đăng ký tự do và không cần cam kết trở thành nhân viên NOBLECO.</p>
+              <p className="text-base md:text-lg text-white text-center leading-relaxed">✅ Phù hợp cho những ai muốn tăng thu nhập trong môi trường sang trọng, nâng cấp hình ảnh và xây dựng nghề bền vững với trang sức cao cấp.</p>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+                {targetAudience.map((item, index) => (
+                  <div key={index} className="flex flex-col items-center gap-2 md:gap-3 text-center">
+                    <div className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center">
+                      <Image
+                        src={item.icon}
+                        alt={item.alt}
+                        width={80}
+                        height={80}
+                        className="w-full h-full object-contain filter brightness-0 invert"
+                      />
+                    </div>
+                    <p className="text-xs md:text-sm lg:text-base text-white font-medium uppercase">
+                      {item.label}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
           {/* Phần DÀNH CHO MỌI ĐỐI TƯỢNG với biểu tượng */}
           <div className="space-y-2">
-            <h3 className="text-base md:text-lg lg:text-3xl font-bold text-center bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent">
-              DÀNH CHO MỌI ĐỐI TƯỢNG
-            </h3>
-            <p className="text-center pb-4">Phù hợp cho những ai muốn tăng thu nhập trong môi trường sang trọng, nâng cấp hình ảnh và xây dựng nghề bền vững với trang sức cao cấp.</p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
-              {targetAudience.map((item, index) => (
-                <div key={index} className="flex flex-col items-center gap-2 md:gap-3 text-center">
-                  <div className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center">
-                    <Image
-                      src={item.icon}
-                      alt={item.alt}
-                      width={80}
-                      height={80}
-                      className="w-full h-full object-contain filter brightness-0 invert"
-                    />
-                  </div>
-                  <p className="text-xs md:text-sm lg:text-base text-white font-medium uppercase">
-                    {item.label}
-                  </p>
-                </div>
-              ))}
-            </div>
+
           </div>
 
           {/* Phần GIÁ TRỊ ĐỘC LẬP */}
@@ -125,7 +123,7 @@ const AboutUs = () => {
 
                     {/* Nội dung thẻ */}
                     <div className="p-2 lg:p-5 space-y-3 flex flex-col items-center justify-center">
-                      <h4 className="text-base xl:text-xl font-bold text-center mb-4 md:mb-6 bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent">
+                      <h4 className="text-base xl:text-xl font-bold text-center mb-2 bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent">
                         {card.title}
                       </h4>
                       <p className="text-white text-xs md:text-sm lg:text-base 2xl:w-4/5 leading-relaxed text-justify">
@@ -142,7 +140,7 @@ const AboutUs = () => {
 
       {/* Phần cam kết */}
       <div className="bg-white py-6 md:py-8">
-        <p className="px-2 md:px-0 max-w-7xl mx-auto text-base md:text-lg leading-relaxed text-center">
+        <p className="px-2 md:px-0 mx-auto text-base md:text-lg leading-relaxed text-center">
           <span className="font-bold">NOBLECO ACADEMY</span> cam kết mang đến kiến thức thực chiến và mạng lưới quan hệ chất lượng, đồng hành cùng bạn xây dựng sự nghiệp tự chủ và tăng trưởng thu nhập bền vững.
         </p>
       </div>
