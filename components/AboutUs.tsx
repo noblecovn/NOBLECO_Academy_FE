@@ -10,7 +10,7 @@ const AboutUs = () => {
   const featureCards = [
     {
       title: "TIỀM NĂNG TÀI CHÍNH",
-      content: "Làm chủ kiến thức sản phẩm để không còn lúng túng khi khách hỏi sâu về kim cương, đá quý hay giá trị thật của món trang sức.Thấu hiểu tâm lý khách hàng và quy trình bán hàng chuyên nghiệp trong ngành Trang sức Cao cấp, mở ra cơ hội tài chính lớn cho mọi cá nhân muốn gia tăng thu nhập.",
+      content: "Làm chủ kiến thức sản phẩm để không còn lúng túng khi khách hỏi sâu về kim cương, đá quý hay giá trị thật của món trang sức. Thấu hiểu tâm lý khách hàng và quy trình bán hàng chuyên nghiệp trong ngành Trang sức Cao cấp, mở ra cơ hội tài chính lớn cho mọi cá nhân muốn gia tăng thu nhập.",
       image: "/images/about-us/5.png"
     },
     {
