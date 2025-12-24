@@ -65,7 +65,7 @@ const AboutUs = () => {
           <div className="bg-gradient-to-l from-[#547C6D] to-[#072D1F] p-1 rounded-xl">
             {/* Phần HỌC VIỆN MỞ CHO CÔNG CHÚNG */}
             <div className="bg-gradient-to-b from-[#547C6D] to-[#072D1F] rounded-lg p-4 md:p-6 lg:p-8 space-y-4">
-              <p className="text-base md:text-lg text-white text-center leading-relaxed">NOBLECO Academy được xây dựng trên nền tảng chuyên môn của NOBLECO – thương hiệu tiên phong về kim cương Lab‑grown chuẩn Hoa Kỳ tại Việt Nam. <br />Đây là chương trình đào tạo PUBLIC, có thu phí, KHÔNG phải tuyển dụng/đào tạo nội bộ: bạn đăng ký tự do và không cần cam kết trở thành nhân viên NOBLECO.</p>
+              <p className="text-base md:text-lg text-white text-center leading-relaxed">NOBLECO Academy được xây dựng trên nền tảng chuyên môn của NOBLECO – thương hiệu tiên phong về kim cương Lab‑grown chuẩn Hoa Kỳ tại Việt Nam. <br />Đây là chương trình đào tạo PUBLIC, KHÔNG phải tuyển dụng/đào tạo nội bộ: bạn đăng ký tự do và không cần cam kết trở thành nhân viên NOBLECO.</p>
               <p className="text-base md:text-lg text-white text-center leading-relaxed">✅ Phù hợp cho những ai muốn tăng thu nhập trong môi trường sang trọng, nâng cấp hình ảnh và xây dựng nghề bền vững với trang sức cao cấp.</p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
                 {targetAudience.map((item, index) => (
