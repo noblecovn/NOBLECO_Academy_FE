@@ -90,7 +90,7 @@ export default function Home() {
     },
     sameAs: [
       // Thêm các link mạng xã hội nếu có
-      // "https://www.facebook.com/noblecoacademy",
+      "https://www.facebook.com/nobleco.academy",
       // "https://www.instagram.com/noblecoacademy",
     ],
     offers: {
@@ -134,10 +134,6 @@ export default function Home() {
           },
         },
       ],
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      // Có thể thêm rating nếu có đánh giá
     },
   };
 
