@@ -201,8 +201,85 @@ export default function RegisterCoursePage() {
 
         {!loading && !error && (
           <>
-            {/* Table */}
-            <div className="bg-white rounded-lg shadow-sm overflow-hidden">
+            {/* Mobile Card View */}
+            <div className="block md:hidden space-y-4">
+              {registrations.length === 0 ? (
+                <div className="bg-white rounded-lg shadow-sm p-12 text-center text-gray-500">
+                  Không có dữ liệu đăng ký nào
+                </div>
+              ) : (
+                registrations.map((registration) => (
+                  <div
+                    key={registration.id}
+                    className="bg-white rounded-lg shadow-sm p-4 border border-gray-200"
+                  >
+                    <div className="flex items-start justify-between mb-3">
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-1">
+                          <span className="text-xs text-gray-500">ID:</span>
+                          <span className="text-sm font-medium text-gray-900">
+                            {registration.id}
+                          </span>
+                        </div>
+                        <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                          {registration.name}
+                        </h3>
+                      </div>
+                    </div>
+
+                    <div className="space-y-2 mb-4">
+                      <div className="flex items-start gap-2">
+                        <span className="text-xs text-gray-500 min-w-[80px]">
+                          Email:
+                        </span>
+                        <span className="text-sm text-gray-900 break-all">
+                          {registration.email || "N/A"}
+                        </span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <span className="text-xs text-gray-500 min-w-[80px]">
+                          SĐT:
+                        </span>
+                        <span className="text-sm text-gray-900">
+                          {registration.phoneNumber}
+                        </span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <span className="text-xs text-gray-500 min-w-[80px]">
+                          Cấp độ:
+                        </span>
+                        <span className="text-sm text-gray-900">
+                          {registration.levelOfInterest || "N/A"}
+                        </span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <span className="text-xs text-gray-500 min-w-[80px]">
+                          Ngày ĐK:
+                        </span>
+                        <span className="text-sm text-gray-900">
+                          {formatDate(registration.created_at)}
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="pt-3 border-t border-gray-200">
+                      <Button
+                        onClick={() => handleViewDetail(registration.id)}
+                        variant="outline"
+                        size="sm"
+                        className="w-full flex items-center justify-center gap-2"
+                      >
+                        <Eye className="w-4 h-4" />
+                        Xem chi tiết
+                      </Button>
+                    </div>
+                  </div>
+                ))
+              )}
+            </div>
+
+            {/* Desktop Table View */}
+            <div className="hidden md:block bg-white rounded-lg shadow-sm overflow-hidden">
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead className="bg-gradient-to-r from-[#265038] to-[#013817] text-white">
@@ -285,65 +362,67 @@ export default function RegisterCoursePage() {
 
             {/* Pagination */}
             {totalPages > 1 && (
-              <div className="mt-6 flex items-center justify-between bg-white rounded-lg shadow-sm p-4">
-                <div className="text-sm text-gray-600">
-                  Hiển thị{" "}
-                  <span className="font-medium">
-                    {(currentPage - 1) * perPage + 1}
-                  </span>{" "}
-                  đến{" "}
-                  <span className="font-medium">
-                    {Math.min(currentPage * perPage, totalItems)}
-                  </span>{" "}
-                  trong tổng số <span className="font-medium">{totalItems}</span>{" "}
-                  kết quả
-                </div>
-                <div className="flex items-center gap-2">
-                  <Button
-                    onClick={() => setCurrentPage((prev) => Math.max(1, prev - 1))}
-                    disabled={currentPage === 1}
-                    variant="outline"
-                    size="sm"
-                  >
-                    <ChevronLeft className="w-4 h-4" />
-                    Trước
-                  </Button>
-                  <div className="flex items-center gap-1">
-                    {Array.from({ length: Math.min(5, totalPages) }, (_, i) => {
-                      let pageNum;
-                      if (totalPages <= 5) {
-                        pageNum = i + 1;
-                      } else if (currentPage <= 3) {
-                        pageNum = i + 1;
-                      } else if (currentPage >= totalPages - 2) {
-                        pageNum = totalPages - 4 + i;
-                      } else {
-                        pageNum = currentPage - 2 + i;
-                      }
-                      return (
-                        <Button
-                          key={pageNum}
-                          onClick={() => setCurrentPage(pageNum)}
-                          variant={currentPage === pageNum ? "default" : "outline"}
-                          size="sm"
-                          className="min-w-[40px]"
-                        >
-                          {pageNum}
-                        </Button>
-                      );
-                    })}
+              <div className="mt-6 bg-white rounded-lg shadow-sm p-4">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                  <div className="text-sm text-gray-600 text-center md:text-left">
+                    Hiển thị{" "}
+                    <span className="font-medium">
+                      {(currentPage - 1) * perPage + 1}
+                    </span>{" "}
+                    đến{" "}
+                    <span className="font-medium">
+                      {Math.min(currentPage * perPage, totalItems)}
+                    </span>{" "}
+                    trong tổng số <span className="font-medium">{totalItems}</span>{" "}
+                    kết quả
                   </div>
-                  <Button
-                    onClick={() =>
-                      setCurrentPage((prev) => Math.min(totalPages, prev + 1))
-                    }
-                    disabled={currentPage === totalPages}
-                    variant="outline"
-                    size="sm"
-                  >
-                    Sau
-                    <ChevronRight className="w-4 h-4" />
-                  </Button>
+                  <div className="flex items-center justify-center gap-2">
+                    <Button
+                      onClick={() => setCurrentPage((prev) => Math.max(1, prev - 1))}
+                      disabled={currentPage === 1}
+                      variant="outline"
+                      size="sm"
+                    >
+                      <ChevronLeft className="w-4 h-4" />
+                      <span className="hidden sm:inline">Trước</span>
+                    </Button>
+                    <div className="flex items-center gap-1">
+                      {Array.from({ length: Math.min(5, totalPages) }, (_, i) => {
+                        let pageNum;
+                        if (totalPages <= 5) {
+                          pageNum = i + 1;
+                        } else if (currentPage <= 3) {
+                          pageNum = i + 1;
+                        } else if (currentPage >= totalPages - 2) {
+                          pageNum = totalPages - 4 + i;
+                        } else {
+                          pageNum = currentPage - 2 + i;
+                        }
+                        return (
+                          <Button
+                            key={pageNum}
+                            onClick={() => setCurrentPage(pageNum)}
+                            variant={currentPage === pageNum ? "default" : "outline"}
+                            size="sm"
+                            className="min-w-[40px]"
+                          >
+                            {pageNum}
+                          </Button>
+                        );
+                      })}
+                    </div>
+                    <Button
+                      onClick={() =>
+                        setCurrentPage((prev) => Math.min(totalPages, prev + 1))
+                      }
+                      disabled={currentPage === totalPages}
+                      variant="outline"
+                      size="sm"
+                    >
+                      <span className="hidden sm:inline">Sau</span>
+                      <ChevronRight className="w-4 h-4" />
+                    </Button>
+                  </div>
                 </div>
               </div>
             )}
