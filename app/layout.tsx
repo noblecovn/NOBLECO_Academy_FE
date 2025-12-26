@@ -43,6 +43,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: "/images/logo.png", sizes: "any" },
+      { url: "/favicon.ico", sizes: "32x32" },
+    ],
+    apple: [
+      { url: "/images/logo.png", sizes: "180x180" },
+    ],
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
     type: "website",
     locale: "vi_VN",
@@ -53,7 +63,7 @@ export const metadata: Metadata = {
       "Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế, cấp độ từ Jewelry Advisor đến Master Jewelry Stylist.",
     images: [
       {
-        url: "/images/logo_update-01.svg",
+        url: "/images/logo.png",
         width: 1200,
         height: 630,
         alt: "NOBLECO Academy - Đào Tạo Trang Sức Cao Cấp",
@@ -65,7 +75,7 @@ export const metadata: Metadata = {
     title: "NOBLECO Academy - Đào Tạo Trang Sức Cao Cấp Chuẩn Quốc Tế",
     description:
       "Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế.",
-    images: ["/images/logo_update-01.svg"],
+    images: ["/images/logo.png"],
   },
   robots: {
     index: true,

@@ -62,7 +62,7 @@ export const metadata: Metadata = {
       "Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế, cấp độ từ Jewelry Advisor đến Master Jewelry Stylist.",
     images: [
       {
-        url: "/images/logo_update-01.svg",
+        url: "/images/logo.png",
         width: 1200,
         height: 630,
         alt: "NOBLECO Academy",
@@ -81,8 +81,8 @@ export default function Home() {
     description:
       "Học viện đào tạo trang sức cao cấp hàng đầu Việt Nam. Chương trình đào tạo chuẩn quốc tế.",
     url: baseUrl,
-    logo: `${baseUrl}/images/logo_update-01.svg`,
-    image: `${baseUrl}/images/logo_update-01.svg`,
+    logo: `${baseUrl}/images/logo.png`,
+    image: `${baseUrl}/images/logo.png`,
     address: {
       "@type": "PostalAddress",
       addressCountry: "VN",

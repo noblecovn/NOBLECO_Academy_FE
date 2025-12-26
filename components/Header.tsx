@@ -23,7 +23,7 @@ export function Header() {
 
   return (
     <header className="w-full sticky top-0 z-50 border-b border-[#D5DADF] bg-white px-2 py-4 text-[var(--deep-green)]">
-      <div className="mx-auto flex max-w-7xl items-center justify-between">
+      <div className="mx-auto flex max-w-7xl items-center md:justify-between justify-center relative">
         <Link href="/" className="flex items-center gap-3" aria-label="Trang chủ NOBLECO Academy">
           <Image src="/images/logo.png" alt="NOBLECO Academy" width={150} height={51} priority/>
         </Link>
@@ -70,7 +70,7 @@ export function Header() {
 
         {/* Mobile Hamburger Button */}
         <button
-          className="xl:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5"
+          className="absolute right-0 xl:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label={mobileMenuOpen ? "Đóng menu" : "Mở menu"}
           aria-expanded={mobileMenuOpen}
