@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import { Afacad_Flux } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import Decoration from "@/components/Decoration";
-import RegistrationNotificationPopup from "@/components/RegistrationNotificationPopup";
+import ConditionalLayout from "@/components/ConditionalLayout";
 
 const afacadFlux = Afacad_Flux({
   subsets: ["latin"],
@@ -104,11 +101,7 @@ export default function RootLayout({
       <body
         className={`${afacadFlux.className} antialiased w-full overflow-x-hidden`}
       >
-        <Decoration />
-        <Header />
-        <main className="w-full">{children}</main>
-        <Footer />
-        <RegistrationNotificationPopup />
+        <ConditionalLayout>{children}</ConditionalLayout>
       </body>
     </html>
   );
