@@ -197,7 +197,7 @@ export default function Decoration() {
     <>
       {/* Snowflakes Container */}
       <div id="snowflakeContainer" ref={snowflakeContainerRef}>
-        <p className="snowflake">❄</p>
+        <p className="snowflake">🌸</p>
       </div>
     </>
   );
