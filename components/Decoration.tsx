@@ -1,204 +1,123 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
+import { useEffect, useRef } from "react";
 
-interface Snowflake {
-  element: HTMLParagraphElement;
-  radius: number;
-  speed: number;
-  xPos: number;
-  yPos: number;
-  counter: number;
-  sign: number;
+interface Particle {
+  x: number;
+  y: number;
+  size: number;
+  speedX: number;
+  speedY: number;
+  color: string;
+  update: () => void;
+  draw: (ctx: CanvasRenderingContext2D) => void;
+}
+
+class ParticleClass implements Particle {
+  x: number;
+  y: number;
+  size: number;
+  speedX: number;
+  speedY: number;
+  color: string;
+
+  constructor(x: number, y: number) {
+    this.x = x;
+    this.y = y;
+    this.size = Math.random() * 5 + 1;
+    this.speedX = Math.random() * 6 - 3;
+    this.speedY = Math.random() * 6 - 3;
+    this.color = 'hsl(' + Math.random() * 360 + ', 100%, 50%';
+  }
+
+  update() {
+    this.x += this.speedX;
+    this.y += this.speedY;
+    this.size *= 0.98; // giảm kích thước
+  }
+
+  draw(ctx: CanvasRenderingContext2D) {
+    ctx.fillStyle = this.color;
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fill();
+  }
 }
 
 export default function Decoration() {
-  const snowflakeContainerRef = useRef<HTMLDivElement>(null);
-  const snowflakesRef = useRef<Snowflake[]>([]);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const particlesRef = useRef<Particle[]>([]);
   const animationFrameRef = useRef<number | null>(null);
-  const [browserDimensions, setBrowserDimensions] = useState({
-    width: typeof window !== "undefined" ? window.innerWidth : 0,
-    height: typeof window !== "undefined" ? window.innerHeight : 0,
-  });
-  const browserDimensionsRef = useRef(browserDimensions);
-  const resetPositionRef = useRef(false);
-
-  const numberOfSnowflakes = 20;
-
-  const getSupportedPropertyName = (properties: string[]): string => {
-    if (typeof window === "undefined") return "transform";
-    for (let i = 0; i < properties.length; i++) {
-      if (
-        typeof document.body.style[
-          properties[i] as keyof CSSStyleDeclaration
-        ] !== "undefined"
-      ) {
-        return properties[i];
-      }
-    }
-    return "transform";
-  };
-
-  const setTranslate3DTransform = (
-    element: HTMLElement,
-    x: number,
-    y: number
-  ) => {
-    const transformProperty = getSupportedPropertyName([
-      "transform",
-      "msTransform",
-      "webkitTransform",
-      "mozTransform",
-      "oTransform",
-    ]);
-    const transform = `translate3d(${x}px, ${y}px, 0)`;
-    (element.style as any)[transformProperty] = transform;
-  };
-
-  const getPosition = (offset: number, max: number): number => {
-    return Math.round(-1 * offset + Math.random() * (max + 2 * offset));
-  };
-
-  const moveSnowflakes = () => {
-    if (snowflakesRef.current.length === 0) return;
-
-    const width = browserDimensionsRef.current.width || window.innerWidth;
-    const height = browserDimensionsRef.current.height || window.innerHeight;
-
-    snowflakesRef.current.forEach((snowflake) => {
-      snowflake.counter += snowflake.speed / 5000;
-      snowflake.xPos +=
-        (snowflake.sign * snowflake.speed * Math.cos(snowflake.counter)) / 40;
-      snowflake.yPos +=
-        Math.sin(snowflake.counter) / 40 + snowflake.speed / 30;
-
-      setTranslate3DTransform(
-        snowflake.element,
-        Math.round(snowflake.xPos),
-        Math.round(snowflake.yPos)
-      );
-
-      if (snowflake.yPos > height) {
-        snowflake.yPos = -50;
-      }
-    });
-
-    if (resetPositionRef.current) {
-      snowflakesRef.current.forEach((snowflake) => {
-        snowflake.xPos = getPosition(50, width);
-        snowflake.yPos = getPosition(50, height);
-      });
-      resetPositionRef.current = false;
-    }
-
-    animationFrameRef.current = requestAnimationFrame(moveSnowflakes);
-  };
-
-  const generateSnowflakes = () => {
-    if (typeof window === "undefined" || !snowflakeContainerRef.current) return;
-
-    const container = snowflakeContainerRef.current;
-    const existingSnowflake = container.querySelector(".snowflake") as
-      | HTMLParagraphElement
-      | null;
-
-    if (!existingSnowflake) return;
-
-    const width = browserDimensionsRef.current.width || window.innerWidth;
-    const height = browserDimensionsRef.current.height || window.innerHeight;
-
-    // Clear existing snowflakes
-    if (animationFrameRef.current) {
-      cancelAnimationFrame(animationFrameRef.current);
-    }
-    snowflakesRef.current = [];
-    container.innerHTML = "";
-
-    // Create snowflakes
-    for (let i = 0; i < numberOfSnowflakes; i++) {
-      const snowflake = existingSnowflake.cloneNode(true) as HTMLParagraphElement;
-      container.appendChild(snowflake);
-
-      const xPos = getPosition(50, width);
-      const yPos = getPosition(50, height);
-      const speed = 5 + Math.random() * 40;
-      const radius = 4 + Math.random() * 10;
-
-      snowflake.style.opacity = `${0.5 + Math.random()}`;
-      snowflake.style.fontSize = `${4 + Math.random() * 20}px`;
-
-      const snowflakeObj: Snowflake = {
-        element: snowflake,
-        radius,
-        speed,
-        xPos,
-        yPos,
-        counter: 0,
-        sign: Math.random() < 0.5 ? 1 : -1,
-      };
-
-      snowflakesRef.current.push(snowflakeObj);
-    }
-
-    moveSnowflakes();
-  };
 
   useEffect(() => {
-    // Set initial dimensions
-    if (typeof window !== "undefined") {
-      const dimensions = {
-        width: window.innerWidth,
-        height: window.innerHeight,
-      };
-      setBrowserDimensions(dimensions);
-      browserDimensionsRef.current = dimensions;
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    // Thiết lập kích thước canvas
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    function createFirework(x: number, y: number) {
+      for (let i = 0; i < 100; i++) {
+        particlesRef.current.push(new ParticleClass(x, y));
+      }
     }
 
-    const handleResize = () => {
-      const dimensions = {
-        width: window.innerWidth,
-        height: window.innerHeight,
-      };
-      setBrowserDimensions(dimensions);
-      browserDimensionsRef.current = dimensions;
-      resetPositionRef.current = true;
-    };
+    function animate() {
+      if (!canvas || !ctx) return;
+      
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      // Lọc và cập nhật particles
+      particlesRef.current = particlesRef.current.filter((particle) => {
+        particle.update();
+        particle.draw(ctx);
+        return particle.size > 0.2;
+      });
 
-    window.addEventListener("resize", handleResize);
+      animationFrameRef.current = requestAnimationFrame(animate);
+    }
 
+    // Tạo pháo hoa tự động
+    const autoFirework = setInterval(() => {
+      const x = Math.random() * canvas.width;
+      const y = Math.random() * canvas.height;
+      createFirework(x, y);
+    }, 2000);
+
+    animate();
+
+    // Cleanup
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', resizeCanvas);
+      clearInterval(autoFirework);
       if (animationFrameRef.current) {
         cancelAnimationFrame(animationFrameRef.current);
       }
     };
   }, []);
 
-  useEffect(() => {
-    browserDimensionsRef.current = browserDimensions;
-    if (browserDimensions.width > 0 && browserDimensions.height > 0) {
-      // Delay to ensure DOM is ready
-      const timer = setTimeout(() => {
-        generateSnowflakes();
-      }, 100);
-
-      return () => {
-        clearTimeout(timer);
-        if (animationFrameRef.current) {
-          cancelAnimationFrame(animationFrameRef.current);
-        }
-      };
-    }
-  }, [browserDimensions]);
-
-
   return (
     <>
-      {/* Snowflakes Container */}
-      <div id="snowflakeContainer" ref={snowflakeContainerRef}>
-        <p className="snowflake">🌸</p>
-      </div>
+      <canvas
+        ref={canvasRef}
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          pointerEvents: 'none',
+          zIndex: 1000
+        }}
+      />
     </>
   );
 }

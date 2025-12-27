@@ -4,7 +4,8 @@ import { usePathname } from "next/navigation";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import Decoration from "@/components/Decoration";
-import RegistrationNotificationPopup from "@/components/RegistrationNotificationPopup";
+import SeminarRegistrationPopup from "@/components/SeminarRegistrationPopup";
+// import RegistrationNotificationPopup from "@/components/RegistrationNotificationPopup"; // Đã ẩn popup cũ
 import { shouldHideHeaderFooter } from "@/lib/layout-config";
 
 export default function ConditionalLayout({
@@ -21,7 +22,8 @@ export default function ConditionalLayout({
       {!hideHeaderFooter && <Header />}
       <main className="w-full">{children}</main>
       {!hideHeaderFooter && <Footer />}
-      {!hideHeaderFooter && <RegistrationNotificationPopup />}
+      {!hideHeaderFooter && <SeminarRegistrationPopup />}
+      {/* {!hideHeaderFooter && <RegistrationNotificationPopup />} */} {/* Đã ẩn popup cũ */}
     </>
   );
 }

@@ -140,7 +140,6 @@ export default function Home() {
   return (
     <div className="relative min-h-screen">
       <JsonLd data={jsonLd} />
-      <IntroPopup />
       <div className="relative w-full" style={{ aspectRatio: "640 / 360" }}>
         <iframe
           src="https://player.cloudinary.com/embed/?cloud_name=dtmtycf0d&public_id=clip_60s-web_rv4y1n&profile=cld-looping"
