@@ -1,123 +1,63 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-
-interface Particle {
-  x: number;
-  y: number;
-  size: number;
-  speedX: number;
-  speedY: number;
-  color: string;
-  update: () => void;
-  draw: (ctx: CanvasRenderingContext2D) => void;
-}
-
-class ParticleClass implements Particle {
-  x: number;
-  y: number;
-  size: number;
-  speedX: number;
-  speedY: number;
-  color: string;
-
-  constructor(x: number, y: number) {
-    this.x = x;
-    this.y = y;
-    this.size = Math.random() * 5 + 1;
-    this.speedX = Math.random() * 6 - 3;
-    this.speedY = Math.random() * 6 - 3;
-    this.color = 'hsl(' + Math.random() * 360 + ', 100%, 50%';
-  }
-
-  update() {
-    this.x += this.speedX;
-    this.y += this.speedY;
-    this.size *= 0.98; // giảm kích thước
-  }
-
-  draw(ctx: CanvasRenderingContext2D) {
-    ctx.fillStyle = this.color;
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-    ctx.fill();
-  }
-}
+import { Fireworks } from "fireworks-js";
 
 export default function Decoration() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const particlesRef = useRef<Particle[]>([]);
-  const animationFrameRef = useRef<number | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
+    if (!containerRef.current) return;
 
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
+    const fireworks = new Fireworks(containerRef.current, {
+      hue: { min: 0, max: 360 },
+      delay: { min: 60, max: 100 },
+      rocketsPoint: { min: 0, max: 100 }, // Bắn từ mọi vị trí theo chiều ngang
+      acceleration: 1.05,
+      friction: 0.95,
+      gravity: 1.5,
+      particles: 50,
+      traceLength: 3,
+      traceSpeed: 5,
+      explosion: 5,
+      intensity: 30,
+      flickering: 50,
+      lineStyle: 'round',
+      lineWidth: { 
+        explosion: { min: 1, max: 3 }, 
+        trace: { min: 1, max: 2 } 
+      },
+      autoresize: true,
+      brightness: { min: 50, max: 80 },
+      decay: { min: 0.015, max: 0.03 },
+      mouse: { click: false, move: false, max: 1 },
+      // Xóa boundaries hoặc để giá trị lớn để pháo hoa lan tỏa tự nhiên
+    });
 
-    // Thiết lập kích thước canvas
-    const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
-    resizeCanvas();
-    window.addEventListener('resize', resizeCanvas);
+    fireworks.start();
 
-    function createFirework(x: number, y: number) {
-      for (let i = 0; i < 100; i++) {
-        particlesRef.current.push(new ParticleClass(x, y));
-      }
-    }
-
-    function animate() {
-      if (!canvas || !ctx) return;
-      
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
-      // Lọc và cập nhật particles
-      particlesRef.current = particlesRef.current.filter((particle) => {
-        particle.update();
-        particle.draw(ctx);
-        return particle.size > 0.2;
-      });
-
-      animationFrameRef.current = requestAnimationFrame(animate);
-    }
-
-    // Tạo pháo hoa tự động
-    const autoFirework = setInterval(() => {
-      const x = Math.random() * canvas.width;
-      const y = Math.random() * canvas.height;
-      createFirework(x, y);
-    }, 2000);
-
-    animate();
-
-    // Cleanup
     return () => {
-      window.removeEventListener('resize', resizeCanvas);
-      clearInterval(autoFirework);
-      if (animationFrameRef.current) {
-        cancelAnimationFrame(animationFrameRef.current);
+      fireworks.stop();
+      // Đảm bảo xóa sạch các canvas cũ khi component bị gỡ bỏ
+      if (containerRef.current) {
+        containerRef.current.innerHTML = '';
       }
     };
   }, []);
 
   return (
-    <>
-      <canvas
-        ref={canvasRef}
-        style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          pointerEvents: 'none',
-          zIndex: 1000
-        }}
-      />
-    </>
+    <div
+      ref={containerRef}
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100vw', // Sử dụng viewport width/height cho chắc chắn
+        height: '100vh',
+        pointerEvents: 'none',
+        zIndex: 1000,
+        background: 'transparent' // Đảm bảo nền trong suốt
+      }}
+    />
   );
 }

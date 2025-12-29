@@ -55,7 +55,9 @@ const AboutUs = () => {
       {/* Tiêu đề trên nền trắng với biểu tượng */}
       <div className="py-6 md:py-8 relative px-2 md:px-0">
         <div className="relative flex justify-center items-center">
-          <Image src="/images/about-us/text.png" alt="Logo" width={500} height={43} />
+          <h2 className={`${cormorantGaramond.className} text-2xl md:text-4xl 2xl:text-5xl font-bold uppercase bg-gradient-to-t from-[#eebc79] to-[#fffaee] bg-clip-text text-transparent`}>
+            NOBLECO ACADEMY
+          </h2>
         </div>
       </div>
 
