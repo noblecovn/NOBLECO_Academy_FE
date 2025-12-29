@@ -4,8 +4,9 @@
  */
 export const routesWithoutHeaderFooter = [
   "/register-course",
+  "/admin",
   // Thêm các routes khác cần ẩn Header/Footer ở đây
-  // Ví dụ: "/admin", "/dashboard", etc.
+  // Ví dụ: "/dashboard", etc.
 ];
 
 /**
