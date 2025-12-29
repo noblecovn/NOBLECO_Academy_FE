@@ -90,6 +90,20 @@ export default function SeminarRegistrationPopup() {
         }, 300);
     };
 
+    // Regex patterns for validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^(0|\+84)[0-9]{9}$/;
+
+    const validateEmail = (email: string): boolean => {
+        if (!email) return false;
+        return emailRegex.test(email);
+    };
+
+    const validatePhone = (phone: string): boolean => {
+        if (!phone) return false;
+        return phoneRegex.test(phone);
+    };
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setFormData((prev) => ({
@@ -113,6 +127,20 @@ export default function SeminarRegistrationPopup() {
         // Reset errors
         setErrors({});
         setErrorMessage("");
+
+        // Validate email
+        if (formData.email && !validateEmail(formData.email)) {
+            setErrorMessage("Email không đúng định dạng. Vui lòng kiểm tra lại.");
+            setErrors({ email: ["Email không đúng định dạng"] });
+            return;
+        }
+
+        // Validate phone
+        if (formData.phone && !validatePhone(formData.phone)) {
+            setErrorMessage("Số điện thoại không hợp lệ. Vui lòng nhập số điện thoại Việt Nam (10 số, bắt đầu bằng 0 hoặc +84).");
+            setErrors({ phone: ["Số điện thoại không hợp lệ"] });
+            return;
+        }
 
         // Validate participant_count
         const participantCount = formData.participants
@@ -313,6 +341,8 @@ export default function SeminarRegistrationPopup() {
                                         value={formData.phone}
                                         onChange={handleChange}
                                         required
+                                        pattern="^(0|\+84)[0-9]{9}$"
+                                        title="Số điện thoại phải là 10 số, bắt đầu bằng 0 hoặc +84"
                                         className={`w-full bg-white border-2 rounded px-3 py-2 text-gray-900 focus:outline-none focus:ring-2 ${errors.phone ? "border-red-500 focus:ring-red-500" : "border-[#d4af37] focus:ring-[#d4af37]"
                                             }`}
                                         placeholder="Số điện thoại:"
@@ -329,6 +359,8 @@ export default function SeminarRegistrationPopup() {
                                         value={formData.email}
                                         onChange={handleChange}
                                         required
+                                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                                        title="Email không đúng định dạng (ví dụ: example@email.com)"
                                         className={`w-full bg-white border-2 rounded px-3 py-2 text-gray-900 focus:outline-none focus:ring-2 ${errors.email ? "border-red-500 focus:ring-red-500" : "border-[#d4af37] focus:ring-[#d4af37]"
                                             }`}
                                         placeholder="Email:"
