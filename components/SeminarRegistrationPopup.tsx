@@ -452,8 +452,8 @@ export default function SeminarRegistrationPopup() {
                                 disabled={isSubmitting}
                                 className="cursor-pointer relative mx-auto w-full md:w-4/6 text-white font-bold text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed"
                             >
-                                <Image src="/images/popup2/CTA-1.png" alt="Logo" width={200} height={50} className="absolute top-0 left-0 w-full h-auto" />
-                                <Image src="/images/popup2/CTA-1.png" alt="" width={200} height={50} className="w-full h-auto opacity-0 pointer-events-none" aria-hidden="true" />
+                                <Image src="/images/popup2/CTA-1.png" alt="Logo" width={1616} height={203} className="absolute top-0 left-0 w-full h-auto" />
+                                <Image src="/images/popup2/CTA-1.png" alt="" width={1616} height={203} className="w-full h-auto opacity-0 pointer-events-none" aria-hidden="true" />
                                 <span className="absolute inset-0 uppercase z-10 flex items-center justify-center text-center w-full">
                                     {isSubmitting ? "ĐANG XỬ LÝ..." : "ĐĂNG KÝ NHẬN VÉ MỜI NGAY"}
                                 </span>
