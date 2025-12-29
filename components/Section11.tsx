@@ -56,7 +56,7 @@ const Section11 = () => {
                         {/* Right - Certificate Image */}
                         <div className="flex justify-center lg:justify-end lg:h-full order-1">
                             <Image
-                                src="/images/section11/2-01.jpg"
+                                src="/images/section11/c.jpg"
                                 width={3840}
                                 height={2789}
                                 alt="Certification of Completion - Senior Jewelry Consultant Training Program"
