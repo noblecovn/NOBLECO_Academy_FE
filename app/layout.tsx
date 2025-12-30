@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Afacad_Flux } from "next/font/google";
 import "./globals.css";
 import ConditionalLayout from "@/components/ConditionalLayout";
+import { Analytics } from "@vercel/analytics/react";
 
 const afacadFlux = Afacad_Flux({
   subsets: ["latin"],
@@ -102,6 +103,7 @@ export default function RootLayout({
         className={`${afacadFlux.className} antialiased w-full overflow-x-hidden`}
       >
         <ConditionalLayout>{children}</ConditionalLayout>
+        <Analytics />
       </body>
     </html>
   );
