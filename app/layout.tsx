@@ -4,6 +4,7 @@ import "./globals.css";
 import ConditionalLayout from "@/components/ConditionalLayout";
 import { Analytics } from "@vercel/analytics/react";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import MicrosoftClarity from "@/components/MicrosoftClarity";
 
 const afacadFlux = Afacad_Flux({
   subsets: ["latin"],
@@ -104,6 +105,7 @@ export default function RootLayout({
         className={`${afacadFlux.className} antialiased w-full overflow-x-hidden`}
       >
         <GoogleAnalytics />
+        <MicrosoftClarity />
         <ConditionalLayout>{children}</ConditionalLayout>
         <Analytics />
       </body>
