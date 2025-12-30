@@ -43,7 +43,7 @@ const AboutUs = () => {
     },
     {
       icon: "/images/about-us/4-1.svg",
-      label: <>Có kinh nghiệm bán hàng Premium</>,
+      label: <>Có kinh nghiệm bán hàng Premium/ Luxury</>,
       alt: "TĂNG THU NHẬP & NÂNG CẤP HÌNH ẢNH"
     }
   ];
