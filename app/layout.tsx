@@ -3,7 +3,7 @@ import { Afacad_Flux } from "next/font/google";
 import "./globals.css";
 import ConditionalLayout from "@/components/ConditionalLayout";
 import { Analytics } from "@vercel/analytics/react";
-import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { GoogleAnalytics } from '@next/third-parties/google';
 import MicrosoftClarity from "@/components/MicrosoftClarity";
 
 const afacadFlux = Afacad_Flux({
@@ -104,11 +104,11 @@ export default function RootLayout({
       <body
         className={`${afacadFlux.className} antialiased w-full overflow-x-hidden`}
       >
-        <GoogleAnalytics />
         <MicrosoftClarity />
         <ConditionalLayout>{children}</ConditionalLayout>
         <Analytics />
       </body>
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || ""} />
     </html>
   );
 }
